@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Environment Variables
+.env
+.env.local
+
+# Build & OS Junk
+dist/
+build/
+*.log
+npm-debug.log*
+yarn-debug.log*
+Thumbs.db
+.DS_Store
+
+# Temporary / Scratch
+find_git.ps1
+output
+test_scroll_reviews.png
+food/test_*.png
+food/test_*.mjs

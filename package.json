@@ -1,0 +1,32 @@
+{
+  "name": "multi-agent-travel-planner",
+  "version": "1.0.0",
+  "description": "Multi-Agent Travel Planner with Cross-Validation Loop (Taipei 3N4D)",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "pdf": "node scripts/generate_pdfs.mjs"
+  },
+  "keywords": [
+    "multi-agent",
+    "travel-planner",
+    "gemini",
+    "cross-validation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@google/genai": "^2.3.0",
+    "dotenv": "^16.4.7",
+    "picocolors": "^1.1.1",
+    "puppeteer-core": "^25.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.7.3"
+  }
+}

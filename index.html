@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대만 여행 & 미식 가이드 | Taiwan Trip Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 20%, #1e293b 0%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 960px;
+      width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 30%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--primary);
+      box-shadow: 0 12px 30px -10px rgba(245, 158, 11, 0.25);
+    }
+    .card-icon {
+      font-size: 2.2rem;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.55;
+      margin-bottom: 20px;
+      flex-grow: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 20px;
+    }
+    .card-tag {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      color: #cbd5e1;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 20px;
+      background: var(--primary);
+      color: #0f172a;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: background 0.2s ease;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background: var(--primary-hover);
+    }
+    .footer {
+      margin-top: 50px;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">🇹🇼 Taiwan Travel & Gourmet Hub</div>
+    <h1>대만 여행 & 미식 종합 가이드</h1>
+    <p class="subtitle">교차 검증 멀티 에이전트 시스템으로 제작된 3박 4일 일정표와<br>구글 지도 실데이터 검증 기반 15대 전통 미식 가이드입니다.</p>
+    
+    <div class="grid">
+      <!-- Card 1: Food Guide (Primary) -->
+      <a href="food/index.html" class="card">
+        <div>
+          <div class="card-icon">🍽️</div>
+          <h2>대만 15대 미식 & 레스토랑 지도 가이드</h2>
+          <p>시간대별 식문화(아침/점심/저녁/야식) 대표 맛집 12곳 + 미슐랭 3곳 완벽 분석. 실시간 인터랙티브 지도, 실제 구글 리뷰 5선(부정 2선 포함), 추천 메뉴 및 지하철 경로 안내.</p>
+          <div class="card-tags">
+            <span class="card-tag">인터랙티브 지도</span>
+            <span class="card-tag">구글 리뷰 실검증</span>
+            <span class="card-tag">My Maps CSV/KML</span>
+            <span class="card-tag">미슐랭 3스타</span>
+          </div>
+        </div>
+        <div class="btn">미식 가이드 열기 &rarr;</div>
+      </a>
+
+      <!-- Card 2: Travel Itinerary Dashboard -->
+      <a href="trip_plan/taipei_3n4d_dashboard_v3.html" class="card">
+        <div>
+          <div class="card-icon">🗺️</div>
+          <h2>타이베이 3박 4일 여행 일정 대시보드</h2>
+          <p>동선(Route), 영업시간/휴무일(Spot), 예산(Budget) 에이전트 간의 교차 검증 루프를 통해 완성된 최적의 3박 4일 여행 타임라인과 기념품 가이드.</p>
+          <div class="card-tags">
+            <span class="card-tag">3박 4일 일정표</span>
+            <span class="card-tag">MRT 동선 최적화</span>
+            <span class="card-tag">예산 감사 리포트</span>
+            <span class="card-tag">기념품 쇼핑</span>
+          </div>
+        </div>
+        <div class="btn">여행 일정표 열기 &rarr;</div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>Source Code & Datasets available on <a href="https://github.com/kangsj1306-tech/taiwan-trip" target="_blank">GitHub Repository</a></p>
+    </div>
+  </div>
+</body>
+</html>

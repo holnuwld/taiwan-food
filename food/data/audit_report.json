@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "푸항또우장",
+    "category": "전통 조식 (또우장)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 2,
+    "name": "융허또우장 다안점",
+    "category": "전통 조식 (또우장)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 3,
+    "name": "딩위안또우장",
+    "category": "전통 조식 (또우장)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 4,
+    "name": "유산동 우육면",
+    "category": "우육면",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 5,
+    "name": "융캉우육면",
+    "category": "우육면",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 6,
+    "name": "임동방 우육면",
+    "category": "우육면",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 7,
+    "name": "진펑 루로우판",
+    "category": "루로우판",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 8,
+    "name": "황지 루로우판",
+    "category": "루로우판",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 9,
+    "name": "천천리",
+    "category": "루로우판",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 10,
+    "name": "핀샨 생맹해선 러차오",
+    "category": "러차오 (대만식 선술집)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 11,
+    "name": "중앙시장 생맹해선 100 러차오",
+    "category": "러차오 (대만식 선술집)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 12,
+    "name": "키키 레스토랑 신의점",
+    "category": "러차오 (대만식 선술집)",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 13,
+    "name": "르 팔레 (미슐랭 3스타)",
+    "category": "미슐랭급 식당",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 14,
+    "name": "마운틴 앤 씨 하우스 (미슐랭 1스타/그린스타)",
+    "category": "미슐랭급 식당",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  },
+  {
+    "id": 15,
+    "name": "신예 대만요리 본점 (미슐랭 셀렉티드)",
+    "category": "미슐랭급 식당",
+    "failCount": 0,
+    "issues": [],
+    "status": "PASSED"
+  }
+]
