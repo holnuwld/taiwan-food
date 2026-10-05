@@ -1,0 +1,10 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+test_*.mjs
+test_*.png
+test_*.txt
+pin_*.txt
+hotel_card_*.txt
+google_search_result.txt

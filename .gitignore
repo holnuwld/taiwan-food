@@ -20,3 +20,19 @@ output
 test_scroll_reviews.png
 food/test_*.png
 food/test_*.mjs
+
+# Independent project repositories
+deploy_repo/
+hotel/.git_hotel_repo/
+hotel/node_modules/
+hotel/*evidence*.png
+hotel/test_*.png
+hotel/real_*.png
+hotel/*scrolled*.png
+hotel/page_*.png
+hotel/pin_*.png
+hotel/place_*.png
+hotel/rendered_preview_top30.png
+hotel/rendered_preview_v2.png
+hotel/rendered_preview_v3.png
+

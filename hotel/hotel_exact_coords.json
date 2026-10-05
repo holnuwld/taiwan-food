@@ -1,0 +1,402 @@
+{
+  "Green World Linsen": {
+    "name": "Green World Linsen",
+    "officialTitle": "洛碁大飯店 林森館 Green World Linsen",
+    "address": "\nNo. 617號, Linsen N Rd, Qingguang Village, Zhongshan District, Taipei City, 대만 104",
+    "lat": 25.066767,
+    "lng": 121.525882,
+    "mapsUrl": "https://www.google.com/maps/place/%E6%B4%9B%E7%A2%81%E5%A4%A7%E9%A3%AF%E5%BA%97+%E6%9E%97%E6%A3%AE%E9%A4%A8+Green+World+Linsen/@25.066767,121.525882,17z/data=!4m9!3m8!1s0x3442a95ab20c89cb:0x3077237f85a643c8!5m2!4m1!1i2!8m2!3d25.066767!4d121.525882!16s%2Fg%2F1v_z6m0f?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Meworld Hotel - Ximen": {
+    "name": "Meworld Hotel - Ximen",
+    "officialTitle": "We Love Hotel",
+    "address": "\nNo. 101號, Chengdu Rd, Ximen Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0432589,
+    "lng": 121.50437,
+    "mapsUrl": "https://www.google.com/maps/place/We+Love+Hotel/@25.0432589,121.50437,17z/data=!3m1!5s0x3442a908f5b1ea41:0xa7f4620ff3eee526!4m9!3m8!1s0x3442a9b48b5c1609:0x8270be71e13fbcd!5m2!4m1!1i2!8m2!3d25.0432589!4d121.50437!16s%2Fg%2F11rrn70606?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Gold Inn": {
+    "name": "Gold Inn",
+    "officialTitle": "골드인 호텔",
+    "address": "\n10491 대만 Taipei City, Zhongshan District, Jucheng Village, Linsen N Rd, 413號",
+    "lat": 25.0600171,
+    "lng": 121.5257839,
+    "mapsUrl": "https://www.google.com/maps/place/%EA%B3%A8%EB%93%9C%EC%9D%B8+%ED%98%B8%ED%85%94/@25.0600171,121.5257839,17z/data=!4m9!3m8!1s0x3442a95cd2f1534b:0x236addfb512bce26!5m2!4m1!1i2!8m2!3d25.0600171!4d121.5257839!16s%2Fg%2F11b_02pky8?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "The Moon Hotel": {
+    "name": "The Moon Hotel",
+    "officialTitle": "더 문 호텔",
+    "address": "\nNo. 122號, Section 1, Xinsheng N Rd, Zhengyi Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0507698,
+    "lng": 121.527771,
+    "mapsUrl": "https://www.google.com/maps/place/%EB%8D%94+%EB%AC%B8+%ED%98%B8%ED%85%94/@25.0507698,121.527771,17z/data=!4m9!3m8!1s0x3442a965d7917007:0x38542f7e85a3b22e!5m2!4m1!1i2!8m2!3d25.0507698!4d121.527771!16s%2Fg%2F1tdczcxr?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Hotel 6 - Ximen": {
+    "name": "Hotel 6 - Ximen",
+    "officialTitle": "Hotel 6",
+    "address": "\nNo. 88-2號, Section 1, Zhonghua Rd, Wanshou Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0447107,
+    "lng": 121.5083965,
+    "mapsUrl": "https://www.google.com/maps/place/Hotel+6/@25.0447107,121.5083965,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a90019be9c6d:0x44cc47179aa2f9f!8m2!3d25.0447107!4d121.5083965!16s%2Fg%2F11lf4gkvf7?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Han She Business Hotel": {
+    "name": "Han She Business Hotel",
+    "officialTitle": "Han She Business Hotel",
+    "address": "\n108 대만 Taipei City, Wanhua District, Ximen Village, Lane 76, Chengdu Rd, 68號4樓",
+    "lat": 25.0427966,
+    "lng": 121.5051175,
+    "mapsUrl": "https://www.google.com/maps/place/Han+She+Business+Hotel/@25.0427966,121.5051175,17z/data=!4m9!3m8!1s0x3442a90855df8ff5:0x1beb93331d5741a9!5m2!4m1!1i2!8m2!3d25.0427966!4d121.5051175!16s%2Fg%2F1ths_486?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Slow Town Hotel- Reel": {
+    "name": "Slow Town Hotel- Reel",
+    "officialTitle": "Slow Town Hotel",
+    "address": "\nNo. 169-1號, Guangfu Rd, 中區 Central District, Taichung City, 대만 400",
+    "lat": 25.0580527,
+    "lng": 121.5289758,
+    "mapsUrl": "https://www.google.com/maps/search/%E5%8F%B0%E5%8C%97%E5%B8%82+%E4%B8%AD%E5%B1%B1%E5%8D%80+%E6%9D%BE%E6%B1%9F%E8%B7%AF+%E6%85%A2%E8%A1%8C%E6%97%85/@25.0580527,121.5289758,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Link World Hotel Taipei": {
+    "name": "Link World Hotel Taipei",
+    "officialTitle": "링크 월드 호텔",
+    "address": "\nNo. 5, Lane 90, Songjiang Rd, Xingya Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0507081,
+    "lng": 121.5319604,
+    "mapsUrl": "https://www.google.com/maps/place/%EB%A7%81%ED%81%AC+%EC%9B%94%EB%93%9C+%ED%98%B8%ED%85%94/@25.0507081,121.5319604,17z/data=!4m9!3m8!1s0x3442a9614fc482b1:0x37362c0409f21658!5m2!4m1!1i2!8m2!3d25.0507081!4d121.5319604!16s%2Fg%2F1tgq4btx?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Cattail Pocket Inn - Ximen Branch": {
+    "name": "Cattail Pocket Inn - Ximen Branch",
+    "officialTitle": "Cat Tail Pocket Inn. Ximen 貓尾口袋 西門館",
+    "address": "\n108 대만 Taipei City, Wanhua District, Ximen Village, Lane 25, Kangding Rd, 1號1至4樓",
+    "lat": 25.0468475,
+    "lng": 121.5083276,
+    "mapsUrl": "https://www.google.com/maps/search/Cat+Tail+Pocket+Inn+Ximen+Taipei/@25.0468475,121.5083276,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Charming City Hotel SungShan": {
+    "name": "Charming City Hotel SungShan",
+    "officialTitle": "Charming City Songshan Hotel",
+    "address": "\nNo. 67, Section 6, Civic Blvd, Ciyou Village, Songshan District, Taipei City, 대만 105",
+    "lat": 25.0495638,
+    "lng": 121.5742093,
+    "mapsUrl": "https://www.google.com/maps/place/Charming+City+Songshan+Hotel/@25.0495638,121.5742093,17z/data=!4m9!3m8!1s0x3442ab999d960d35:0xd3dffe19500c70!5m2!4m1!1i2!8m2!3d25.0495638!4d121.5742093!16s%2Fg%2F1tl8hdx0?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Art'otel": {
+    "name": "Art'otel",
+    "officialTitle": "Art'otel Ximending TAIPEI",
+    "address": "\n108 대만 Taipei City, Wanhua District, Section 2, Wuchang St, 124-2號4樓",
+    "lat": 25.0454154,
+    "lng": 121.503584,
+    "mapsUrl": "https://www.google.com/maps/place/Art'otel+Ximending+TAIPEI/@25.0454154,121.503584,17z/data=!4m9!3m8!1s0x3442a908b0cbde55:0xe3e16694a0241620!5m2!4m1!1i2!8m2!3d25.0454154!4d121.503584!16s%2Fg%2F11b7gw8m2j?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Green World Mai - NanJing": {
+    "name": "Green World Mai - NanJing",
+    "officialTitle": "Green World Mai - NanJing",
+    "address": "Zhongshan District",
+    "lat": 25.0520164,
+    "lng": 121.5366677,
+    "mapsUrl": "https://www.google.com/maps/search/Green+World+Mai+-+NanJing+Taipei/@25.0520164,121.5366677,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Beauty Hotels Taipei – Hotel B6": {
+    "name": "Beauty Hotels Taipei – Hotel B6",
+    "officialTitle": "台北俞美精品飯店",
+    "address": "\n108 대만 Taipei City, Wanhua District, 武昌街二段106號",
+    "lat": 25.045028,
+    "lng": 121.505055,
+    "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E4%BF%9E%E7%BE%8E%E7%B2%BE%E5%93%81%E9%A3%AF%E5%BA%97/@25.045028,121.505055,17z/data=!4m9!3m8!1s0x3442a908d0eef821:0xe15007087417c167!5m2!4m1!1i2!8m2!3d25.045028!4d121.505055!16s%2Fg%2F1hd_fkgdp?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Ark Hotel-Changan Fuxing": {
+    "name": "Ark Hotel-Changan Fuxing",
+    "officialTitle": "아크호텔 창안푸싱점",
+    "address": "\n10492 대만 Taipei City, Zhongshan District, Zhulun Village, ChangAn East Rd Section 2, 246號3F",
+    "lat": 25.048105,
+    "lng": 121.5431755,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%95%84%ED%81%AC%ED%98%B8%ED%85%94+%EC%B0%BD%EC%95%88%ED%91%B8%EC%8B%B1%EC%A0%90/@25.048105,121.5431755,17z/data=!4m9!3m8!1s0x3442abdc1987a479:0x1fe3e84d2548119e!5m2!4m1!1i2!8m2!3d25.048105!4d121.5431755!16s%2Fg%2F11bzz_yn8j?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Hope City Minsheng Hotel": {
+    "name": "Hope City Minsheng Hotel",
+    "officialTitle": "HopeCity MinSheng Hotel",
+    "address": "\n105 대만 Taipei City, Songshan District, Minyou Village, 民生東路3段113巷7弄11號",
+    "lat": 25.058588,
+    "lng": 121.5469077,
+    "mapsUrl": "https://www.google.com/maps/place/105+%EB%8C%80%EB%A7%8C+Taipei+City,+Songshan+District,+Minyou+Village,+%E6%B0%91%E7%94%9F%E6%9D%B1%E8%B7%AF3%E6%AE%B5113%E5%B7%B77%E5%BC%8411%E8%99%9F/@25.058588,121.5469077,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abe5be14966f:0x12ce195b1369e58e!8m2!3d25.058588!4d121.5469077!16s%2Fg%2F11q2w_7xcz?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Grace Hotel Dunbei": {
+    "name": "Grace Hotel Dunbei",
+    "officialTitle": "葛瑞絲商旅敦北館 Grace Hotel Dunbei",
+    "address": "No. 326, Dunhua N Rd, Songshan District, Taipei City",
+    "lat": 25.0583989,
+    "lng": 121.54872,
+    "mapsUrl": "https://www.google.com/maps/place/%E8%91%9B%E7%91%9E%E7%B5%B2%E5%95%86%E6%97%85%E6%95%A6%E5%8C%97%E9%A4%A8/@25.0583989,121.54872,17z"
+  },
+  "Guide Hotel Taipei Fuxing N.": {
+    "name": "Guide Hotel Taipei Fuxing N.",
+    "officialTitle": "GUIDE HOTEL - Taipei Fuxing N.",
+    "address": "\nNo. 307號, Fuxing N Rd, 松山區 Songshan District, Taipei City, 대만 105",
+    "lat": 25.0585901,
+    "lng": 121.5445057,
+    "mapsUrl": "https://www.google.com/maps/place/No.+307,+Fuxing+N+Rd,+Minyou+Village,+Songshan+District,+Taipei+City,+%EB%8C%80%EB%A7%8C+105/@25.0585901,121.5445057,17z/data=!3m1!4b1!4m6!3m5!1s0x3442abe43c0913f5:0x13e0b76a5ec8ace0!8m2!3d25.0585901!4d121.5445057!16s%2Fg%2F11ckqm698m?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "T.O.Hotel-Main Station": {
+    "name": "T.O.Hotel-Main Station",
+    "officialTitle": "T.O Hotel Main Station",
+    "address": "\n10047 대만 Taipei City, Zhongzheng District, Liming Village, Section 1, Kaifeng St, 2號2樓",
+    "lat": 25.0458207,
+    "lng": 121.5145591,
+    "mapsUrl": "https://www.google.com/maps/place/T.O+Hotel+Main+Station/@25.0458207,121.5145591,17z/data=!3m1!5s0x3468f90123c6c7a9:0xea15d3718333d337!4m9!3m8!1s0x3442a90cd4e5a66d:0xebc3040935f10941!5m2!4m1!1i2!8m2!3d25.0458207!4d121.5145591!16s%2Fg%2F11ft373gs7?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Rich & Free Ez Inn - Taipei Arena": {
+    "name": "Rich & Free Ez Inn - Taipei Arena",
+    "officialTitle": "台北悠趣旅店 (小巨蛋館) / Urtrip Hotel",
+    "address": "No. 113, Lane 12, Section 3, Minquan E Rd / Nanjing E Rd, Songshan District, Taipei City",
+    "lat": 25.0483319,
+    "lng": 121.5448361,
+    "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E6%82%A0%E8%B6%A3%E6%97%85%E5%BA%97+(%E5%B0%8F%E5%B7%A8%E8%9B%8B%E9%A4%A8)/@25.0483319,121.5448361,17z"
+  },
+  "Rich & Free Hotel - Zhongshan": {
+    "name": "Rich & Free Hotel - Zhongshan",
+    "officialTitle": "Rich & Free Hotel Kaifeng 富逸旅趣-北車開封館",
+    "address": "\n100 대만 Taipei City, Zhongzheng District, Guangfu Village, Section 1, Kaifeng St, 41號2F",
+    "lat": 25.0460512,
+    "lng": 121.5125012,
+    "mapsUrl": "https://www.google.com/maps/place/Rich+%26+Free+Hotel+Kaifeng+%E5%AF%8C%E9%80%B8%E6%97%85%E8%B6%A3-%E5%8C%97%E8%BB%8A%E9%96%8B%E5%B0%81%E9%A4%A8/@25.0460512,121.5125012,17z/data=!4m9!3m8!1s0x3442a90e57880427:0x7664bfb557c271da!5m2!4m1!1i2!8m2!3d25.0460512!4d121.5125012!16s%2Fg%2F11jzx55rm4?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Waikoloa Hotel": {
+    "name": "Waikoloa Hotel",
+    "officialTitle": "와이콜로아 호텔",
+    "address": "\nNo. 187號, Changchun Rd, Zhufu Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0549654,
+    "lng": 121.5377586,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%99%80%EC%9D%B4%EC%BD%9C%EB%A1%9C%EC%95%84+%ED%98%B8%ED%85%94/@25.0549654,121.5377586,17z/data=!4m9!3m8!1s0x3442abe0174c1d4b:0x922dc8c5301a2c!5m2!4m1!1i2!8m2!3d25.0549654!4d121.5377586!16s%2Fg%2F1tdkvclt?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Smile Inn - Taipei Main Station": {
+    "name": "Smile Inn - Taipei Main Station",
+    "officialTitle": "詩漫精品旅館 Smile Inn - Taipei Main Station",
+    "address": "\n6樓, No. 8號, Guanqian Rd, Liming Village, Zhongzheng District, Taipei City, 대만 100",
+    "lat": 25.045952,
+    "lng": 121.5147959,
+    "mapsUrl": "https://www.google.com/maps/place/%E8%A9%A9%E6%BC%AB%E7%B2%BE%E5%93%81%E6%97%85%E9%A4%A8+Smile+Inn+-+Taipei+Main+Station/@25.045952,121.5147959,17z/data=!3m1!5s0x3468f90123c6c7a9:0x8e96ac48494cd5f4!4m9!3m8!1s0x3442a9732885b177:0x660f25e9a85eccad!5m2!4m1!1i2!8m2!3d25.045952!4d121.5147959!16s%2Fg%2F11b7800tn2?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Wonstar Hotel": {
+    "name": "Wonstar Hotel",
+    "officialTitle": "Wonstar Hotel",
+    "address": "\nNo. 82, Section 1, Zhonghua Rd, Fuxing Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0453717,
+    "lng": 121.5087399,
+    "mapsUrl": "https://www.google.com/maps/place/Wonstar+Hotel/@25.0453717,121.5087399,17z/data=!4m9!3m8!1s0x3442a90c039b5863:0x724aa9c917ebe422!5m2!4m1!1i2!8m2!3d25.0453717!4d121.5087399!16s%2Fg%2F1w6632q4?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Stay Inn": {
+    "name": "Stay Inn",
+    "officialTitle": "Stay Inn Taipei",
+    "address": "\n10491 대만 Taipei City, Zhongshan District, Zhongshan Village, Section 2, Zhongshan N Rd, 71號8樓",
+    "lat": 25.0573631,
+    "lng": 121.5230488,
+    "mapsUrl": "https://www.google.com/maps/place/Stay+Inn+Taipei/@25.0573631,121.5230488,17z/data=!4m9!3m8!1s0x3442a94281f6d117:0xbe89db542fb694e3!5m2!4m1!1i2!8m2!3d25.0573631!4d121.5230488!16s%2Fg%2F12hkb2plq?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Royal Rose Hotel Shuangcheng Hall": {
+    "name": "Royal Rose Hotel Shuangcheng Hall",
+    "officialTitle": "로즈 부티크 호텔 솽청 홀",
+    "address": "\nNo. 8號, Lane 28, Shuangcheng St, 中山區 Zhongshan District, Taipei City, 대만 104",
+    "lat": 25.0657184,
+    "lng": 121.5236783,
+    "mapsUrl": "https://www.google.com/maps/place/No.+8%E8%99%9F,+Lane+28,+Shuangcheng+St,+Qingguang+Village,+Zhongshan+District,+Taipei+City,+%EB%8C%80%EB%A7%8C+104/@25.0657184,121.5236783,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a9451a6f8bc3:0xb185b0792683dda4!8m2!3d25.0657184!4d121.5236783!16s%2Fg%2F11rp3cdlr9?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Muzik Hotel - Ximending Xining": {
+    "name": "Muzik Hotel - Ximending Xining",
+    "officialTitle": "검색 결과",
+    "address": "Ximending",
+    "lat": 25.0452505,
+    "lng": 121.5075846,
+    "mapsUrl": "https://www.google.com/maps/search/Muzik+Hotel+-+Ximending+Xining+Taipei/@25.0452505,121.5075846,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Royal Inn Taipei Linsen - Huashan 1914 Creative Park": {
+    "name": "Royal Inn Taipei Linsen - Huashan 1914 Creative Park",
+    "officialTitle": "로얄 인 타이베이 린센",
+    "address": "\n104 대만 Taipei City, Zhongshan District, Zhengyi Village, Linsen N Rd, 83號4F",
+    "lat": 25.0496333,
+    "lng": 121.5248752,
+    "mapsUrl": "https://www.google.com/maps/place/%EB%A1%9C%EC%96%84+%EC%9D%B8+%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4+%EB%A6%B0%EC%84%BC/@25.0496333,121.5248752,17z/data=!4m9!3m8!1s0x3442a96f6ff3156d:0x9f175b0c17d753aa!5m2!4m1!1i2!8m2!3d25.0496333!4d121.5248752!16s%2Fg%2F12vtxkm01?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Royal Rose Hotel Taipei Station": {
+    "name": "Royal Rose Hotel Taipei Station",
+    "officialTitle": "Royal Rose Hotel Taipei Station",
+    "address": "Taipei Main Station",
+    "lat": 25.0532838,
+    "lng": 121.5215075,
+    "mapsUrl": "https://www.google.com/maps/search/Royal+Rose+Hotel+Taipei+Station+Taipei/@25.0532838,121.5215075,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Airline Inn Taipei Ximen": {
+    "name": "Airline Inn Taipei Ximen",
+    "officialTitle": "Airline Inn Taipei Ximen",
+    "address": "Ximending",
+    "lat": 25.0422213,
+    "lng": 121.5083572,
+    "mapsUrl": "https://www.google.com/maps/search/Airline+Inn+Taipei+Ximen+Taipei/@25.0422213,121.5083572,17z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Sunny Hotel": {
+    "name": "Sunny Hotel",
+    "officialTitle": "Sunny hotel",
+    "address": "\nNo. 21號, Section 1, Zhonghua Rd, Guangfu Village, Zhongzheng District, Taipei City, 대만 100",
+    "lat": 25.046357,
+    "lng": 121.509936,
+    "mapsUrl": "https://www.google.com/maps/place/Sunny+hotel/@25.046357,121.509936,17z/data=!4m9!3m8!1s0x3442a934d42b9107:0xcc249676dead160f!5m2!4m1!1i2!8m2!3d25.046357!4d121.509936!16s%2Fg%2F11gtbk2v11?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Hotel 6 - Wannien": {
+    "name": "Hotel 6 - Wannien",
+    "officialTitle": "Hotel 6 - Wan Nian",
+    "address": "\n108 대만 Taipei City, Wanhua District, Ximen Village, Xining Rd, 70號6樓",
+    "lat": 25.043488,
+    "lng": 121.505978,
+    "mapsUrl": "https://www.google.com/maps/place/Hotel+6+-+Wan+Nian/@25.043488,121.505978,17z/data=!3m1!5s0x3442a9091b7d4bbd:0xb2805cd3738ba281!4m9!3m8!1s0x3442a9091c9ba32d:0x6a0c4df19f00ba5f!5m2!4m1!1i2!8m2!3d25.043488!4d121.505978!16s%2Fg%2F1hc82pgt6?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Meworld Hotel - Taipei Main Station": {
+    "name": "Meworld Hotel - Taipei Main Station",
+    "officialTitle": "Water Meworld Hotel",
+    "address": "\n100 대만 Taipei City, Zhongzheng District, Liming Village, 忠孝西路一段50號7樓",
+    "lat": 25.046222,
+    "lng": 121.51583,
+    "mapsUrl": "https://www.google.com/maps/place/Water+Meworld+Hotel/@25.046222,121.51583,17z/data=!3m1!5s0x3442a972e155937f:0x6eb18fedd67432ba!4m9!3m8!1s0x3442a9615ed42c53:0xfd2cac18c92188fd!5m2!4m1!1i2!8m2!3d25.046222!4d121.51583!16s%2Fg%2F11s5wnx34m?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Bouti Waterfront Hotel": {
+    "name": "Bouti Waterfront Hotel",
+    "officialTitle": "浪居旅店松河館 Bouti Waterfront Hotel",
+    "address": "No. 112, Songhe St, Songshan District, Taipei City",
+    "lat": 25.0510526,
+    "lng": 121.5772373,
+    "mapsUrl": "https://www.google.com/maps/place//@25.0510526,121.5772373,17z?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Tomorrow Hotel": {
+    "name": "Tomorrow Hotel",
+    "officialTitle": "Tomorrow Hotel",
+    "address": "\nNo. 23號, Chengdu Rd, Ximen Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0426004,
+    "lng": 121.5069953,
+    "mapsUrl": "https://www.google.com/maps/place/Tomorrow+Hotel/@25.0426004,121.5069953,17z/data=!4m9!3m8!1s0x3442a9090ac772e1:0x96a4e332e9ce4ee6!5m2!4m1!1i2!8m2!3d25.0426004!4d121.5069953!16s%2Fg%2F1tfb8vlv?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Lucky Apple Hotel": {
+    "name": "Lucky Apple Hotel",
+    "officialTitle": "Lucky Apple Hotel",
+    "address": "\nNo. 109-2號, Emei St, Wanshou Village, Wanhua District, Taipei City, 대만 10844",
+    "lat": 25.044275,
+    "lng": 121.504104,
+    "mapsUrl": "https://www.google.com/maps/place/Lucky+Apple+Hotel/@25.044275,121.504104,17z/data=!4m9!3m8!1s0x3442a95c09c6a501:0x4134dd55f8088d67!5m2!4m1!1i2!8m2!3d25.044275!4d121.504104!16s%2Fg%2F11gr5xk70r?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "YOMI Hotel": {
+    "name": "YOMI Hotel",
+    "officialTitle": "요미호텔",
+    "address": "\nNo. 28號, Section 1, Minsheng E Rd, Zhongshan Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0578847,
+    "lng": 121.5240369,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%9A%94%EB%AF%B8%ED%98%B8%ED%85%94/@25.0578847,121.5240369,17z/data=!4m9!3m8!1s0x3442a824ff792f9f:0x1acedd5871bdf132!5m2!4m1!1i2!8m2!3d25.0578847!4d121.5240369!16s%2Fg%2F1tf9kz1y?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "New City Hotel": {
+    "name": "New City Hotel",
+    "officialTitle": "신 시 호텔 (Shin Shih Hotel / 新仕商務飯店)",
+    "address": "No. 8, Alley 14, Lane 20, Section 2, Zhongshan N Rd, Zhongshan District, Taipei City",
+    "lat": 25.0576956,
+    "lng": 121.5222791,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%8B%A0+%EC%8B%9C+%ED%98%B8%ED%85%94/@25.0576956,121.5222791,17z"
+  },
+  "JSL HOTEL": {
+    "name": "JSL HOTEL",
+    "officialTitle": "JSL hotel",
+    "address": "\nNo. 62, Xing'an St, Zhufu Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0559341,
+    "lng": 121.539816,
+    "mapsUrl": "https://www.google.com/maps/place/JSL+hotel/@25.0559341,121.539816,17z/data=!4m9!3m8!1s0x3442abe0fffe77c1:0xd2ad8ec2780b6e3a!5m2!4m1!1i2!8m2!3d25.0559341!4d121.539816!16s%2Fg%2F11g18f4msk?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Just Live Inn-Taipei Station": {
+    "name": "Just Live Inn-Taipei Station",
+    "officialTitle": "미이 호텔",
+    "address": "\nNo. 4, Section 1, Hankou St, Liming Village, Zhongzheng District, Taipei City, 대만 100",
+    "lat": 25.0450947,
+    "lng": 121.5147356,
+    "mapsUrl": "https://www.google.com/maps/place/%EB%AF%B8%EC%9D%B4+%ED%98%B8%ED%85%94/@25.0450947,121.5147356,17z/data=!4m9!3m8!1s0x3442a97330dcf107:0xeebd68692ca781e7!5m2!4m1!1i2!8m2!3d25.0450947!4d121.5147356!16s%2Fg%2F1txflvng?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Rainbow Hotel": {
+    "name": "Rainbow Hotel",
+    "officialTitle": "Rainbow Hotel",
+    "address": "\nNo. 36號, Hanzhong St, Wanshou Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0445244,
+    "lng": 121.5073974,
+    "mapsUrl": "https://www.google.com/maps/place/Rainbow+Hotel/@25.0445244,121.5073974,17z/data=!4m9!3m8!1s0x3442a9094f3bd0bb:0xa7fb97b69db5fc5!5m2!4m1!1i2!8m2!3d25.0445244!4d121.5073974!16s%2Fg%2F1tdn1sjs?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "The Blue by Just Inn": {
+    "name": "The Blue by Just Inn",
+    "officialTitle": "正旅館 藍 The Blue by Just Inn",
+    "address": "\nNo. 22, Guanqian Rd, Zhongzheng District, Taipei City, 대만 100",
+    "lat": 25.0450783,
+    "lng": 121.5148545,
+    "mapsUrl": "https://www.google.com/maps/place/%E6%AD%A3%E6%97%85%E9%A4%A8+%E8%97%8D+The+Blue+by+Just+Inn/@25.0450783,121.5148545,17z/data=!4m9!3m8!1s0x3442a91dc1c1da47:0xb770b2d50ce9c5e7!5m2!4m1!1i2!8m2!3d25.0450783!4d121.5148545!16s%2Fg%2F11l5j8wtv9?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Horizon Inn": {
+    "name": "Horizon Inn",
+    "officialTitle": "Horizon Inn 大地清旅",
+    "address": "\nNo. 246號, ChangAn East Rd Section 2, Zhulun Village, Zhongshan District, Taipei City, 대만 104",
+    "lat": 25.048105,
+    "lng": 121.5431755,
+    "mapsUrl": "https://www.google.com/maps/place/Horizon+Inn+%E5%A4%A7%E5%9C%B0%E6%B8%85%E6%97%85/@25.048105,121.5431755,17z/data=!4m9!3m8!1s0x3442abdc1bb70f55:0x103a98b1fd818d38!5m2!4m1!1i2!8m2!3d25.048105!4d121.5431755!16s%2Fg%2F1q6759vvl?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Formosa101 Taipei Main Branch": {
+    "name": "Formosa101 Taipei Main Branch",
+    "officialTitle": "福爾摩莎北驛旅館 Formosa101 Taipei Main Branch",
+    "address": "\n100 대만 Taipei City, Zhongzheng District, Guangfu Village, Section 1, Hankou St, 45號4F",
+    "lat": 25.0452964,
+    "lng": 121.5126058,
+    "mapsUrl": "https://www.google.com/maps/place/%E7%A6%8F%E7%88%BE%E6%91%A9%E8%8E%8E%E5%8C%97%E9%A9%9B%E6%97%85%E9%A4%A8+Formosa101+Taipei+Main+Branch/@25.0452964,121.5126058,17z/data=!3m1!5s0x3442a90cebb2ccf1:0xe7c95f90162c1f4a!4m9!3m8!1s0x3442a98138b37921:0x169f0bbcd0e9815c!5m2!4m1!1i2!8m2!3d25.0452964!4d121.5126058!16s%2Fg%2F11t1lhdf4h?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Taipei International Hotel": {
+    "name": "Taipei International Hotel",
+    "officialTitle": "台北國際飯店",
+    "address": "\nNo. 66號, Section 1, Nanjing E Rd, Zhengde Village, Zhongshan District, Taipei City, 대만 10491",
+    "lat": 25.0518759,
+    "lng": 121.5250793,
+    "mapsUrl": "https://www.google.com/maps/place/%E5%8F%B0%E5%8C%97%E5%9C%8B%E9%9A%9B%E9%A3%AF%E5%BA%97/@25.0518759,121.5250793,17z/data=!3m1!5s0x3442a968ac35d6c9:0xa3fc4912d88f4aa3!4m9!3m8!1s0x3442a968aeece49d:0x2bdfd65806fc63f6!5m2!4m1!1i2!8m2!3d25.0518759!4d121.5250793!16s%2Fg%2F1pp2tvlrc?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Fun Stay Inn Ximen": {
+    "name": "Fun Stay Inn Ximen",
+    "officialTitle": "Fun Stay Inn Ximen",
+    "address": "\n6F, No. 72之1號, Xining Rd, Ximen Village, Wanhua District, Taipei City, 대만 108",
+    "lat": 25.0432389,
+    "lng": 121.5059649,
+    "mapsUrl": "https://www.google.com/maps/place/Fun+Stay+Inn+Ximen/@25.0432389,121.5059649,17z/data=!4m9!3m8!1s0x3442a909047e6a51:0x895a64d211df934f!5m2!4m1!1i2!8m2!3d25.0432389!4d121.5059649!16s%2Fg%2F11l37b8w9f?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Finders Hotel Fu Qian": {
+    "name": "Finders Hotel Fu Qian",
+    "officialTitle": "파인더스 호텔",
+    "address": "\nNo. 86, Section 1, Chongqing S Rd, Guangfu Village, Zhongzheng District, Taipei City, 대만 100",
+    "lat": 25.0431277,
+    "lng": 121.5130411,
+    "mapsUrl": "https://www.google.com/maps/place/No.+86%E8%99%9F,+Section+1,+Chongqing+S+Rd,+Guangfu+Village,+Zhongzheng+District,+Taipei+City,+%EB%8C%80%EB%A7%8C+100/@25.0431277,121.5130411,17z/data=!3m1!4b1!4m6!3m5!1s0x3442a90b5cbaa2cf:0xf646448fc284f895!8m2!3d25.0431277!4d121.5130411!16s%2Fg%2F11q2w_9xzf?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "CityInn Hotel Taipei Station Branch II": {
+    "name": "CityInn Hotel Taipei Station Branch II",
+    "officialTitle": "시티인 호텔 타이베이 스테이션 브랜치 II",
+    "address": "\nNo. 81號, Chang'an W Rd, Jiantai Village, Datong District, Taipei City, 대만 103",
+    "lat": 25.0511524,
+    "lng": 121.5166121,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%8B%9C%ED%8B%B0%EC%9D%B8+%ED%98%B8%ED%85%94+%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4+%EC%8A%A4%ED%85%8C%EC%9D%B4%EC%85%98+%EB%B8%8C%EB%9E%9C%EC%B9%98+II/@25.0511524,121.5166121,17z/data=!4m9!3m8!1s0x3442a96cfc472f45:0x4b3e9811d8dc0005!5m2!4m1!1i2!8m2!3d25.0511524!4d121.5166121!16s%2Fg%2F1ts1py3b?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "WalkerHotel. Ximen": {
+    "name": "WalkerHotel. Ximen",
+    "officialTitle": "沃客商旅-西門館",
+    "address": "\n108 대만 Taipei City, Wanhua District, Ximen Village, Section 1, Zhonghua Rd, 144號10樓",
+    "lat": 25.043161,
+    "lng": 121.5080755,
+    "mapsUrl": "https://www.google.com/maps/place/%E6%B2%83%E5%AE%A2%E5%95%86%E6%97%85-%E8%A5%BF%E9%96%80%E9%A4%A8/@25.043161,121.5080755,17z/data=!4m9!3m8!1s0x3442a90963d7decb:0x8dc8d3277aa96b9e!5m2!4m1!1i2!8m2!3d25.043161!4d121.5080755!16s%2Fg%2F11c0xp2bl6?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "Swiio Hotel Ximending": {
+    "name": "Swiio Hotel Ximending",
+    "officialTitle": "SWIIO HOTEL XIMEN",
+    "address": "\n108 대만 Taipei City, Wanhua District, Wanshou Village, Section 2, Wuchang St, 72號6樓",
+    "lat": 25.0447195,
+    "lng": 121.5062571,
+    "mapsUrl": "https://www.google.com/maps/place/SWIIO+HOTEL+XIMEN/@25.0447195,121.5062571,17z/data=!3m1!5s0x3442a9092f950ae7:0xa20883d7b2e5e4e2!4m9!3m8!1s0x3442a90931dd99a3:0xc90b2b4e74a5db21!5m2!4m1!1i2!8m2!3d25.0447195!4d121.5062571!16s%2Fg%2F1tj4drjw?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  },
+  "I PLAY Inn": {
+    "name": "I PLAY Inn",
+    "officialTitle": "아이 플레이 인",
+    "address": "\n108 대만 Taipei City, Wanhua District, Fuxing Village, Section 2, Hankou St, 45號12樓",
+    "lat": 25.0458147,
+    "lng": 121.5066656,
+    "mapsUrl": "https://www.google.com/maps/place/%EC%95%84%EC%9D%B4+%ED%94%8C%EB%A0%88%EC%9D%B4+%EC%9D%B8/@25.0458147,121.5066656,17z/data=!4m9!3m8!1s0x3442a90ec6031bf1:0xf8038a9ae803f446!5m2!4m1!1i2!8m2!3d25.0458147!4d121.5066656!16s%2Fg%2F11c0rm93vm?entry=ttu&g_ep=EgoyMDI2MDkzMC4wIKXMDSoASAFQAw%3D%3D"
+  }
+}
