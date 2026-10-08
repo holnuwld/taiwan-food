@@ -1,0 +1,37 @@
+{
+  "totalVerifications": 3,
+  "passCount": 3,
+  "overallStatus": "PASS",
+  "verifiedAt": "2026-10-07T14:56:03.674Z",
+  "verifications": [
+    {
+      "verificationId": 1,
+      "title": "데스크톱 HTML 내 Leaflet 타일 서버 설정 검증 (숙소 프로젝트와 100% 동일한 Esri World Street Map 적용)",
+      "expected": "Esri World Street Map 타일 레이어 적용 및 구 OSM 타일 URL 제거, API Key 요구 없음",
+      "actual": {
+        "esriWorldStreetMapPresent": true,
+        "blockedOsmRemoved": true
+      },
+      "status": "PASS"
+    },
+    {
+      "verificationId": 2,
+      "title": "Esri World Street Map CDN 실시간 HTTP 타일 응답 검증 (타이베이 좌표 타일)",
+      "testedUrl": "https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/13/3532/6862",
+      "response": {
+        "statusCode": 200,
+        "contentType": "image/jpeg"
+      },
+      "status": "PASS"
+    },
+    {
+      "verificationId": 3,
+      "title": "모바일 HTML (youtube_food_guide_mobile.html) 내 Esri World Street Map 타일 설정 검증",
+      "expected": "모바일 버전에서도 동일하게 Esri World Street Map 적용으로 모바일 구글맵 API 에러 원천 방지",
+      "actual": {
+        "esriMobilePresent": true
+      },
+      "status": "PASS"
+    }
+  ]
+}

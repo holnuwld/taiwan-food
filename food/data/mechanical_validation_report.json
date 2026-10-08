@@ -1,0 +1,17 @@
+{
+  "passed_count": 27,
+  "warn_count": 0,
+  "fail_count": 0,
+  "errors": [],
+  "warnings": [],
+  "stats": {
+    "master_video_count": 200,
+    "total_views": 119524454,
+    "restaurant_count": 40,
+    "total_mentions": 275,
+    "timeline_csv_rows": 312,
+    "timeline_json_rows": 312,
+    "raw_distinct_videos": 200
+  },
+  "is_success": true
+}

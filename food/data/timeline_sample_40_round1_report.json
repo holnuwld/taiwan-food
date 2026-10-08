@@ -1,0 +1,771 @@
+{
+  "round": 1,
+  "totalSamples": 40,
+  "passCount": 40,
+  "failCount": 0,
+  "successRate": "100.0%",
+  "overallStatus": "PASS",
+  "verifiedAt": "2026-10-07T14:01:59.966Z",
+  "samples": [
+    {
+      "sampleIndex": 1,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "먹지희Mukjihee",
+      "videoTitle": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+      "videoUrl": "https://www.youtube.com/watch?v=OTmAMzLK0ak",
+      "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+      "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+      "timeline": "⏱️ 12:15 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=OTmAMzLK0ak&t=735s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 2,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "채널십오야",
+      "videoTitle": "🧋1화  |  그 시절 대명이가 사랑했던 그 대만ㅣ🍜🚶맛멋대대",
+      "videoUrl": "https://www.youtube.com/watch?v=hO2HO3iAb9k",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=hO2HO3iAb9k",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 3,
+      "nationality": "홍콩 🇭🇰",
+      "youtuber": "Kiki & May - 隨意吃樂部",
+      "videoTitle": "【台北自由行2024】台灣名物！實試台北牛肉麵人氣名店6選｜清燉派巨頭專食靚牛、米芝蓮推介70年老字號、冠軍級紅燒蕃茄湯崛起、日本遊客追捧川味手工麵...｜Kiki and May",
+      "videoUrl": "https://www.youtube.com/watch?v=IbDDck5aBFc",
+      "restaurantName": "유산동 우육면 (미슐랭 빕구르망) (劉山東牛肉麵)",
+      "menu": "맑고 깊은 청돈 우육면 (清燉牛肉麵) / 진한 홍샤오 우육면",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=IbDDck5aBFc",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 4,
+      "nationality": "대만 🇹🇼",
+      "youtuber": "AIKEN CHIA",
+      "videoTitle": "What to Eat, See, and Do in Taipei 2025! | Aiken Chia",
+      "videoUrl": "https://www.youtube.com/watch?v=wz2ShQNLZcQ",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=wz2ShQNLZcQ",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 5,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "[하말넘많] heavytalker",
+      "videoTitle": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+      "videoUrl": "https://www.youtube.com/watch?v=vCYcAk_WDSQ",
+      "restaurantName": "진천미 (시먼딩 대만가정식) (真川味)",
+      "menu": "부드러운 연두부 튀김 (라오피넌로우) / 매콤한 파볶음 (창잉터우)",
+      "timeline": "⏱️ 96:46 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=vCYcAk_WDSQ&t=5806s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 6,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "Yummy Go 야미고",
+      "videoTitle": "타이베이에서 가오슝 유명한 대만 길거리음식 모음 Famous Taiwanese street food",
+      "videoUrl": "https://www.youtube.com/watch?v=KUD1qoTUNYk",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=KUD1qoTUNYk",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 7,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "sookoh 수코",
+      "videoTitle": "대만여행 몰아보기🥭최고의 망빙을 찾아서…(맛집, 숙소, 카페, 관광, 까르푸, 기념품) 타이베이, 가오슝, 단수이 • 10일간 나혼자 대만 여행 브이로그",
+      "videoUrl": "https://www.youtube.com/watch?v=BbLorHjsuoY",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=BbLorHjsuoY",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 8,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "tzuyang쯔양",
+      "videoTitle": "⭐️미슐랭 3스타에서 먹고싶은만큼 시켰더니 가격이..xxx만원😂 대만 최초 7년연속 3스타 먹방",
+      "videoUrl": "https://www.youtube.com/watch?v=XFIdY5DKdHs",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=XFIdY5DKdHs",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 9,
+      "nationality": "홍콩 🇭🇰",
+      "youtuber": "mansonovo",
+      "videoTitle": "2026台北遊🇹🇼「快閃台北美食搜索」2026台北收藏必吃清單，全球第七辣蛋餅挑戰，超驚喜麻辣滷肉飯，打卡棉花糖甜點，台北麻辣火鍋性價比超高放題，日式高質牛肉麵，台式芋圓麻糬甜品，台式豆花甜品店",
+      "videoUrl": "https://www.youtube.com/watch?v=DVo7q1M-eZ4",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=DVo7q1M-eZ4",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 10,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "이렇게 사는 강지수",
+      "videoTitle": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+      "videoUrl": "https://www.youtube.com/watch?v=ErVXrLt40qE",
+      "restaurantName": "라뜰리에 루터스 (오픈런 필수) (L'Atelier Lotus)",
+      "menu": "대파 풍미 가득 단짠 수제 누가 크래커",
+      "timeline": "⏱️ 07:34 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=ErVXrLt40qE&t=454s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 11,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "캡틴따거 Captain Brother",
+      "videoTitle": "구독자 10명과 함께한 대만 안보여행 - 특별편",
+      "videoUrl": "https://www.youtube.com/watch?v=5BsqHllFL8Y",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=5BsqHllFL8Y",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 12,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "육식맨 YOOXICMAN",
+      "videoTitle": "대만 스트리트 푸드 특집 : 한 끼가 아니라 하루에 만 원이면 충분한 초가성비 고기 맛집들",
+      "videoUrl": "https://www.youtube.com/watch?v=KdX7safobfo",
+      "restaurantName": "황기 루로우판 (중산 미슐랭 빕구르망) (黃記魯肉飯)",
+      "menu": "윤기 흐르는 흑금 루로우판 / 배추 절임 찜 루바이차이",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=KdX7safobfo",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 13,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "문복희 Eat with Boki",
+      "videoTitle": "SUB)대만 먹방 여행 브이로그! 로컬 맛집부터 망고빙수 야시장까지 타이난은 천국이야.. Taiwan Tainan Travel Vlog with Meals",
+      "videoUrl": "https://www.youtube.com/watch?v=J5bs4PaRhVI",
+      "restaurantName": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+      "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=J5bs4PaRhVI",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 14,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "sookoh 수코",
+      "videoTitle": "나혼자 대만🏆황금코스! 내가 대만에서 제일 좋아하는 곳✨단수이샴푸마사지,새로 뚫은 대만맛집 - 대만4",
+      "videoUrl": "https://www.youtube.com/watch?v=Hyp2FxVhynM",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=Hyp2FxVhynM",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 15,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "연수연",
+      "videoTitle": "vlog. 할말많은 타이베이 브이로그 Ep.01 🇹🇼 입국심사 꿀팁부터 찐맛집 추천까지.. 낱낱이 알려드림 | 3박4일 대만여행 🌳",
+      "videoUrl": "https://www.youtube.com/watch?v=m38VSZjPp7g",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=m38VSZjPp7g",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 16,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "우니의끼니 UNIII",
+      "videoTitle": "[우육면편] 입맛에 딱..🤤🇹🇼 타이베이 여행 먹방브이로그 (곱창국수, 버블티, 대만식 햄버거, 자장라면, 춘수당, 끼니투어, 18일 맥주)",
+      "videoUrl": "https://www.youtube.com/watch?v=cZoaxi3TAh0",
+      "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+      "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+      "timeline": "⏱️ 06:46 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=cZoaxi3TAh0&t=406s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 17,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "예또세상 Yeddo World",
+      "videoTitle": "짧게 치고 빠지는 ‘타이베이’ 먹방 여행. (뻔한 맛집 X) [대만 5]",
+      "videoUrl": "https://www.youtube.com/watch?v=SZyCaBXFGhs",
+      "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+      "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=SZyCaBXFGhs",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 18,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "최술진",
+      "videoTitle": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+      "videoUrl": "https://www.youtube.com/watch?v=BQfnmaD6L5E",
+      "restaurantName": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+      "menu": "따뜻한 또우장 (豆漿) / 바삭한 요우티아오 / 두꺼운 화덕빵 호우샤오빙",
+      "timeline": "⏱️ 14:26 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=BQfnmaD6L5E&t=866s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 19,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "탸퍄 THAFHA",
+      "videoTitle": "[VLOG] 미친 계획형 인간, 3박 4일 대만여행 Taiwan | 한국인이 좋아할 코스 총정리🇹🇼 | 웨이팅 꿀팁 | 여행지원금 당첨 (대만/예스폭진지/맛집/야시장/까르푸)",
+      "videoUrl": "https://www.youtube.com/watch?v=hcg8pT6g5v8",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=hcg8pT6g5v8",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 20,
+      "nationality": "글로벌 🌐",
+      "youtuber": "Ralph & Sam",
+      "videoTitle": "Taichung Taiwan Travel Guide 2025 🇹🇼 Best Places to Visit, Cafes | Taiwan Vlog",
+      "videoUrl": "https://www.youtube.com/watch?v=y4TEKsgUd6Q",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=y4TEKsgUd6Q",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 21,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "살란다",
+      "videoTitle": "🇹🇼대만 타이베이 3박4일 여행코스 일정 완벽정리+맛집, 쇼핑 꿀팁 대방출 | 예스진지 단수이 당일치기 근교여행까지",
+      "videoUrl": "https://www.youtube.com/watch?v=ZvDUkX5MFsk",
+      "restaurantName": "융캉우육면 (융캉제 원조) (永康牛肉麵)",
+      "menu": "매콤 칼칼한 홍샤오 우육면 / 매운 도가니 반반국수",
+      "timeline": "⏱️ 10:40 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=ZvDUkX5MFsk&t=640s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 22,
+      "nationality": "미국 🇺🇸",
+      "youtuber": "Doobydobap",
+      "videoTitle": "BEST TAIWANESE STREET FOOD in TAIPEI for 100hrs (2)",
+      "videoUrl": "https://www.youtube.com/watch?v=gaNYMQt4Ppk",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=gaNYMQt4Ppk",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 23,
+      "nationality": "대만 🇹🇼",
+      "youtuber": "佩特拉去哪裡Petra Play Around",
+      "videoTitle": "【2025台北吃到飽】王者回歸！台北寒舍艾美探索廚房華麗大升級！龍蝦/鮑魚/生蠔/干貝/帝王蟹一次到位！還有獺祭放題！",
+      "videoUrl": "https://www.youtube.com/watch?v=SIyESs8yzcM",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=SIyESs8yzcM",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 24,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "써니하니 먹투어",
+      "videoTitle": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+      "videoUrl": "https://www.youtube.com/watch?v=JZ9i9ktNUT4",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=JZ9i9ktNUT4",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 25,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "여행가 제이 [Traveler JAY]",
+      "videoTitle": "한국인 입맛 저격한 대만 1등 맛집 찾기",
+      "videoUrl": "https://www.youtube.com/watch?v=8Pz2f9U4riE",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=8Pz2f9U4riE",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 26,
+      "nationality": "글로벌 🌐",
+      "youtuber": "MICHELIN Guide",
+      "videoTitle": "Taipei & Beyond: Hidden Eats",
+      "videoUrl": "https://www.youtube.com/watch?v=UfVeUkOHVgc",
+      "restaurantName": "용허또우장 (시먼딩 심야/조식) (永和豆漿大王)",
+      "menu": "고소한 또우장 / 딴빙 (대만식 계란 전병) / 무떡 뤄보가오",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=UfVeUkOHVgc",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 27,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "UCC 미누키 (UCC MINUKEE)",
+      "videoTitle": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+      "videoUrl": "https://www.youtube.com/watch?v=zfh6sMgrPCQ",
+      "restaurantName": "빙찬 생망고빙수 (여름 한정) (冰讚)",
+      "menu": "우유 눈꽃얼음 생망고 빙수 (푸딩 토핑 추가)",
+      "timeline": "⏱️ 06:48 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=zfh6sMgrPCQ&t=408s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 28,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "최술진",
+      "videoTitle": "🇹🇼 대만 타이베이 3대 야시장 투어🌟 미슐랭 천국 속에 꼭 먹어야 할 음식 추천🔥 (닝샤 / 라오허제 / 스린)_ep.2",
+      "videoUrl": "https://www.youtube.com/watch?v=sv4ddl8eUqs",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=sv4ddl8eUqs",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 29,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "안안安安",
+      "videoTitle": "대만 유학생 출신이 진심으로 추천하는 찐맛집 5곳 🥟🍢 제발 이상한 데 가지 말라.",
+      "videoUrl": "https://www.youtube.com/watch?v=umknvCRjgCs",
+      "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+      "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=umknvCRjgCs",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 30,
+      "nationality": "캐나다 🇨🇦",
+      "youtuber": "TIFFYCOOKS",
+      "videoTitle": "a week in TAIPEI *foodie trip* 🍜 local favorites, mother-daughter trip | tiffycooks vlog 🍧",
+      "videoUrl": "https://www.youtube.com/watch?v=CmeE6nha5Dk",
+      "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+      "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=CmeE6nha5Dk",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 31,
+      "nationality": "대만 🇹🇼",
+      "youtuber": "Yummy Food 台灣美食職人",
+      "videoTitle": "深夜限定流氓快炒！士林夜市隱藏版小吃攤宛如封街流水席，不是流氓的流氓熱炒",
+      "videoUrl": "https://www.youtube.com/watch?v=l0-ftZ__02U",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=l0-ftZ__02U",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 32,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "모르는지",
+      "videoTitle": "[🇹🇼ep:2] 먹고 싶은 거 빼고 다 먹고 온 특이한 대만 먹방 여행",
+      "videoUrl": "https://www.youtube.com/watch?v=dzYHjkQ3yTo",
+      "restaurantName": "신마라 훠궈 클래식 (시먼딩) (新馬辣經典麻辣鍋)",
+      "menu": "호주산 와규 / 블랙타이거 새우 / 하겐다즈 무한리필 훠궈",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=dzYHjkQ3yTo",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 33,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "현주zip",
+      "videoTitle": "나 혼자 3박4일 대만 여행🇹🇼 • 타이베이 최고의 코스로 모십니다..(jmt를 곁들인) • 역대급 가성비 신상숙소 • 느좋카페 뿌수기☕️",
+      "videoUrl": "https://www.youtube.com/watch?v=DUv6OjHHd2Q",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=DUv6OjHHd2Q",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 34,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "지새기의 인간극장",
+      "videoTitle": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+      "videoUrl": "https://www.youtube.com/watch?v=mvpD0ARfquE",
+      "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+      "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+      "timeline": "⏱️ 10:15 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=mvpD0ARfquE&t=615s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 35,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "나나 Nanasserie",
+      "videoTitle": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+      "videoUrl": "https://www.youtube.com/watch?v=SYcMDi5K2Pg",
+      "restaurantName": "빙찬 생망고빙수 (여름 한정) (冰讚)",
+      "menu": "우유 눈꽃얼음 생망고 빙수 (푸딩 토핑 추가)",
+      "timeline": "⏱️ 32:18 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=SYcMDi5K2Pg&t=1938s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 36,
+      "nationality": "대만 🇹🇼",
+      "youtuber": "欸你這週要幹嘛",
+      "videoTitle": "【台北滷肉飯圖鑑2】第二彈再開箱七間！崇崇三觀即將崩壞！滷肉飯之歌出爐！",
+      "videoUrl": "https://www.youtube.com/watch?v=KyBZZcLm228",
+      "restaurantName": "일갑자찬음 (미슐랭 빕구르망) (一甲子餐飲)",
+      "menu": "통삼겹 조림 콩러우판 (爌肉飯) / 대만식 버거 꽈바오 (刈包)",
+      "timeline": "⏱️ 01:09 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=KyBZZcLm228&t=69s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 37,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "조은fine",
+      "videoTitle": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+      "videoUrl": "https://www.youtube.com/watch?v=NcoDFINz1WE",
+      "restaurantName": "유산동 우육면 (미슐랭 빕구르망) (劉山東牛肉麵)",
+      "menu": "맑고 깊은 청돈 우육면 (清燉牛肉麵) / 진한 홍샤오 우육면",
+      "timeline": "⏱️ 36:29 (공식 챕터)",
+      "timelineUrl": "https://www.youtube.com/watch?v=NcoDFINz1WE&t=2189s",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 38,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "베짱이엔터테인먼트",
+      "videoTitle": "(왕중왕1화) 또간집! 풍자 최초 결혼 발표?! 영혼까지 탈탈 털렸다! 출생의 비밀까지...? #시대의대만신들 왕중왕 #임덕영 #이유엽 #풍자#또간집",
+      "videoUrl": "https://www.youtube.com/watch?v=QhxTV61UGUI",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=QhxTV61UGUI",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 39,
+      "nationality": "한국 🇰🇷",
+      "youtuber": "야미보이 Yummyboy",
+      "videoTitle": "대만 인기 길거리음식 몰아보기! / popular! taiwanese street food video collection!",
+      "videoUrl": "https://www.youtube.com/watch?v=L0KWNWfrpZE",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=L0KWNWfrpZE",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    },
+    {
+      "sampleIndex": 40,
+      "nationality": "대만 🇹🇼",
+      "youtuber": "Yummy Food 台灣美食職人",
+      "videoTitle": "台北市街頭美食特輯！大稻埕、士林、寧夏、饒河4大商圈美食一次看",
+      "videoUrl": "https://www.youtube.com/watch?v=S85rB71pE5g",
+      "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+      "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+      "timeline": "전체 시청 (타임라인 미제공)",
+      "timelineUrl": "https://www.youtube.com/watch?v=S85rB71pE5g",
+      "status": "PASS",
+      "auditChecks": {
+        "noDummyText": true,
+        "validTimestamp": true,
+        "validJumpUrl": true,
+        "specificMenu": true,
+        "validNationality": true
+      }
+    }
+  ]
+}

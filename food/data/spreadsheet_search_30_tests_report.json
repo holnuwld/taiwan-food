@@ -1,0 +1,698 @@
+{
+  "totalTests": 30,
+  "passCount": 30,
+  "failCount": 0,
+  "overallStatus": "PASS",
+  "testedAt": "2026-10-07T14:56:03.112Z",
+  "testResults": [
+    {
+      "testId": 1,
+      "testName": "식당명 검색: 행복당",
+      "criteria": {
+        "restaurant": "행복당"
+      },
+      "matchedCount": 131,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:12 (자막 실측)"
+        },
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:23 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 2,
+      "testName": "식당명 검색: 아종면선",
+      "criteria": {
+        "restaurant": "아종면선"
+      },
+      "matchedCount": 19,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 04:40 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 12:01 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 3,
+      "testName": "식당명 검색: 딘타이펑",
+      "criteria": {
+        "restaurant": "딘타이펑"
+      },
+      "matchedCount": 27,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 12:25 (공식 챕터)"
+        },
+        {
+          "youtuber": "해피뉴먼쓰",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 36:09 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 4,
+      "testName": "식당명 검색: 삼미식당",
+      "criteria": {
+        "restaurant": "삼미식당"
+      },
+      "matchedCount": 3,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "삼미식당 (시먼딩 명물) (三味食堂)",
+          "menu": "손바닥만한 대왕 연어초밥 (3피스) / 연어 뱃살 사시미",
+          "timeline": "⏱️ 25:24 (공식 챕터)"
+        },
+        {
+          "youtuber": "tzuyang쯔양",
+          "restaurant": "삼미식당 (시먼딩 명물) (三味食堂)",
+          "menu": "손바닥만한 대왕 연어초밥 (3피스) / 연어 뱃살 사시미",
+          "timeline": "⏱️ 18:02 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 5,
+      "testName": "식당명 검색: 푸항또우장",
+      "criteria": {
+        "restaurant": "푸항또우장"
+      },
+      "matchedCount": 9,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+          "menu": "따뜻한 또우장 (豆漿) / 바삭한 요우티아오 / 두꺼운 화덕빵 호우샤오빙",
+          "timeline": "⏱️ 10:28 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+          "menu": "따뜻한 또우장 (豆漿) / 바삭한 요우티아오 / 두꺼운 화덕빵 호우샤오빙",
+          "timeline": "⏱️ 14:26 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 6,
+      "testName": "유튜버명 검색: 써니하니",
+      "criteria": {
+        "youtuber": "써니하니"
+      },
+      "matchedCount": 7,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "후쿠주 원조 후추빵 (라오허제 야시장) (福州世祖胡椒餅)",
+          "menu": "참숯 화덕에서 구워낸 육즙 폭발 원조 후추빵 (胡椒餅)",
+          "timeline": "⏱️ 03:19 (공식 챕터)"
+        },
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 04:40 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 7,
+      "testName": "유튜버명 검색: 캡틴따거",
+      "criteria": {
+        "youtuber": "캡틴따거"
+      },
+      "matchedCount": 4,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "캡틴따거 Captain Brother",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "전체 시청 (자막 미지원)"
+        },
+        {
+          "youtuber": "캡틴따거 Captain Brother",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "전체 시청 (자막 미지원)"
+        }
+      ]
+    },
+    {
+      "testId": 8,
+      "testName": "유튜버명 검색: 류튜브",
+      "criteria": {
+        "youtuber": "류튜브"
+      },
+      "matchedCount": 12,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 05:16 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "푸바왕 족발 (송장난징 로컬 1티어) (富霸王豬腳)",
+          "menu": "특제 간장 족발 조림 (루주쟈오) / 쫄깃한 족발 덮밥",
+          "timeline": "⏱️ 08:38 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 9,
+      "testName": "유튜버명 검색: 럭키커플",
+      "criteria": {
+        "youtuber": "럭키커플"
+      },
+      "matchedCount": 2,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:12 (자막 실측)"
+        },
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:23 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 10,
+      "testName": "유튜버명 검색: 고요비",
+      "criteria": {
+        "youtuber": "고요비"
+      },
+      "matchedCount": 3,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "고요비koyobi",
+          "restaurant": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+          "menu": "따뜻한 또우장 (豆漿) / 바삭한 요우티아오 / 두꺼운 화덕빵 호우샤오빙",
+          "timeline": "전체 시청 (자막 미지원)"
+        },
+        {
+          "youtuber": "고요비koyobi",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "전체 시청 (자막 미지원)"
+        }
+      ]
+    },
+    {
+      "testId": 11,
+      "testName": "메뉴 검색: 우육면",
+      "criteria": {
+        "menu": "우육면"
+      },
+      "matchedCount": 10,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "푸홍 우육면 (시먼딩 24시) (富宏牛肉麵)",
+          "menu": "진한 홍샤오 우육면 (갓절임/우지 추가) / 수제 물만두",
+          "timeline": "⏱️ 00:20 (공식 챕터)"
+        },
+        {
+          "youtuber": "잠티 JamTi",
+          "restaurant": "융캉우육면 (융캉제 원조) (永康牛肉麵)",
+          "menu": "매콤 칼칼한 홍샤오 우육면 / 매운 도가니 반반국수",
+          "timeline": "⏱️ 15:16 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 12,
+      "testName": "메뉴 검색: 루로우판",
+      "criteria": {
+        "menu": "루로우판"
+      },
+      "matchedCount": 13,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+          "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+          "timeline": "⏱️ 07:24 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+          "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+          "timeline": "⏱️ 50:18 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 13,
+      "testName": "메뉴 검색: 샤오롱바오",
+      "criteria": {
+        "menu": "샤오롱바오"
+      },
+      "matchedCount": 27,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 12:25 (공식 챕터)"
+        },
+        {
+          "youtuber": "해피뉴먼쓰",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 36:09 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 14,
+      "testName": "메뉴 검색: 버블티",
+      "criteria": {
+        "menu": "버블티"
+      },
+      "matchedCount": 132,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:12 (자막 실측)"
+        },
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:23 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 15,
+      "testName": "메뉴 검색: 곱창국수",
+      "criteria": {
+        "menu": "곱창국수"
+      },
+      "matchedCount": 19,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 04:40 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 12:01 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 16,
+      "testName": "타임라인 검색: 03분대 (03:)",
+      "criteria": {
+        "timeline": "03:"
+      },
+      "matchedCount": 5,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "후쿠주 원조 후추빵 (라오허제 야시장) (福州世祖胡椒餅)",
+          "menu": "참숯 화덕에서 구워낸 육즙 폭발 원조 후추빵 (胡椒餅)",
+          "timeline": "⏱️ 03:19 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+          "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+          "timeline": "⏱️ 03:35 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 17,
+      "testName": "타임라인 검색: 05분대 (05:)",
+      "criteria": {
+        "timeline": "05:"
+      },
+      "matchedCount": 10,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 05:46 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 05:16 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 18,
+      "testName": "타임라인 검색: 10분대 (10:)",
+      "criteria": {
+        "timeline": "10:"
+      },
+      "matchedCount": 11,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+          "menu": "따뜻한 또우장 (豆漿) / 바삭한 요우티아오 / 두꺼운 화덕빵 호우샤오빙",
+          "timeline": "⏱️ 10:28 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "황가 소세지 (백종원 스푸파) (皇家現烤香腸)",
+          "menu": "생마늘과 함께 먹는 숯불 수제 흑돼지 소시지",
+          "timeline": "⏱️ 10:02 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 19,
+      "testName": "타임라인 검색: 00분대 초반 (00:)",
+      "criteria": {
+        "timeline": "00:"
+      },
+      "matchedCount": 11,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "푸홍 우육면 (시먼딩 24시) (富宏牛肉麵)",
+          "menu": "진한 홍샤오 우육면 (갓절임/우지 추가) / 수제 물만두",
+          "timeline": "⏱️ 00:20 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "핫스타 지파이 (스린 야시장) (豪大大雞排)",
+          "menu": "얼굴보다 큰 대왕 흑후추 닭튀김 지파이 (雞排)",
+          "timeline": "⏱️ 01:00:09 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 20,
+      "testName": "타임라인 검색: 08분대 (08:)",
+      "criteria": {
+        "timeline": "08:"
+      },
+      "matchedCount": 7,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "천진총좌빙 (융캉제 명물) (天津蔥抓餅)",
+          "menu": "햄+계란+치즈 총좌빙 (대만식 파 페이스트리 전병)",
+          "timeline": "⏱️ 08:38 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "푸바왕 족발 (송장난징 로컬 1티어) (富霸王豬腳)",
+          "menu": "특제 간장 족발 조림 (루주쟈오) / 쫄깃한 족발 덮밥",
+          "timeline": "⏱️ 08:38 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 21,
+      "testName": "통합 검색: 시먼딩",
+      "criteria": {
+        "global": "시먼딩"
+      },
+      "matchedCount": 48,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+          "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+          "timeline": "⏱️ 07:24 (공식 챕터)"
+        },
+        {
+          "youtuber": "해피뉴먼쓰",
+          "restaurant": "딘타이펑 본점 / 101점 (鼎泰豐)",
+          "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+          "timeline": "⏱️ 36:09 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 22,
+      "testName": "통합 검색: 미슐랭",
+      "criteria": {
+        "global": "미슐랭"
+      },
+      "matchedCount": 44,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "후쿠주 원조 후추빵 (라오허제 야시장) (福州世祖胡椒餅)",
+          "menu": "참숯 화덕에서 구워낸 육즙 폭발 원조 후추빵 (胡椒餅)",
+          "timeline": "⏱️ 03:19 (공식 챕터)"
+        },
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "아종면선 곱창국수 (阿宗麵線)",
+          "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+          "timeline": "⏱️ 04:40 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 23,
+      "testName": "통합 검색: 야시장",
+      "criteria": {
+        "global": "야시장"
+      },
+      "matchedCount": 58,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:12 (자막 실측)"
+        },
+        {
+          "youtuber": "럭키커플트립 Lucky Couple Trip",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 07:23 (자막 실측)"
+        }
+      ]
+    },
+    {
+      "testId": 24,
+      "testName": "통합 검색: 융캉제",
+      "criteria": {
+        "global": "융캉제"
+      },
+      "matchedCount": 19,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "천진총좌빙 (융캉제 명물) (天津蔥抓餅)",
+          "menu": "햄+계란+치즈 총좌빙 (대만식 파 페이스트리 전병)",
+          "timeline": "⏱️ 08:38 (공식 챕터)"
+        },
+        {
+          "youtuber": "류튜브 Ryu Tube",
+          "restaurant": "천진총좌빙 (융캉제 명물) (天津蔥抓餅)",
+          "menu": "햄+계란+치즈 총좌빙 (대만식 파 페이스트리 전병)",
+          "timeline": "⏱️ 40:53 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 25,
+      "testName": "통합 검색: 망고빙수",
+      "criteria": {
+        "global": "망고"
+      },
+      "matchedCount": 17,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "잠티 JamTi",
+          "restaurant": "스무시 하우스 (융캉제) (思慕昔)",
+          "menu": "푸딩 생망고 눈꽃빙수 / 슈퍼 망고 아이스크림 빙수",
+          "timeline": "⏱️ 17:56 (공식 챕터)"
+        },
+        {
+          "youtuber": "UCC 미누키 (UCC MINUKEE)",
+          "restaurant": "빙찬 생망고빙수 (여름 한정) (冰讚)",
+          "menu": "우유 눈꽃얼음 생망고 빙수 (푸딩 토핑 추가)",
+          "timeline": "⏱️ 06:48 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 26,
+      "testName": "복합 검색: 유튜버(써니하니) AND 식당(행복당)",
+      "criteria": {
+        "youtuber": "써니하니",
+        "restaurant": "행복당"
+      },
+      "matchedCount": 1,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+          "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+          "timeline": "⏱️ 05:46 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 27,
+      "testName": "복합 검색: 식당(융캉우육면) AND 메뉴(우육면)",
+      "criteria": {
+        "restaurant": "융캉우육면",
+        "menu": "우육면"
+      },
+      "matchedCount": 3,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "잠티 JamTi",
+          "restaurant": "융캉우육면 (융캉제 원조) (永康牛肉麵)",
+          "menu": "매콤 칼칼한 홍샤오 우육면 / 매운 도가니 반반국수",
+          "timeline": "⏱️ 15:16 (공식 챕터)"
+        },
+        {
+          "youtuber": "흥삶이네 Heungsam's Life",
+          "restaurant": "융캉우육면 (융캉제 원조) (永康牛肉麵)",
+          "menu": "매콤 칼칼한 홍샤오 우육면 / 매운 도가니 반반국수",
+          "timeline": "⏱️ 00:23 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 28,
+      "testName": "복합 검색: 통합(타이베이) AND 메뉴(만두)",
+      "criteria": {
+        "global": "타이베이",
+        "menu": "만두"
+      },
+      "matchedCount": 4,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "써니하니 먹투어",
+          "restaurant": "하오지 쉐이지아오 / 차오즈웨이 (巧之味手工水餃)",
+          "menu": "초록색 다시마 피의 통가리비 수제 물만두 / 부추 물만두",
+          "timeline": "⏱️ 13:47 (공식 챕터)"
+        },
+        {
+          "youtuber": "최술진",
+          "restaurant": "푸홍 우육면 (시먼딩 24시) (富宏牛肉麵)",
+          "menu": "진한 홍샤오 우육면 (갓절임/우지 추가) / 수제 물만두",
+          "timeline": "⏱️ 00:20 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 29,
+      "testName": "복합 검색: 국적(대만) AND 식당(일갑자)",
+      "criteria": {
+        "nationality": "대만",
+        "restaurant": "일갑자"
+      },
+      "matchedCount": 2,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "肥波開吃啦",
+          "restaurant": "일갑자찬음 (미슐랭 빕구르망) (一甲子餐飲)",
+          "menu": "통삼겹 조림 콩러우판 (爌肉飯) / 대만식 버거 꽈바오 (刈包)",
+          "timeline": "전체 시청 (자막 미지원)"
+        },
+        {
+          "youtuber": "欸你這週要幹嘛",
+          "restaurant": "일갑자찬음 (미슐랭 빕구르망) (一甲子餐飲)",
+          "menu": "통삼겹 조림 콩러우판 (爌肉飯) / 대만식 버거 꽈바오 (刈包)",
+          "timeline": "⏱️ 01:09 (공식 챕터)"
+        }
+      ]
+    },
+    {
+      "testId": 30,
+      "testName": "복합 검색: 식당(진천미) AND 제목(대만)",
+      "criteria": {
+        "restaurant": "진천미",
+        "title": "대만"
+      },
+      "matchedCount": 6,
+      "status": "PASS",
+      "sampleMatches": [
+        {
+          "youtuber": "최술진",
+          "restaurant": "진천미 (시먼딩 대만가정식) (真川味)",
+          "menu": "부드러운 연두부 튀김 (라오피넌로우) / 매콤한 파볶음 (창잉터우)",
+          "timeline": "⏱️ 21:25 (공식 챕터)"
+        },
+        {
+          "youtuber": "연수연",
+          "restaurant": "진천미 (시먼딩 대만가정식) (真川味)",
+          "menu": "부드러운 연두부 튀김 (라오피넌로우) / 매콤한 파볶음 (창잉터우)",
+          "timeline": "⏱️ 11:04 (자막 실측)"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "overall_status": "PASS",
+  "round1": {
+    "round": 1,
+    "total_samples": 30,
+    "pass_count": 30,
+    "success_rate": "100.0%",
+    "is_all_pass": true,
+    "samples": [
+      {
+        "sampleIndex": 1,
+        "videoId": "G67fimywcmk",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+        "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+        "timeline": "⏱️ 01:05 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "(Step.1 대왕연어초밥)",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 2,
+        "videoId": "Zp5LldONF8w",
+        "youtuber": "이자반",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 10:13 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "하구나. 아종면선이라고. 대만에",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 3,
+        "videoId": "LLf7z_dXRVE",
+        "youtuber": "럭키커플트립 Lucky Couple Trip",
+        "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 07:23 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "진천미 있데요 평일 오픈 20분",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 4,
+        "videoId": "s4UXfjhIj3k",
+        "youtuber": "육식맨 YOOXICMAN",
+        "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 14:04 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "우육면이 되어야 합니다",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 5,
+        "videoId": "MXB4qnvyhyg",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "후쿠주 원조 후추빵 (라오허제 야시장) (福州世祖胡椒餅)",
+        "menu": "참숯 화덕에서 구워낸 육즙 폭발 원조 후추빵 (胡椒餅)",
+        "timeline": "⏱️ 01:44 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "(미쉐린 가이드 빕 구르망에 소개된 후추빵 맛집)",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 6,
+        "videoId": "MXB4qnvyhyg",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "후쿠주 원조 후추빵 (라오허제 야시장) (福州世祖胡椒餅)",
+        "menu": "참숯 화덕에서 구워낸 육즙 폭발 원조 후추빵 (胡椒餅)",
+        "timeline": "⏱️ 01:39 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "후추빵 파는 곳인데 저거 진짜 먹어야 돼요",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 7,
+        "videoId": "RhzjMVq8KnE",
+        "youtuber": "sookoh 수코",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 05:13 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "여기가 샤오롱바오, 두유, 무떡",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 8,
+        "videoId": "Zp5LldONF8w",
+        "youtuber": "이자반",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 10:10 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "하구나. 아종면선이라고. 대만에",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 9,
+        "videoId": "atG3d_zO7Vc",
+        "youtuber": "인영 forever young",
+        "restaurantName": "카리도넛 (타이베이 메인역) (脆皮鮮奶甜甜圈)",
+        "menu": "바삭하고 쫄깃한 원조 갓 튀긴 우유 도넛 (밀크도넛)",
+        "timeline": "⏱️ 22:34 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "만두가개인 거 같아. 이거는 밀크로",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 10,
+        "videoId": "O__eiPspcU4",
+        "youtuber": "현주zip",
+        "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 18:44 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "망고빙수 맛있고는 빨간색게 뭔지",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 11,
+        "videoId": "hINdxe0vyHg",
+        "youtuber": "가오니의 메뉴판GAONI",
+        "restaurantName": "푸항또우장 (미슐랭 조식) (阜杭豆漿)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 05:23 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "추천받았던이 타로볼 빙수집 가장",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 12,
+        "videoId": "LLf7z_dXRVE",
+        "youtuber": "럭키커플트립 Lucky Couple Trip",
+        "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 07:12 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "진천미 있데요 평일 오픈 20분",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 13,
+        "videoId": "m38VSZjPp7g",
+        "youtuber": "연수연",
+        "restaurantName": "진천미 (시먼딩 대만가정식) (真川味)",
+        "menu": "부드러운 연두부 튀김 (라오피넌로우) / 매콤한 파볶음 (창잉터우)",
+        "timeline": "⏱️ 11:04 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "저게 진천미 아니야? 아닌가? 거",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 14,
+        "videoId": "KdX7safobfo",
+        "youtuber": "육식맨 YOOXICMAN",
+        "restaurantName": "황기 루로우판 (중산 미슐랭 빕구르망) (黃記魯肉飯)",
+        "menu": "윤기 흐르는 흑금 루로우판 / 배추 절임 찜 루바이차이",
+        "timeline": "⏱️ 00:25 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "바로 루로우판",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 15,
+        "videoId": "G67fimywcmk",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "삼미식당 (시먼딩 명물) (三味食堂)",
+        "menu": "손바닥만한 대왕 연어초밥 (3피스) / 연어 뱃살 사시미",
+        "timeline": "⏱️ 00:53 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "(Step.1 대왕연어초밥)",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 16,
+        "videoId": "s4UXfjhIj3k",
+        "youtuber": "육식맨 YOOXICMAN",
+        "restaurantName": "행복당 (싱푸탕) (幸福堂 旗艦店)",
+        "menu": "화염 흑당 버블 밀크티 / 골드 포일 버블티",
+        "timeline": "⏱️ 13:53 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "우육면이 되어야 합니다",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 17,
+        "videoId": "0QdfKOC0rew",
+        "youtuber": "EBS 세계테마기행",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 01:11 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "하면 알아서 길거리돼서 먹는 그 곱창",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 18,
+        "videoId": "ZBfm-ReCLhw",
+        "youtuber": "육식맨 YOOXICMAN",
+        "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+        "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+        "timeline": "⏱️ 13:10 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "딘타이펑이 떠오릅니다",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 19,
+        "videoId": "QEnzXKtYUoU",
+        "youtuber": "타이거투어 - 나만 알기 아까운 여행정보",
+        "restaurantName": "라뜰리에 루터스 (오픈런 필수) (L'Atelier Lotus)",
+        "menu": "대파 풍미 가득 단짠 수제 누가 크래커",
+        "timeline": "⏱️ 10:02 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "크래커와 라뜰리에 루터스 man 빼고",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 20,
+        "videoId": "kl9UVBj3sqk",
+        "youtuber": "sookoh 수코",
+        "restaurantName": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+        "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+        "timeline": "⏱️ 12:56 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "천천리라고 불전이 유명한 데데 다른",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 21,
+        "videoId": "xtyFyJfAnSY",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+        "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+        "timeline": "⏱️ 18:38 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "(우육면)",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 22,
+        "videoId": "sv4ddl8eUqs",
+        "youtuber": "최술진",
+        "restaurantName": "천천리 (시먼딩 가성비 노포) (天天利美食坊)",
+        "menu": "반숙 계란후라이 돼지고기덮밥 (루로우판) / 바삭한 대만 굴전",
+        "timeline": "⏱️ 03:35 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "맛있어 메인은 굴전이 하다 그지",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 23,
+        "videoId": "SZyCaBXFGhs",
+        "youtuber": "예또세상 Yeddo World",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 15:02 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "죽이나 곱창국수를 세트로 시켜서",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 24,
+        "videoId": "m38VSZjPp7g",
+        "youtuber": "연수연",
+        "restaurantName": "라뜰리에 루터스 (오픈런 필수) (L'Atelier Lotus)",
+        "menu": "대파 풍미 가득 단짠 수제 누가 크래커",
+        "timeline": "⏱️ 19:23 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "저게 진천미 아니야? 아닌가? 거",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 25,
+        "videoId": "5j_vyyHGHa8",
+        "youtuber": "취어리더 김태린 金泰琳",
+        "restaurantName": "핀셴 생맹활해선 (100원 러차오) (品鱻生猛活海鮮)",
+        "menu": "바지락 볶음 / 파리머리 부추꽃볶음 / 18일 생맥주",
+        "timeline": "⏱️ 06:44 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": ">> 그니까 후기에는 러차오라고",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 26,
+        "videoId": "5j_vyyHGHa8",
+        "youtuber": "취어리더 김태린 金泰琳",
+        "restaurantName": "핀셴 생맹활해선 (100원 러차오) (品鱻生猛活海鮮)",
+        "menu": "바지락 볶음 / 파리머리 부추꽃볶음 / 18일 생맥주",
+        "timeline": "⏱️ 06:43 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": ">> 러차오라고 해.",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 27,
+        "videoId": "qWoQNtfYQrc",
+        "youtuber": "히제이 HEEJ",
+        "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+        "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+        "timeline": "⏱️ 00:27 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "버블티, 샤오롱바오,",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 28,
+        "videoId": "SZyCaBXFGhs",
+        "youtuber": "예또세상 Yeddo World",
+        "restaurantName": "아종면선 곱창국수 (阿宗麵線)",
+        "menu": "가쓰오부시 육수 곱창국수 (칠리오일/마늘소스)",
+        "timeline": "⏱️ 01:14 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "죽이나 곱창국수를 세트로 시켜서",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 29,
+        "videoId": "xtyFyJfAnSY",
+        "youtuber": "tzuyang쯔양",
+        "restaurantName": "삼미식당 (시먼딩 명물) (三味食堂)",
+        "menu": "손바닥만한 대왕 연어초밥 (3피스) / 연어 뱃살 사시미",
+        "timeline": "⏱️ 18:02 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "(우육면)",
+        "verifiedKeywordFound": true
+      },
+      {
+        "sampleIndex": 30,
+        "videoId": "ZBfm-ReCLhw",
+        "youtuber": "육식맨 YOOXICMAN",
+        "restaurantName": "딘타이펑 본점 / 101점 (鼎泰豐)",
+        "menu": "육즙 가득 샤오롱바오 (小籠包) / 갈비볶음밥 / 오이김치",
+        "timeline": "⏱️ 13:06 (자막 실측)",
+        "status": "PASS",
+        "actualSubtitleLine": "딘타이펑이 떠오릅니다",
+        "verifiedKeywordFound": true
+      }
+    ]
+  },
+  "round2": null
+}

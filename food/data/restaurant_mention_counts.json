@@ -1,0 +1,2696 @@
+[
+  {
+    "id": "행복당",
+    "name_ko": "행복당 (싱푸탕)",
+    "name_zh": "幸福堂 旗艦店",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "디저트 / 버블티",
+    "rating": 4.4,
+    "mention_count": 26,
+    "percentage": "13.0%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "해피뉴먼쓰",
+      "잠티 JamTi",
+      "UCC 미누키 (UCC MINUKEE)",
+      "이자반",
+      "우니의끼니 UNIII",
+      "육식맨 YOOXICMAN",
+      "흥삶이네 Heungsam's Life"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 7,
+        "channel": "잠티 JamTi",
+        "title": "[대만여행]🇹🇼 더운데 대만 간다고??  타이베이 맛집의 모든것",
+        "views": 165342,
+        "url": "https://www.youtube.com/watch?v=q-JYiXRVgTE"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 14,
+        "channel": "이자반",
+        "title": "일본인듯 일본아닌 일본같은 대만의 수도, 타이페이 탐방 브이로그 - 대만(1)",
+        "views": 778331,
+        "url": "https://www.youtube.com/watch?v=Zp5LldONF8w"
+      },
+      {
+        "videoIndex": 17,
+        "channel": "우니의끼니 UNIII",
+        "title": "[우육면편] 입맛에 딱..🤤🇹🇼 타이베이 여행 먹방브이로그 (곱창국수, 버블티, 대만식 햄버거, 자장라면, 춘수당, 끼니투어, 18일 맥주)",
+        "views": 132483,
+        "url": "https://www.youtube.com/watch?v=cZoaxi3TAh0"
+      },
+      {
+        "videoIndex": 20,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 고기국수 특집 : 미식가와 대식가 모두 대만족할 타이베이 누들로드",
+        "views": 1552027,
+        "url": "https://www.youtube.com/watch?v=s4UXfjhIj3k"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 29,
+        "channel": "연수연",
+        "title": "vlog. 할말많은 타이베이 브이로그 Ep.01 🇹🇼 입국심사 꿀팁부터 찐맛집 추천까지.. 낱낱이 알려드림 | 3박4일 대만여행 🌳",
+        "views": 181982,
+        "url": "https://www.youtube.com/watch?v=m38VSZjPp7g"
+      },
+      {
+        "videoIndex": 41,
+        "channel": "현주zip",
+        "title": "나 혼자 3박4일 대만 여행🇹🇼 • 타이베이 최고의 코스로 모십니다..(jmt를 곁들인) • 역대급 가성비 신상숙소 • 느좋카페 뿌수기☕️",
+        "views": 133736,
+        "url": "https://www.youtube.com/watch?v=DUv6OjHHd2Q"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 57,
+        "channel": "쏘이Soy The World",
+        "title": "🇹🇼 단돈 9만원으로 나혼자 대만 갔더니… 급 떠난 타이페이 24시간 여행기",
+        "views": 205552,
+        "url": "https://www.youtube.com/watch?v=WZp6d5BjfM4"
+      },
+      {
+        "videoIndex": 99,
+        "channel": "아재여행 Ajae Travel",
+        "title": "[4K] 아재 혼자 8박 9일 대만 여행 몰아보기",
+        "views": 586738,
+        "url": "https://www.youtube.com/watch?v=NARI9w3Yvtk"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 108,
+        "channel": "여너",
+        "title": "혼자서도 잘먹는 대만여행 몰아보기🇹🇼현지인맛집,인생맛집,인생버블티공개ㅣ타이베이 4박5일 여행",
+        "views": 148518,
+        "url": "https://www.youtube.com/watch?v=yArKuSojK60"
+      },
+      {
+        "videoIndex": 110,
+        "channel": "유정 YUJEONG",
+        "title": "👩🏼‍❤️‍👨🏻💔남자친구랑 헤어지고 바로 떠난 대만 가족여행 ep.1🇹🇼 열 받아서 1,000만원 주고 첫 샤넬백도 장만함..💰 예스폭지 투어, 삼미식당, 행복당, 카리도넛✈️",
+        "views": 277034,
+        "url": "https://www.youtube.com/watch?v=X4iSR_JR1Gg"
+      },
+      {
+        "videoIndex": 112,
+        "channel": "지새기의 인간극장",
+        "title": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+        "views": 429100,
+        "url": "https://www.youtube.com/watch?v=mvpD0ARfquE"
+      },
+      {
+        "videoIndex": 162,
+        "channel": "KFunCouple",
+        "title": "【台北三大夜市必吃😋】西門町🍗｜饒河街🍲｜寧夏夜市🌮｜台北自由行2024",
+        "views": 255560,
+        "url": "https://www.youtube.com/watch?v=j2htppNVUFU"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      },
+      {
+        "videoIndex": 193,
+        "channel": "유랑쀼랑 withYouRang",
+        "title": "대만 여행은 이렇게 준비하세요. 총정리(숙소, 맛집, 쇼핑리스트, 꿀팁 및 주의할 점) + 자막",
+        "views": 110630,
+        "url": "https://www.youtube.com/watch?v=n7I-Eu0Zaxs"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 1
+  },
+  {
+    "id": "아종면선",
+    "name_ko": "아종면선 곱창국수",
+    "name_zh": "阿宗麵線",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "로컬 길거리 간식",
+    "rating": 4,
+    "mention_count": 25,
+    "percentage": "12.5%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "해피뉴먼쓰",
+      "최술진",
+      "류튜브 Ryu Tube",
+      "잠티 JamTi",
+      "UCC 미누키 (UCC MINUKEE)",
+      "이자반",
+      "우니의끼니 UNIII"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 6,
+        "channel": "류튜브 Ryu Tube",
+        "title": "\"대만에서 이보다 많이 먹은 영상이 있을까요?!\" 극한의 타이베이 푸드트립",
+        "views": 290545,
+        "url": "https://www.youtube.com/watch?v=UmfO6O0YC8A"
+      },
+      {
+        "videoIndex": 7,
+        "channel": "잠티 JamTi",
+        "title": "[대만여행]🇹🇼 더운데 대만 간다고??  타이베이 맛집의 모든것",
+        "views": 165342,
+        "url": "https://www.youtube.com/watch?v=q-JYiXRVgTE"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 14,
+        "channel": "이자반",
+        "title": "일본인듯 일본아닌 일본같은 대만의 수도, 타이페이 탐방 브이로그 - 대만(1)",
+        "views": 778331,
+        "url": "https://www.youtube.com/watch?v=Zp5LldONF8w"
+      },
+      {
+        "videoIndex": 17,
+        "channel": "우니의끼니 UNIII",
+        "title": "[우육면편] 입맛에 딱..🤤🇹🇼 타이베이 여행 먹방브이로그 (곱창국수, 버블티, 대만식 햄버거, 자장라면, 춘수당, 끼니투어, 18일 맥주)",
+        "views": 132483,
+        "url": "https://www.youtube.com/watch?v=cZoaxi3TAh0"
+      },
+      {
+        "videoIndex": 18,
+        "channel": "예또세상 Yeddo World",
+        "title": "짧게 치고 빠지는 ‘타이베이’ 먹방 여행. (뻔한 맛집 X) [대만 5]",
+        "views": 387645,
+        "url": "https://www.youtube.com/watch?v=SZyCaBXFGhs"
+      },
+      {
+        "videoIndex": 20,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 고기국수 특집 : 미식가와 대식가 모두 대만족할 타이베이 누들로드",
+        "views": 1552027,
+        "url": "https://www.youtube.com/watch?v=s4UXfjhIj3k"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 41,
+        "channel": "현주zip",
+        "title": "나 혼자 3박4일 대만 여행🇹🇼 • 타이베이 최고의 코스로 모십니다..(jmt를 곁들인) • 역대급 가성비 신상숙소 • 느좋카페 뿌수기☕️",
+        "views": 133736,
+        "url": "https://www.youtube.com/watch?v=DUv6OjHHd2Q"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 52,
+        "channel": "이렇게 사는 강지수",
+        "title": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+        "views": 108656,
+        "url": "https://www.youtube.com/watch?v=ErVXrLt40qE"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 99,
+        "channel": "아재여행 Ajae Travel",
+        "title": "[4K] 아재 혼자 8박 9일 대만 여행 몰아보기",
+        "views": 586738,
+        "url": "https://www.youtube.com/watch?v=NARI9w3Yvtk"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 166,
+        "channel": "Angelica & Aileen Wanders",
+        "title": "2026 Taiwan Food Guide: 30 Budget Eats (w/ Prices) • Street Food & Night Markets • Taipei Food Vlog",
+        "views": 305869,
+        "url": "https://www.youtube.com/watch?v=ddWFEuAMn9s"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      },
+      {
+        "videoIndex": 188,
+        "channel": "나도나도DoDo",
+        "title": "🇹🇼#1✨살찌는 건 결국 내 운명이었다🔥대만 여행 브이로그 | 곱창국수,라뜰리에누가크래커 오픈런🏃‍♀곰돌이훠궈,흑당버블티,우육면,진천미 | 먹방브이로그",
+        "views": 339183,
+        "url": "https://www.youtube.com/watch?v=wbGNLGh19Y8"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 2
+  },
+  {
+    "id": "딘타이펑",
+    "name_ko": "딘타이펑",
+    "name_zh": "鼎泰豐 信義店",
+    "district": "동먼 / 융캉제",
+    "cuisine": "만두 / 샤오롱바오",
+    "rating": 4.5,
+    "mention_count": 23,
+    "percentage": "11.5%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "해피뉴먼쓰",
+      "[하말넘많] heavytalker",
+      "육식맨 YOOXICMAN",
+      "tzuyang쯔양",
+      "나나 Nanasserie",
+      "이렇게 사는 강지수",
+      "살란다"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 28,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 육식 올스타전 : 젠슨황 단골집부터 반값 딘타이펑까지 월클로 가득 채운 육식 탐방기",
+        "views": 1982428,
+        "url": "https://www.youtube.com/watch?v=ZBfm-ReCLhw"
+      },
+      {
+        "videoIndex": 38,
+        "channel": "tzuyang쯔양",
+        "title": "대만에서 딤섬으로 탑 세웠더니 직원분들이..😂 기본 웨이팅 2시간인 딘타이펑 먹방",
+        "views": 2989874,
+        "url": "https://www.youtube.com/watch?v=M36TycatOOY"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 52,
+        "channel": "이렇게 사는 강지수",
+        "title": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+        "views": 108656,
+        "url": "https://www.youtube.com/watch?v=ErVXrLt40qE"
+      },
+      {
+        "videoIndex": 54,
+        "channel": "살란다",
+        "title": "대만 여행 필수 시청 총정리 타이베이 여행지 베스트 | 여행코스 일정 맛집 근교 예스진지 예류 스펀 지우펀 진과스 단수이 영상 하나로 끝!",
+        "views": 271118,
+        "url": "https://www.youtube.com/watch?v=xicBzOWPjjM"
+      },
+      {
+        "videoIndex": 79,
+        "channel": "sookoh 수코",
+        "title": "나혼자 대만여행vlog🇹🇼필수코스 딱✔️용산사, 중정기념당, 대만조식, 백종원 우육면, 융캉제, 샴푸마사지, 시먼딩",
+        "views": 118071,
+        "url": "https://www.youtube.com/watch?v=XgZd8N9spQQ"
+      },
+      {
+        "videoIndex": 80,
+        "channel": "Daily Joy조이",
+        "title": "[vlog] 나 혼자 대만여행🇹🇼 가오슝 ‘찐맛집’ 정복하러 왔다🔥 3박4일 코스와 경비 | ㄹㅇ인생빙수, 우육면 로컬맛집, 누가크래커, 치친섬에서 자전거 타기",
+        "views": 135329,
+        "url": "https://www.youtube.com/watch?v=7s8rgGEGBkk"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 112,
+        "channel": "지새기의 인간극장",
+        "title": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+        "views": 429100,
+        "url": "https://www.youtube.com/watch?v=mvpD0ARfquE"
+      },
+      {
+        "videoIndex": 154,
+        "channel": "老張微旅行",
+        "title": "好逛好買的店太多了！人氣美食＋巷弄文創小店＋氣質咖啡｜老張微旅行 #永康街 #台北美食",
+        "views": 225906,
+        "url": "https://www.youtube.com/watch?v=l2GlMyDR7po"
+      },
+      {
+        "videoIndex": 155,
+        "channel": "CHILL先生一家人",
+        "title": "被譽為「全球最酷街道之一」，一路上很難聽到中文的台灣美食街道，哪些差異讓外國觀光客趨之若鶩呢？",
+        "views": 155569,
+        "url": "https://www.youtube.com/watch?v=wn59ZuVTKck"
+      },
+      {
+        "videoIndex": 156,
+        "channel": "KFunCouple",
+        "title": "【台北遊客一直錯過的🩵永康街】必吃美食🌟｜必逛手信店🛍｜打卡位📸｜慢活台北🌅｜台北自由行2025",
+        "views": 183574,
+        "url": "https://www.youtube.com/watch?v=vipI7ky6lZ0"
+      },
+      {
+        "videoIndex": 157,
+        "channel": "天母小貓",
+        "title": "觀光客排爆!甜點好精彩~在地人都吃哪幾家?永康街10家美食一次收集#永康街排隊店#巷弄小店#小籠包#芒果冰#伴手禮#牛軋餅#觀光客最愛#YongkangStreeT#Travel#TaiwanTour",
+        "views": 163188,
+        "url": "https://www.youtube.com/watch?v=dtWC5t_YIcA"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 165,
+        "channel": "TIFFYCOOKS",
+        "title": "a week in TAIPEI *foodie trip* 🍜 local favorites, mother-daughter trip | tiffycooks vlog 🍧",
+        "views": 212941,
+        "url": "https://www.youtube.com/watch?v=CmeE6nha5Dk"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      },
+      {
+        "videoIndex": 176,
+        "channel": "Travelwithchris",
+        "title": "STREET FOOD HEAVEN in Taipei, Taiwan 🇹🇼",
+        "views": 131786,
+        "url": "https://www.youtube.com/watch?v=QA9cGdU8iYQ"
+      },
+      {
+        "videoIndex": 193,
+        "channel": "유랑쀼랑 withYouRang",
+        "title": "대만 여행은 이렇게 준비하세요. 총정리(숙소, 맛집, 쇼핑리스트, 꿀팁 및 주의할 점) + 자막",
+        "views": 110630,
+        "url": "https://www.youtube.com/watch?v=n7I-Eu0Zaxs"
+      }
+    ],
+    "rank": 3
+  },
+  {
+    "id": "천진총좌빙",
+    "name_ko": "천진총좌빙",
+    "name_zh": "天津蔥抓餅",
+    "district": "동먼 / 융캉제",
+    "cuisine": "로컬 길거리 간식",
+    "rating": 4.4,
+    "mention_count": 20,
+    "percentage": "10.0%",
+    "top_creators": [
+      "최술진",
+      "류튜브 Ryu Tube",
+      "UCC 미누키 (UCC MINUKEE)",
+      "[하말넘많] heavytalker",
+      "현주zip",
+      "우니의끼니 UNIII",
+      "흥삶이네 Heungsam's Life",
+      "우연로그"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 6,
+        "channel": "류튜브 Ryu Tube",
+        "title": "\"대만에서 이보다 많이 먹은 영상이 있을까요?!\" 극한의 타이베이 푸드트립",
+        "views": 290545,
+        "url": "https://www.youtube.com/watch?v=UmfO6O0YC8A"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 46,
+        "channel": "우니의끼니 UNIII",
+        "title": "[오징어숙회편] 내 배에 술이랑 면 있어요,,🫄🏼먹방브이로그 (다미옥 매운냉면, 풍년닭도리탕, 대만 밍글링투어, 대만 우육면 맛집, 이치란라멘, 진천미)",
+        "views": 142526,
+        "url": "https://www.youtube.com/watch?v=6vblGzy9zQ4"
+      },
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 55,
+        "channel": "살란다",
+        "title": "🇹🇼대만 타이베이 3박4일 여행코스 일정 완벽정리+맛집, 쇼핑 꿀팁 대방출 | 예스진지 단수이 당일치기 근교여행까지",
+        "views": 153524,
+        "url": "https://www.youtube.com/watch?v=ZvDUkX5MFsk"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 154,
+        "channel": "老張微旅行",
+        "title": "好逛好買的店太多了！人氣美食＋巷弄文創小店＋氣質咖啡｜老張微旅行 #永康街 #台北美食",
+        "views": 225906,
+        "url": "https://www.youtube.com/watch?v=l2GlMyDR7po"
+      },
+      {
+        "videoIndex": 155,
+        "channel": "CHILL先生一家人",
+        "title": "被譽為「全球最酷街道之一」，一路上很難聽到中文的台灣美食街道，哪些差異讓外國觀光客趨之若鶩呢？",
+        "views": 155569,
+        "url": "https://www.youtube.com/watch?v=wn59ZuVTKck"
+      },
+      {
+        "videoIndex": 163,
+        "channel": "Yummy Food 台灣美食職人",
+        "title": "寧夏夜市美食攻略！25間經典小吃一次搜刮",
+        "views": 261279,
+        "url": "https://www.youtube.com/watch?v=cc8lOnx1oYM"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 165,
+        "channel": "TIFFYCOOKS",
+        "title": "a week in TAIPEI *foodie trip* 🍜 local favorites, mother-daughter trip | tiffycooks vlog 🍧",
+        "views": 212941,
+        "url": "https://www.youtube.com/watch?v=CmeE6nha5Dk"
+      },
+      {
+        "videoIndex": 166,
+        "channel": "Angelica & Aileen Wanders",
+        "title": "2026 Taiwan Food Guide: 30 Budget Eats (w/ Prices) • Street Food & Night Markets • Taipei Food Vlog",
+        "views": 305869,
+        "url": "https://www.youtube.com/watch?v=ddWFEuAMn9s"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      },
+      {
+        "videoIndex": 178,
+        "channel": "Abroad and Hungry",
+        "title": "15 Must Try Taiwanese Street Foods at Taipei Largest Night Markets 🇹🇼",
+        "views": 236762,
+        "url": "https://www.youtube.com/watch?v=rrGmHGPppVg"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      }
+    ],
+    "rank": 4
+  },
+  {
+    "id": "라뜰리에루터스",
+    "name_ko": "라뜰리에 루터스 (누가크래커)",
+    "name_zh": "L'Atelier Lotus",
+    "district": "동먼 / 융캉제",
+    "cuisine": "디저트 / 기념품",
+    "rating": 4.6,
+    "mention_count": 16,
+    "percentage": "8.0%",
+    "top_creators": [
+      "고요비koyobi",
+      "[하말넘많] heavytalker",
+      "현주zip",
+      "연수연",
+      "타이거투어 - 나만 알기 아까운 여행정보",
+      "홍밋너 hongmeetu",
+      "나나 Nanasserie",
+      "이렇게 사는 강지수"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 9,
+        "channel": "고요비koyobi",
+        "title": "혼자 대만 타이베이 여행 🇹🇼 2박3일 최애 디저트추천 🍰 현지인 맛집까지 안가면 후회하는 핫플모음",
+        "views": 251949,
+        "url": "https://www.youtube.com/watch?v=rtvuyMdq0zI"
+      },
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 29,
+        "channel": "연수연",
+        "title": "vlog. 할말많은 타이베이 브이로그 Ep.01 🇹🇼 입국심사 꿀팁부터 찐맛집 추천까지.. 낱낱이 알려드림 | 3박4일 대만여행 🌳",
+        "views": 181982,
+        "url": "https://www.youtube.com/watch?v=m38VSZjPp7g"
+      },
+      {
+        "videoIndex": 32,
+        "channel": "타이거투어 - 나만 알기 아까운 여행정보",
+        "title": "🇹🇼대만 여행이 처음이라면  필수 시청! 놓치면 후회 할 꿀팁 총정리 [호텔,  가성비 숙소, 셀프 근교 여행, 가볼만한곳, 관광지, 기념품, 공항에서 시내, 누가크래커, 펑리수]",
+        "views": 508005,
+        "url": "https://www.youtube.com/watch?v=QEnzXKtYUoU"
+      },
+      {
+        "videoIndex": 39,
+        "channel": "홍밋너 hongmeetu",
+        "title": "🇹🇼 괴랄 여행 천재의 1박3일 대만 타이베이 여행🌳 24시간 먹다 온 기깔나는 하루 정복 코스 🐽",
+        "views": 121636,
+        "url": "https://www.youtube.com/watch?v=wF220lkgK6c"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 52,
+        "channel": "이렇게 사는 강지수",
+        "title": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+        "views": 108656,
+        "url": "https://www.youtube.com/watch?v=ErVXrLt40qE"
+      },
+      {
+        "videoIndex": 80,
+        "channel": "Daily Joy조이",
+        "title": "[vlog] 나 혼자 대만여행🇹🇼 가오슝 ‘찐맛집’ 정복하러 왔다🔥 3박4일 코스와 경비 | ㄹㅇ인생빙수, 우육면 로컬맛집, 누가크래커, 치친섬에서 자전거 타기",
+        "views": 135329,
+        "url": "https://www.youtube.com/watch?v=7s8rgGEGBkk"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 105,
+        "channel": "윤윤데",
+        "title": "나혼자 타이베이 2박3일 :: 인생 첫 대만✨알차게 맛집 뿌수고,예스폭지 버스투어,예약없이 샴푸 마사지받기,대만 한정 기념품 발굴,누가크래커 오픈런🏃🏻‍♂️부터 융캉제 소품샵투어",
+        "views": 146462,
+        "url": "https://www.youtube.com/watch?v=V88aS1uocGE"
+      },
+      {
+        "videoIndex": 112,
+        "channel": "지새기의 인간극장",
+        "title": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+        "views": 429100,
+        "url": "https://www.youtube.com/watch?v=mvpD0ARfquE"
+      },
+      {
+        "videoIndex": 115,
+        "channel": "인영 forever young",
+        "title": "나홀로 대만여행💙 오늘은 가오슝 먹방 뿌시기🔥 훠궈, 만두, 누가크래커, 갬성 카페 투어, 소품샵, 야시장 간식, 써니힐 | EP2",
+        "views": 165571,
+        "url": "https://www.youtube.com/watch?v=VCtrR2ZCCjA"
+      },
+      {
+        "videoIndex": 188,
+        "channel": "나도나도DoDo",
+        "title": "🇹🇼#1✨살찌는 건 결국 내 운명이었다🔥대만 여행 브이로그 | 곱창국수,라뜰리에누가크래커 오픈런🏃‍♀곰돌이훠궈,흑당버블티,우육면,진천미 | 먹방브이로그",
+        "views": 339183,
+        "url": "https://www.youtube.com/watch?v=wbGNLGh19Y8"
+      },
+      {
+        "videoIndex": 190,
+        "channel": "정하셋 haset",
+        "title": "대만 쇼핑하울 🛍️ : 아, 이건 잘샀다! 싶은 찐템들만 추천드림 | 쟁여오는 대만과자, 뷰티템, 저렴한 선물템",
+        "views": 282499,
+        "url": "https://www.youtube.com/watch?v=tFe6QhynGDM"
+      }
+    ],
+    "rank": 5
+  },
+  {
+    "id": "카리도넛",
+    "name_ko": "카리도넛 (크리스피 밀크 도넛)",
+    "name_zh": "脆皮鮮奶甜甜圈",
+    "district": "타이베이 메인역 / 화인거리",
+    "cuisine": "로컬 길거리 간식",
+    "rating": 4.5,
+    "mention_count": 13,
+    "percentage": "6.5%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "UCC 미누키 (UCC MINUKEE)",
+      "흥삶이네 Heungsam's Life",
+      "연수연",
+      "홍밋너 hongmeetu",
+      "MIYUT미윳",
+      "나나 Nanasserie",
+      "우연로그"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 29,
+        "channel": "연수연",
+        "title": "vlog. 할말많은 타이베이 브이로그 Ep.01 🇹🇼 입국심사 꿀팁부터 찐맛집 추천까지.. 낱낱이 알려드림 | 3박4일 대만여행 🌳",
+        "views": 181982,
+        "url": "https://www.youtube.com/watch?v=m38VSZjPp7g"
+      },
+      {
+        "videoIndex": 39,
+        "channel": "홍밋너 hongmeetu",
+        "title": "🇹🇼 괴랄 여행 천재의 1박3일 대만 타이베이 여행🌳 24시간 먹다 온 기깔나는 하루 정복 코스 🐽",
+        "views": 121636,
+        "url": "https://www.youtube.com/watch?v=wF220lkgK6c"
+      },
+      {
+        "videoIndex": 45,
+        "channel": "MIYUT미윳",
+        "title": "나 혼자 대만여행 vlog🇹🇼 만원짜리 패키지투어 ••ootd부터 찐현지맛집까지🍜(ft.릴릴 마켓공지)",
+        "views": 109032,
+        "url": "https://www.youtube.com/watch?v=9URpT2SvXSM"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 52,
+        "channel": "이렇게 사는 강지수",
+        "title": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+        "views": 108656,
+        "url": "https://www.youtube.com/watch?v=ErVXrLt40qE"
+      },
+      {
+        "videoIndex": 108,
+        "channel": "여너",
+        "title": "혼자서도 잘먹는 대만여행 몰아보기🇹🇼현지인맛집,인생맛집,인생버블티공개ㅣ타이베이 4박5일 여행",
+        "views": 148518,
+        "url": "https://www.youtube.com/watch?v=yArKuSojK60"
+      },
+      {
+        "videoIndex": 110,
+        "channel": "유정 YUJEONG",
+        "title": "👩🏼‍❤️‍👨🏻💔남자친구랑 헤어지고 바로 떠난 대만 가족여행 ep.1🇹🇼 열 받아서 1,000만원 주고 첫 샤넬백도 장만함..💰 예스폭지 투어, 삼미식당, 행복당, 카리도넛✈️",
+        "views": 277034,
+        "url": "https://www.youtube.com/watch?v=X4iSR_JR1Gg"
+      },
+      {
+        "videoIndex": 168,
+        "channel": "Kean Travel",
+        "title": "2 days of food in taipei | cute desserts, local favorites, best cafes | taiwan vlog 🍰",
+        "views": 314368,
+        "url": "https://www.youtube.com/watch?v=lyWYIN7Khrg"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      }
+    ],
+    "rank": 6
+  },
+  {
+    "id": "일갑자찬음",
+    "name_ko": "일갑자찬음",
+    "name_zh": "一甲子餐飲",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "루로우판",
+    "rating": 4.2,
+    "mention_count": 13,
+    "percentage": "6.5%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "흥삶이네 Heungsam's Life",
+      "나나 Nanasserie",
+      "sookoh 수코",
+      "먹지희Mukjihee",
+      "조은fine",
+      "헤르미 hermiona",
+      "지새기의 인간극장"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 79,
+        "channel": "sookoh 수코",
+        "title": "나혼자 대만여행vlog🇹🇼필수코스 딱✔️용산사, 중정기념당, 대만조식, 백종원 우육면, 융캉제, 샴푸마사지, 시먼딩",
+        "views": 118071,
+        "url": "https://www.youtube.com/watch?v=XgZd8N9spQQ"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 112,
+        "channel": "지새기의 인간극장",
+        "title": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+        "views": 429100,
+        "url": "https://www.youtube.com/watch?v=mvpD0ARfquE"
+      },
+      {
+        "videoIndex": 129,
+        "channel": "肥波開吃啦",
+        "title": "2024台北米其林，八家必比登推薦美食 !  8 Bib Gourmand MICHELIN Restaurants in Taipei",
+        "views": 266973,
+        "url": "https://www.youtube.com/watch?v=ge4LdWcmiic"
+      },
+      {
+        "videoIndex": 150,
+        "channel": "欸你這週要幹嘛",
+        "title": "【台北滷肉飯圖鑑2】第二彈再開箱七間！崇崇三觀即將崩壞！滷肉飯之歌出爐！",
+        "views": 372201,
+        "url": "https://www.youtube.com/watch?v=KyBZZcLm228"
+      },
+      {
+        "videoIndex": 166,
+        "channel": "Angelica & Aileen Wanders",
+        "title": "2026 Taiwan Food Guide: 30 Budget Eats (w/ Prices) • Street Food & Night Markets • Taipei Food Vlog",
+        "views": 305869,
+        "url": "https://www.youtube.com/watch?v=ddWFEuAMn9s"
+      },
+      {
+        "videoIndex": 173,
+        "channel": "Doobydobap",
+        "title": "BEST TAIWANESE STREET FOOD in TAIPEI for 100hrs",
+        "views": 1573047,
+        "url": "https://www.youtube.com/watch?v=Zs5fEFaT4v4"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 7
+  },
+  {
+    "id": "진천미",
+    "name_ko": "진천미",
+    "name_zh": "真川味 / 真善美",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "러차오 (대만식 선술집)",
+    "rating": 4.2,
+    "mention_count": 12,
+    "percentage": "6.0%",
+    "top_creators": [
+      "최술진",
+      "[하말넘많] heavytalker",
+      "연수연",
+      "현주zip",
+      "우니의끼니 UNIII",
+      "나나 Nanasserie",
+      "우연로그",
+      "쏘이Soy The World"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 29,
+        "channel": "연수연",
+        "title": "vlog. 할말많은 타이베이 브이로그 Ep.01 🇹🇼 입국심사 꿀팁부터 찐맛집 추천까지.. 낱낱이 알려드림 | 3박4일 대만여행 🌳",
+        "views": 181982,
+        "url": "https://www.youtube.com/watch?v=m38VSZjPp7g"
+      },
+      {
+        "videoIndex": 41,
+        "channel": "현주zip",
+        "title": "나 혼자 3박4일 대만 여행🇹🇼 • 타이베이 최고의 코스로 모십니다..(jmt를 곁들인) • 역대급 가성비 신상숙소 • 느좋카페 뿌수기☕️",
+        "views": 133736,
+        "url": "https://www.youtube.com/watch?v=DUv6OjHHd2Q"
+      },
+      {
+        "videoIndex": 46,
+        "channel": "우니의끼니 UNIII",
+        "title": "[오징어숙회편] 내 배에 술이랑 면 있어요,,🫄🏼먹방브이로그 (다미옥 매운냉면, 풍년닭도리탕, 대만 밍글링투어, 대만 우육면 맛집, 이치란라멘, 진천미)",
+        "views": 142526,
+        "url": "https://www.youtube.com/watch?v=6vblGzy9zQ4"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 57,
+        "channel": "쏘이Soy The World",
+        "title": "🇹🇼 단돈 9만원으로 나혼자 대만 갔더니… 급 떠난 타이페이 24시간 여행기",
+        "views": 205552,
+        "url": "https://www.youtube.com/watch?v=WZp6d5BjfM4"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 188,
+        "channel": "나도나도DoDo",
+        "title": "🇹🇼#1✨살찌는 건 결국 내 운명이었다🔥대만 여행 브이로그 | 곱창국수,라뜰리에누가크래커 오픈런🏃‍♀곰돌이훠궈,흑당버블티,우육면,진천미 | 먹방브이로그",
+        "views": 339183,
+        "url": "https://www.youtube.com/watch?v=wbGNLGh19Y8"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 8
+  },
+  {
+    "id": "후쿠주후추빵",
+    "name_ko": "후쿠주 원조 후추빵 (라오허제)",
+    "name_zh": "福州世祖胡椒餅",
+    "district": "쑹산 / 라오허제 야시장",
+    "cuisine": "야시장 명물",
+    "rating": 4.1,
+    "mention_count": 12,
+    "percentage": "6.0%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "해피뉴먼쓰",
+      "류튜브 Ryu Tube",
+      "이자반",
+      "tzuyang쯔양",
+      "우연로그",
+      "먹지희Mukjihee",
+      "feed meimei"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 6,
+        "channel": "류튜브 Ryu Tube",
+        "title": "\"대만에서 이보다 많이 먹은 영상이 있을까요?!\" 극한의 타이베이 푸드트립",
+        "views": 290545,
+        "url": "https://www.youtube.com/watch?v=UmfO6O0YC8A"
+      },
+      {
+        "videoIndex": 14,
+        "channel": "이자반",
+        "title": "일본인듯 일본아닌 일본같은 대만의 수도, 타이페이 탐방 브이로그 - 대만(1)",
+        "views": 778331,
+        "url": "https://www.youtube.com/watch?v=Zp5LldONF8w"
+      },
+      {
+        "videoIndex": 19,
+        "channel": "tzuyang쯔양",
+        "title": "대만3탄) 라오허제 야시장 먹거리 4시간동안 먹었습니다🔥 미슐랭후추빵 대왕철판 버섯구이 망고빙수 먹방",
+        "views": 5330890,
+        "url": "https://www.youtube.com/watch?v=MXB4qnvyhyg"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 169,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 2 2024",
+        "views": 351265,
+        "url": "https://www.youtube.com/watch?v=l_lESg_v-xo"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      },
+      {
+        "videoIndex": 173,
+        "channel": "Doobydobap",
+        "title": "BEST TAIWANESE STREET FOOD in TAIPEI for 100hrs",
+        "views": 1573047,
+        "url": "https://www.youtube.com/watch?v=Zs5fEFaT4v4"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 9
+  },
+  {
+    "id": "핫스타지파이",
+    "name_ko": "핫스타 지파이",
+    "name_zh": "豪大大雞排",
+    "district": "스린 야시장",
+    "cuisine": "야시장 명물",
+    "rating": 4,
+    "mention_count": 11,
+    "percentage": "5.5%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "류튜브 Ryu Tube",
+      "UCC 미누키 (UCC MINUKEE)",
+      "흥삶이네 Heungsam's Life",
+      "육식맨 YOOXICMAN",
+      "나나 Nanasserie",
+      "쏘이Soy The World",
+      "먹지희Mukjihee"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 6,
+        "channel": "류튜브 Ryu Tube",
+        "title": "\"대만에서 이보다 많이 먹은 영상이 있을까요?!\" 극한의 타이베이 푸드트립",
+        "views": 290545,
+        "url": "https://www.youtube.com/watch?v=UmfO6O0YC8A"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 30,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 스트리트 푸드 특집 : 한 끼가 아니라 하루에 만 원이면 충분한 초가성비 고기 맛집들",
+        "views": 1632546,
+        "url": "https://www.youtube.com/watch?v=KdX7safobfo"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 57,
+        "channel": "쏘이Soy The World",
+        "title": "🇹🇼 단돈 9만원으로 나혼자 대만 갔더니… 급 떠난 타이페이 24시간 여행기",
+        "views": 205552,
+        "url": "https://www.youtube.com/watch?v=WZp6d5BjfM4"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 169,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 2 2024",
+        "views": 351265,
+        "url": "https://www.youtube.com/watch?v=l_lESg_v-xo"
+      },
+      {
+        "videoIndex": 190,
+        "channel": "정하셋 haset",
+        "title": "대만 쇼핑하울 🛍️ : 아, 이건 잘샀다! 싶은 찐템들만 추천드림 | 쟁여오는 대만과자, 뷰티템, 저렴한 선물템",
+        "views": 282499,
+        "url": "https://www.youtube.com/watch?v=tFe6QhynGDM"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 10
+  },
+  {
+    "id": "춘수당",
+    "name_ko": "춘수당",
+    "name_zh": "春水堂 南西店",
+    "district": "중산 / 신광미츠코시",
+    "cuisine": "디저트 / 버블티 & 식사",
+    "rating": 4.2,
+    "mention_count": 9,
+    "percentage": "4.5%",
+    "top_creators": [
+      "우니의끼니 UNIII",
+      "나나 Nanasserie",
+      "이렇게 사는 강지수",
+      "찬고리 Changori",
+      "아재여행 Ajae Travel",
+      "헤르미 hermiona",
+      "여너",
+      "feed meimei"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 17,
+        "channel": "우니의끼니 UNIII",
+        "title": "[우육면편] 입맛에 딱..🤤🇹🇼 타이베이 여행 먹방브이로그 (곱창국수, 버블티, 대만식 햄버거, 자장라면, 춘수당, 끼니투어, 18일 맥주)",
+        "views": 132483,
+        "url": "https://www.youtube.com/watch?v=cZoaxi3TAh0"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 52,
+        "channel": "이렇게 사는 강지수",
+        "title": "대만여행 나혼자 타이베이 브이로그 4박 5일 총정리",
+        "views": 108656,
+        "url": "https://www.youtube.com/watch?v=ErVXrLt40qE"
+      },
+      {
+        "videoIndex": 90,
+        "channel": "찬고리 Changori",
+        "title": "원래도 저렴한데, 환율까지 싸져서 가성비가 미쳐버렸다는 대만여행 근황",
+        "views": 257075,
+        "url": "https://www.youtube.com/watch?v=GuPm7Fb_fAY"
+      },
+      {
+        "videoIndex": 99,
+        "channel": "아재여행 Ajae Travel",
+        "title": "[4K] 아재 혼자 8박 9일 대만 여행 몰아보기",
+        "views": 586738,
+        "url": "https://www.youtube.com/watch?v=NARI9w3Yvtk"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 108,
+        "channel": "여너",
+        "title": "혼자서도 잘먹는 대만여행 몰아보기🇹🇼현지인맛집,인생맛집,인생버블티공개ㅣ타이베이 4박5일 여행",
+        "views": 148518,
+        "url": "https://www.youtube.com/watch?v=yArKuSojK60"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 166,
+        "channel": "Angelica & Aileen Wanders",
+        "title": "2026 Taiwan Food Guide: 30 Budget Eats (w/ Prices) • Street Food & Night Markets • Taipei Food Vlog",
+        "views": 305869,
+        "url": "https://www.youtube.com/watch?v=ddWFEuAMn9s"
+      }
+    ],
+    "rank": 11
+  },
+  {
+    "id": "푸홍우육면",
+    "name_ko": "푸홍우육면",
+    "name_zh": "富宏牛肉麵",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "우육면",
+    "rating": 4.2,
+    "mention_count": 8,
+    "percentage": "4.0%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "최술진",
+      "UCC 미누키 (UCC MINUKEE)",
+      "우니의끼니 UNIII",
+      "흥삶이네 Heungsam's Life",
+      "우연로그",
+      "끼리 KKIRI",
+      "뉴욕세끼 NYeat"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 46,
+        "channel": "우니의끼니 UNIII",
+        "title": "[오징어숙회편] 내 배에 술이랑 면 있어요,,🫄🏼먹방브이로그 (다미옥 매운냉면, 풍년닭도리탕, 대만 밍글링투어, 대만 우육면 맛집, 이치란라멘, 진천미)",
+        "views": 142526,
+        "url": "https://www.youtube.com/watch?v=6vblGzy9zQ4"
+      },
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 51,
+        "channel": "우연로그",
+        "title": "🇹🇼3박 4일 대만 타이베이 코스 총정리+꿀팁ㅣ유명 맛집 다 다녀옴🤤🥟(진천미, 푸홍뉴러우맨, 동파육, 우유도넛, 아종면선, 예스지 투어)",
+        "views": 248669,
+        "url": "https://www.youtube.com/watch?v=BlSHUj5UDeM"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      },
+      {
+        "videoIndex": 195,
+        "channel": "뉴욕세끼 NYeat",
+        "title": "대만 본토 우육면 (4,500원)",
+        "views": 2059530,
+        "url": "https://www.youtube.com/watch?v=zoBY4ZonClE"
+      }
+    ],
+    "rank": 12
+  },
+  {
+    "id": "푸항또우장",
+    "name_ko": "푸항또우장",
+    "name_zh": "阜杭豆漿",
+    "district": "샨다오스 / 화산시장",
+    "cuisine": "전통 조식 / 또우장",
+    "rating": 4.1,
+    "mention_count": 7,
+    "percentage": "3.5%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "최술진",
+      "여가네 / 여경래, 박은영 셰프님",
+      "TIFFYCOOKS",
+      "Angelica & Aileen Wanders",
+      "feed meimei",
+      "Bon Appétit"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 120,
+        "channel": "여가네 / 여경래, 박은영 셰프님",
+        "title": "🇹🇼대만 고속열차 여행에서 필수! 편의점 털기 - 대만(2)",
+        "views": 119990,
+        "url": "https://www.youtube.com/watch?v=OSSXlzB9sQA"
+      },
+      {
+        "videoIndex": 165,
+        "channel": "TIFFYCOOKS",
+        "title": "a week in TAIPEI *foodie trip* 🍜 local favorites, mother-daughter trip | tiffycooks vlog 🍧",
+        "views": 212941,
+        "url": "https://www.youtube.com/watch?v=CmeE6nha5Dk"
+      },
+      {
+        "videoIndex": 166,
+        "channel": "Angelica & Aileen Wanders",
+        "title": "2026 Taiwan Food Guide: 30 Budget Eats (w/ Prices) • Street Food & Night Markets • Taipei Food Vlog",
+        "views": 305869,
+        "url": "https://www.youtube.com/watch?v=ddWFEuAMn9s"
+      },
+      {
+        "videoIndex": 169,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 2 2024",
+        "views": 351265,
+        "url": "https://www.youtube.com/watch?v=l_lESg_v-xo"
+      },
+      {
+        "videoIndex": 170,
+        "channel": "Bon Appétit",
+        "title": "Taiwan's Most Iconic Breakfast Spot Serves 1000 People an Hour | Street Eats | Bon Appétit",
+        "views": 709915,
+        "url": "https://www.youtube.com/watch?v=zQfEE6X0qjs"
+      }
+    ],
+    "rank": 13
+  },
+  {
+    "id": "하오지수교",
+    "name_ko": "하오지 수교 (이연복 만두)",
+    "name_zh": "豪季水餃專賣店",
+    "district": "타이베이 메인역 / 중산",
+    "cuisine": "만두 / 샤오롱바오",
+    "rating": 4.2,
+    "mention_count": 6,
+    "percentage": "3.0%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "최술진",
+      "[하말넘많] heavytalker",
+      "현주zip",
+      "헤르미 hermiona",
+      "FEmeow 飛喵"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 137,
+        "channel": "FEmeow 飛喵",
+        "title": "台北快閃美食Vlog | 食、住、買   行程推介 | 超正酸辣砂煲雞 | 南機場夜市 | 即烤豬肉乾手信 | 南門市場 | 台北101 |  爆買桃園華泰OUTLET | 3日2夜",
+        "views": 255122,
+        "url": "https://www.youtube.com/watch?v=pM9alC1H2F8"
+      }
+    ],
+    "rank": 14
+  },
+  {
+    "id": "천천리",
+    "name_ko": "천천리",
+    "name_zh": "天天利美食坊",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "루로우판",
+    "rating": 4.1,
+    "mention_count": 6,
+    "percentage": "3.0%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "잠티 JamTi",
+      "흥삶이네 Heungsam's Life",
+      "feed meimei",
+      "끼리 KKIRI",
+      "머먹남"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 7,
+        "channel": "잠티 JamTi",
+        "title": "[대만여행]🇹🇼 더운데 대만 간다고??  타이베이 맛집의 모든것",
+        "views": 165342,
+        "url": "https://www.youtube.com/watch?v=q-JYiXRVgTE"
+      },
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 15
+  },
+  {
+    "id": "삼미식당",
+    "name_ko": "삼미식당",
+    "name_zh": "三味食堂",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "일식 / 대왕 연어초밥",
+    "rating": 4,
+    "mention_count": 6,
+    "percentage": "3.0%",
+    "top_creators": [
+      "최술진",
+      "tzuyang쯔양",
+      "먹지희Mukjihee",
+      "아재여행 Ajae Travel",
+      "유정 YUJEONG",
+      "지새기의 인간극장"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 34,
+        "channel": "tzuyang쯔양",
+        "title": "대만1탄) 원조 대왕연어초밥 신기록 세웠더니 사장님 반응이..🤣 대만 삼미식당 먹방",
+        "views": 6873964,
+        "url": "https://www.youtube.com/watch?v=G67fimywcmk"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 99,
+        "channel": "아재여행 Ajae Travel",
+        "title": "[4K] 아재 혼자 8박 9일 대만 여행 몰아보기",
+        "views": 586738,
+        "url": "https://www.youtube.com/watch?v=NARI9w3Yvtk"
+      },
+      {
+        "videoIndex": 110,
+        "channel": "유정 YUJEONG",
+        "title": "👩🏼‍❤️‍👨🏻💔남자친구랑 헤어지고 바로 떠난 대만 가족여행 ep.1🇹🇼 열 받아서 1,000만원 주고 첫 샤넬백도 장만함..💰 예스폭지 투어, 삼미식당, 행복당, 카리도넛✈️",
+        "views": 277034,
+        "url": "https://www.youtube.com/watch?v=X4iSR_JR1Gg"
+      },
+      {
+        "videoIndex": 112,
+        "channel": "지새기의 인간극장",
+        "title": "샤오롱바오무뼈닭발마라엽떡 먹는 3박 5일 혼자 대만 타이베이 브이로그",
+        "views": 429100,
+        "url": "https://www.youtube.com/watch?v=mvpD0ARfquE"
+      }
+    ],
+    "rank": 16
+  },
+  {
+    "id": "융캉우육면",
+    "name_ko": "융캉우육면",
+    "name_zh": "永康牛肉麵",
+    "district": "동먼 / 융캉제",
+    "cuisine": "우육면",
+    "rating": 3.8,
+    "mention_count": 6,
+    "percentage": "3.0%",
+    "top_creators": [
+      "잠티 JamTi",
+      "MIYUT미윳",
+      "우니의끼니 UNIII",
+      "흥삶이네 Heungsam's Life",
+      "살란다",
+      "feed meimei"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 7,
+        "channel": "잠티 JamTi",
+        "title": "[대만여행]🇹🇼 더운데 대만 간다고??  타이베이 맛집의 모든것",
+        "views": 165342,
+        "url": "https://www.youtube.com/watch?v=q-JYiXRVgTE"
+      },
+      {
+        "videoIndex": 45,
+        "channel": "MIYUT미윳",
+        "title": "나 혼자 대만여행 vlog🇹🇼 만원짜리 패키지투어 ••ootd부터 찐현지맛집까지🍜(ft.릴릴 마켓공지)",
+        "views": 109032,
+        "url": "https://www.youtube.com/watch?v=9URpT2SvXSM"
+      },
+      {
+        "videoIndex": 46,
+        "channel": "우니의끼니 UNIII",
+        "title": "[오징어숙회편] 내 배에 술이랑 면 있어요,,🫄🏼먹방브이로그 (다미옥 매운냉면, 풍년닭도리탕, 대만 밍글링투어, 대만 우육면 맛집, 이치란라멘, 진천미)",
+        "views": 142526,
+        "url": "https://www.youtube.com/watch?v=6vblGzy9zQ4"
+      },
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 55,
+        "channel": "살란다",
+        "title": "🇹🇼대만 타이베이 3박4일 여행코스 일정 완벽정리+맛집, 쇼핑 꿀팁 대방출 | 예스진지 단수이 당일치기 근교여행까지",
+        "views": 153524,
+        "url": "https://www.youtube.com/watch?v=ZvDUkX5MFsk"
+      },
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      }
+    ],
+    "rank": 17
+  },
+  {
+    "id": "양산박",
+    "name_ko": "양산박 샤오롱바오",
+    "name_zh": "梁山泊小籠湯包",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "만두 / 샤오롱바오",
+    "rating": 4.4,
+    "mention_count": 5,
+    "percentage": "2.5%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "고요비koyobi",
+      "흥삶이네 Heungsam's Life",
+      "홍밋너 hongmeetu",
+      "먹지희Mukjihee"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 9,
+        "channel": "고요비koyobi",
+        "title": "혼자 대만 타이베이 여행 🇹🇼 2박3일 최애 디저트추천 🍰 현지인 맛집까지 안가면 후회하는 핫플모음",
+        "views": 251949,
+        "url": "https://www.youtube.com/watch?v=rtvuyMdq0zI"
+      },
+      {
+        "videoIndex": 24,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "대만에서 유명한 길거리음식 싹~다 먹고왔습니다!! (시먼딩 맛집, 스린야시장)",
+        "views": 331146,
+        "url": "https://www.youtube.com/watch?v=_e08WLkH6HY"
+      },
+      {
+        "videoIndex": 39,
+        "channel": "홍밋너 hongmeetu",
+        "title": "🇹🇼 괴랄 여행 천재의 1박3일 대만 타이베이 여행🌳 24시간 먹다 온 기깔나는 하루 정복 코스 🐽",
+        "views": 121636,
+        "url": "https://www.youtube.com/watch?v=wF220lkgK6c"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      }
+    ],
+    "rank": 18
+  },
+  {
+    "id": "키키레스토랑",
+    "name_ko": "키키 레스토랑",
+    "name_zh": "KiKi餐廳 台北信義",
+    "district": "신의구 / ATT 4 FUN",
+    "cuisine": "사천 퓨전 요리",
+    "rating": 4.1,
+    "mention_count": 5,
+    "percentage": "2.5%",
+    "top_creators": [
+      "도영도영이",
+      "헤르미 hermiona",
+      "Kiki & May - 隨意吃樂部"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 100,
+        "channel": "도영도영이",
+        "title": "동생이랑 떠난 완벽한 대만 여행VLOG✨✈️ 지우펀, 단수이, 고양이마을까지 3박4일 알찬 코스추천",
+        "views": 179806,
+        "url": "https://www.youtube.com/watch?v=HfaNkxqAQNc"
+      },
+      {
+        "videoIndex": 104,
+        "channel": "헤르미 hermiona",
+        "title": "🇹🇼 120만원으로 할거 다 한 나혼자 대만 여행 | 맛집, 쇼핑, 관광 다 성공 ⋆◡̎⋆ + 더보기 공유 | 타이베이 3박 4일 몰아보기. (1시간 30분)",
+        "views": 112242,
+        "url": "https://www.youtube.com/watch?v=RyHDyIzlRo4"
+      },
+      {
+        "videoIndex": 133,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北自由行2025】台灣上機前最後10小時好去處！赤峰街文青小店/中山站美食地圖/夜市｜排隊吃60年街頭滷肉飯、古宅Cafe、人氣手工Gelato｜Kiki and May Ft. Mercari",
+        "views": 183817,
+        "url": "https://www.youtube.com/watch?v=nvriTyTqk0E"
+      },
+      {
+        "videoIndex": 147,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北自由行2024】台灣名物！實試台北牛肉麵人氣名店6選｜清燉派巨頭專食靚牛、米芝蓮推介70年老字號、冠軍級紅燒蕃茄湯崛起、日本遊客追捧川味手工麵...｜Kiki and May",
+        "views": 189397,
+        "url": "https://www.youtube.com/watch?v=IbDDck5aBFc"
+      },
+      {
+        "videoIndex": 149,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北美食2024】台灣平民美食之首！吃爆台北8大滷肉飯｜台幣$10高質魯肉飯、過萬人激推今大、馳名米芝蓮黑金爌肉、夜市排隊1小時刈包...｜Kiki and May Ft. Surfshark",
+        "views": 133308,
+        "url": "https://www.youtube.com/watch?v=rI4Ru_YJ_Mo"
+      }
+    ],
+    "rank": 19
+  },
+  {
+    "id": "유산동",
+    "name_ko": "유산동 우육면",
+    "name_zh": "劉山東牛肉麵",
+    "district": "타이베이 메인역 / 중산",
+    "cuisine": "우육면",
+    "rating": 4,
+    "mention_count": 5,
+    "percentage": "2.5%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "MIYUT미윳",
+      "조은fine",
+      "Kiki & May - 隨意吃樂部",
+      "머먹남"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 45,
+        "channel": "MIYUT미윳",
+        "title": "나 혼자 대만여행 vlog🇹🇼 만원짜리 패키지투어 ••ootd부터 찐현지맛집까지🍜(ft.릴릴 마켓공지)",
+        "views": 109032,
+        "url": "https://www.youtube.com/watch?v=9URpT2SvXSM"
+      },
+      {
+        "videoIndex": 103,
+        "channel": "조은fine",
+        "title": "지가이드🧑🏻‍🏫 : 그냥 저만 따라오세요! 3박4일 파워J의 알찬 대만여행 브이로그🇹🇼 | 한국인 국룰 코스부터 또또또간집까지 더보기란 정보 몽땅 공유🍯 | 4일간 42가지 음식!",
+        "views": 112164,
+        "url": "https://www.youtube.com/watch?v=NcoDFINz1WE"
+      },
+      {
+        "videoIndex": 147,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北自由行2024】台灣名物！實試台北牛肉麵人氣名店6選｜清燉派巨頭專食靚牛、米芝蓮推介70年老字號、冠軍級紅燒蕃茄湯崛起、日本遊客追捧川味手工麵...｜Kiki and May",
+        "views": 189397,
+        "url": "https://www.youtube.com/watch?v=IbDDck5aBFc"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 20
+  },
+  {
+    "id": "스무시하우스",
+    "name_ko": "스무시하우스",
+    "name_zh": "思慕昔 本館",
+    "district": "동먼 / 융캉제",
+    "cuisine": "디저트 / 망고빙수",
+    "rating": 4,
+    "mention_count": 5,
+    "percentage": "2.5%",
+    "top_creators": [
+      "잠티 JamTi",
+      "UCC 미누키 (UCC MINUKEE)",
+      "흥삶이네 Heungsam's Life",
+      "老張微旅行",
+      "KFunCouple"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 7,
+        "channel": "잠티 JamTi",
+        "title": "[대만여행]🇹🇼 더운데 대만 간다고??  타이베이 맛집의 모든것",
+        "views": 165342,
+        "url": "https://www.youtube.com/watch?v=q-JYiXRVgTE"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 154,
+        "channel": "老張微旅行",
+        "title": "好逛好買的店太多了！人氣美食＋巷弄文創小店＋氣質咖啡｜老張微旅行 #永康街 #台北美食",
+        "views": 225906,
+        "url": "https://www.youtube.com/watch?v=l2GlMyDR7po"
+      },
+      {
+        "videoIndex": 156,
+        "channel": "KFunCouple",
+        "title": "【台北遊客一直錯過的🩵永康街】必吃美食🌟｜必逛手信店🛍｜打卡位📸｜慢活台北🌅｜台北自由行2025",
+        "views": 183574,
+        "url": "https://www.youtube.com/watch?v=vipI7ky6lZ0"
+      }
+    ],
+    "rank": 21
+  },
+  {
+    "id": "황가향장",
+    "name_ko": "황가향장 (황가소시지)",
+    "name_zh": "黃家香腸",
+    "district": "중정구 / 취안저우제",
+    "cuisine": "로컬 길거리 간식",
+    "rating": 4.5,
+    "mention_count": 4,
+    "percentage": "2.0%",
+    "top_creators": [
+      "최술진",
+      "육식맨 YOOXICMAN",
+      "먹지희Mukjihee",
+      "mansonovo"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 30,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 스트리트 푸드 특집 : 한 끼가 아니라 하루에 만 원이면 충분한 초가성비 고기 맛집들",
+        "views": 1632546,
+        "url": "https://www.youtube.com/watch?v=KdX7safobfo"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 135,
+        "channel": "mansonovo",
+        "title": "2025台北遊「12間美食口袋名單」2025最新台北收藏必食店，性價比最高鐵板燒店，最難訂位的火鍋店介紹黑武士，滷肉飯大賽冠軍小店分享，招牌芝士蛋糕店，西門町平價放題火鍋店推介",
+        "views": 330002,
+        "url": "https://www.youtube.com/watch?v=gAiqNQK0R3E"
+      }
+    ],
+    "rank": 22
+  },
+  {
+    "id": "황지루로우판",
+    "name_ko": "황지 루로우판",
+    "name_zh": "黃記魯肉飯",
+    "district": "중산 / 쌍련",
+    "cuisine": "루로우판",
+    "rating": 4.3,
+    "mention_count": 4,
+    "percentage": "2.0%",
+    "top_creators": [
+      "肥波開吃啦",
+      "mansonovo",
+      "Kiki & May - 隨意吃樂部",
+      "머먹남"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 129,
+        "channel": "肥波開吃啦",
+        "title": "2024台北米其林，八家必比登推薦美食 !  8 Bib Gourmand MICHELIN Restaurants in Taipei",
+        "views": 266973,
+        "url": "https://www.youtube.com/watch?v=ge4LdWcmiic"
+      },
+      {
+        "videoIndex": 135,
+        "channel": "mansonovo",
+        "title": "2025台北遊「12間美食口袋名單」2025最新台北收藏必食店，性價比最高鐵板燒店，最難訂位的火鍋店介紹黑武士，滷肉飯大賽冠軍小店分享，招牌芝士蛋糕店，西門町平價放題火鍋店推介",
+        "views": 330002,
+        "url": "https://www.youtube.com/watch?v=gAiqNQK0R3E"
+      },
+      {
+        "videoIndex": 149,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北美食2024】台灣平民美食之首！吃爆台北8大滷肉飯｜台幣$10高質魯肉飯、過萬人激推今大、馳名米芝蓮黑金爌肉、夜市排隊1小時刈包...｜Kiki and May Ft. Surfshark",
+        "views": 133308,
+        "url": "https://www.youtube.com/watch?v=rI4Ru_YJ_Mo"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 23
+  },
+  {
+    "id": "왕스브로스",
+    "name_ko": "왕스브로스 (소왕자과)",
+    "name_zh": "小王煮瓜 Wang's Broth",
+    "district": "만화구 / 화시제 야시장",
+    "cuisine": "루로우판",
+    "rating": 4.3,
+    "mention_count": 4,
+    "percentage": "2.0%",
+    "top_creators": [
+      "흥삶이네 Heungsam's Life",
+      "먹지희Mukjihee",
+      "Kiki & May - 隨意吃樂部",
+      "머먹남"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 49,
+        "channel": "흥삶이네 Heungsam's Life",
+        "title": "인생 우육면부터 '라오허제 야시장'까지, 완벽한 타이베이 먹방 여행!!",
+        "views": 260352,
+        "url": "https://www.youtube.com/watch?v=Q2cQBGgm0Ec"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 149,
+        "channel": "Kiki & May - 隨意吃樂部",
+        "title": "【台北美食2024】台灣平民美食之首！吃爆台北8大滷肉飯｜台幣$10高質魯肉飯、過萬人激推今大、馳名米芝蓮黑金爌肉、夜市排隊1小時刈包...｜Kiki and May Ft. Surfshark",
+        "views": 133308,
+        "url": "https://www.youtube.com/watch?v=rI4Ru_YJ_Mo"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 24
+  },
+  {
+    "id": "마라시안훠궈",
+    "name_ko": "마라시안 훠궈",
+    "name_zh": "馬辣頂級麻辣鴛鴦火鍋 漢口店",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "훠궈",
+    "rating": 4.2,
+    "mention_count": 4,
+    "percentage": "2.0%",
+    "top_creators": [
+      "해피뉴먼쓰",
+      "나나 Nanasserie",
+      "먹지희Mukjihee",
+      "유랑쀼랑 withYouRang"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 4,
+        "channel": "해피뉴먼쓰",
+        "title": "실패없는 여행을 위한 대만 맛집 리스트 + 시먼딩 맛집, 야시장 추천 메뉴, 스푸파 후기",
+        "views": 366842,
+        "url": "https://www.youtube.com/watch?v=0v_Rar380Co"
+      },
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 84,
+        "channel": "먹지희Mukjihee",
+        "title": "[먹방브이로그] 타이베이 맛집 지도 가져가세요꒰ ྀི*•₃•* ྀི꒱♡⁼³₌₃( 대만 훠궈 지파이 샤오롱바오 동파육덮밥 우육면 소세지 야시장 진천미 라뜰리에 곱창국수 연어초밥 )",
+        "views": 121042,
+        "url": "https://www.youtube.com/watch?v=OTmAMzLK0ak"
+      },
+      {
+        "videoIndex": 193,
+        "channel": "유랑쀼랑 withYouRang",
+        "title": "대만 여행은 이렇게 준비하세요. 총정리(숙소, 맛집, 쇼핑리스트, 꿀팁 및 주의할 점) + 자막",
+        "views": 110630,
+        "url": "https://www.youtube.com/watch?v=n7I-Eu0Zaxs"
+      }
+    ],
+    "rank": 25
+  },
+  {
+    "id": "서문면점",
+    "name_ko": "서문면점 (Ximen Noodle)",
+    "name_zh": "西門麵店 Ximen Noodle",
+    "district": "시먼딩 / 만화구",
+    "cuisine": "우육면",
+    "rating": 4.1,
+    "mention_count": 4,
+    "percentage": "2.0%",
+    "top_creators": [
+      "최술진",
+      "UCC 미누키 (UCC MINUKEE)",
+      "more meimei",
+      "머먹남"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 5,
+        "channel": "최술진",
+        "title": "🇹🇼 미슐랭의 나라 대만 🐍 2025 타이베이 맛집 15선 리뷰 드루와🔥 (시먼딩+단수이+스푸파 맛집)_ep.1",
+        "views": 200579,
+        "url": "https://www.youtube.com/watch?v=BQfnmaD6L5E"
+      },
+      {
+        "videoIndex": 8,
+        "channel": "UCC 미누키 (UCC MINUKEE)",
+        "title": "[풀버젼]🇹🇼총경비 31만원! 대만 타이베이 현지인 추천 맛집부터 야시장, 로컬 감성 술집, 예스지투어 그리고 인생샷 포토스팟까지✈️ 미친 갓성비 여행✨",
+        "views": 273893,
+        "url": "https://www.youtube.com/watch?v=zfh6sMgrPCQ"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      },
+      {
+        "videoIndex": 199,
+        "channel": "머먹남",
+        "title": "실패한 식당은 제외한 대만 시먼딩 로컬맛집 족보정리",
+        "views": 475866,
+        "url": "https://www.youtube.com/watch?v=Lg61RnS-pwU"
+      }
+    ],
+    "rank": 26
+  },
+  {
+    "id": "호공도금계원",
+    "name_ko": "호공도 금계원",
+    "name_zh": "好公道金雞園",
+    "district": "동먼 / 융캉제",
+    "cuisine": "만두 / 샤오롱바오",
+    "rating": 4.1,
+    "mention_count": 3,
+    "percentage": "1.5%",
+    "top_creators": [
+      "[하말넘많] heavytalker",
+      "CHILL先生一家人",
+      "KFunCouple"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 12,
+        "channel": "[하말넘많] heavytalker",
+        "title": "딘타이펑 말고 찐 만두집 찾았다 [타이베이 숙소, 맛집 정보 공유]",
+        "views": 770861,
+        "url": "https://www.youtube.com/watch?v=vCYcAk_WDSQ"
+      },
+      {
+        "videoIndex": 155,
+        "channel": "CHILL先生一家人",
+        "title": "被譽為「全球最酷街道之一」，一路上很難聽到中文的台灣美食街道，哪些差異讓外國觀光客趨之若鶩呢？",
+        "views": 155569,
+        "url": "https://www.youtube.com/watch?v=wn59ZuVTKck"
+      },
+      {
+        "videoIndex": 156,
+        "channel": "KFunCouple",
+        "title": "【台北遊客一直錯過的🩵永康街】必吃美食🌟｜必逛手信店🛍｜打卡位📸｜慢活台北🌅｜台北自由行2025",
+        "views": 183574,
+        "url": "https://www.youtube.com/watch?v=vipI7ky6lZ0"
+      }
+    ],
+    "rank": 27
+  },
+  {
+    "id": "빙찬",
+    "name_ko": "빙찬 (생망고빙수)",
+    "name_zh": "冰讚",
+    "district": "중산 / 쌍련역",
+    "cuisine": "디저트 / 망고빙수",
+    "rating": 4.5,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "나나 Nanasserie",
+      "여너"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 50,
+        "channel": "나나 Nanasserie",
+        "title": "3kg 찌고 온 나 혼자 대만 여행 3박4일🇹🇼 (대만 여행 브이로그, 아종면선, 딘타이펑, 중산카페, 행복당, 빙찬, 호호미소보루, 딘타이펑, 일갑자찬음, 춘수당, 진천미)",
+        "views": 208719,
+        "url": "https://www.youtube.com/watch?v=SYcMDi5K2Pg"
+      },
+      {
+        "videoIndex": 108,
+        "channel": "여너",
+        "title": "혼자서도 잘먹는 대만여행 몰아보기🇹🇼현지인맛집,인생맛집,인생버블티공개ㅣ타이베이 4박5일 여행",
+        "views": 148518,
+        "url": "https://www.youtube.com/watch?v=yArKuSojK60"
+      }
+    ],
+    "rank": 28
+  },
+  {
+    "id": "아성아육",
+    "name_ko": "아성아육 (젠슨황 거위고기)",
+    "name_zh": "阿城鵝肉 A Cheng Goose",
+    "district": "중산 / 행천궁",
+    "cuisine": "고기 요리 / 거위고기",
+    "rating": 4.4,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "육식맨 YOOXICMAN",
+      "mansonovo"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 28,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 육식 올스타전 : 젠슨황 단골집부터 반값 딘타이펑까지 월클로 가득 채운 육식 탐방기",
+        "views": 1982428,
+        "url": "https://www.youtube.com/watch?v=ZBfm-ReCLhw"
+      },
+      {
+        "videoIndex": 131,
+        "channel": "mansonovo",
+        "title": "台北美食🇹🇼「￼嚴選13間必吃美食名單」台北最新開的大型商場⚠️￼最熱門水泉豚主題Cafe ￼，鐵板燒天花板人均$250 ，西門町親民價錢火鍋店$150放題，食過台灣最貴的燒肉店￼￼￼￼￼｜黑洞食堂￼",
+        "views": 560759,
+        "url": "https://www.youtube.com/watch?v=t3ohektONfQ"
+      }
+    ],
+    "rank": 29
+  },
+  {
+    "id": "스얼궈",
+    "name_ko": "스얼궈 (12Hotpot)",
+    "name_zh": "石二鍋 台北桂林家樂福店",
+    "district": "시먼딩 / 까르푸 구이린점",
+    "cuisine": "훠궈",
+    "rating": 4.3,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "현주zip",
+      "홍밋너 hongmeetu"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 26,
+        "channel": "현주zip",
+        "title": "나 혼자 대만여행 🇹🇼 맛집 도장깨러 갔다가 최애 여행지가 되었다⋆｡˚.⋆•구글평점 4.9 야키토리•존맛 빙수🍧•1인 훠궈맛집 추천•꼭 가야할 필수스팟",
+        "views": 120407,
+        "url": "https://www.youtube.com/watch?v=O__eiPspcU4"
+      },
+      {
+        "videoIndex": 39,
+        "channel": "홍밋너 hongmeetu",
+        "title": "🇹🇼 괴랄 여행 천재의 1박3일 대만 타이베이 여행🌳 24시간 먹다 온 기깔나는 하루 정복 코스 🐽",
+        "views": 121636,
+        "url": "https://www.youtube.com/watch?v=wF220lkgK6c"
+      }
+    ],
+    "rank": 30
+  },
+  {
+    "id": "위엔환볜굴전",
+    "name_ko": "위엔환볜 굴전 (닝샤)",
+    "name_zh": "圓環邊蚵仔煎",
+    "district": "다퉁 / 닝샤 야시장",
+    "cuisine": "야시장 명물",
+    "rating": 4.1,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "써니하니 먹투어",
+      "Yummy Food 台灣美食職人"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 2,
+        "channel": "써니하니 먹투어",
+        "title": "🇹🇼먹으러 간 대만 타이베이⭐️꼭 먹고 와야 하는 맛집들 총정리⭐️야시장 투어, 미슐랭 맛집 몽땅 포함❤️",
+        "views": 222512,
+        "url": "https://www.youtube.com/watch?v=JZ9i9ktNUT4"
+      },
+      {
+        "videoIndex": 163,
+        "channel": "Yummy Food 台灣美食職人",
+        "title": "寧夏夜市美食攻略！25間經典小吃一次搜刮",
+        "views": 261279,
+        "url": "https://www.youtube.com/watch?v=cc8lOnx1oYM"
+      }
+    ],
+    "rank": 31
+  },
+  {
+    "id": "딩위안또우장",
+    "name_ko": "딩위안또우장",
+    "name_zh": "鼎元豆漿",
+    "district": "중정기념당 / 진화가",
+    "cuisine": "전통 조식 / 또우장",
+    "rating": 4.1,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "TIFFYCOOKS",
+      "more meimei"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 165,
+        "channel": "TIFFYCOOKS",
+        "title": "a week in TAIPEI *foodie trip* 🍜 local favorites, mother-daughter trip | tiffycooks vlog 🍧",
+        "views": 212941,
+        "url": "https://www.youtube.com/watch?v=CmeE6nha5Dk"
+      },
+      {
+        "videoIndex": 171,
+        "channel": "more meimei",
+        "title": "what i ate in 3 days in taipei! 🇹🇼 taiwan food tour (street food, night market, boba, beef noodles)",
+        "views": 141697,
+        "url": "https://www.youtube.com/watch?v=PGP8myjt1D8"
+      }
+    ],
+    "rank": 32
+  },
+  {
+    "id": "융허또우장",
+    "name_ko": "융허또우장",
+    "name_zh": "永和豆漿大王 復興南路",
+    "district": "다안 / 푸싱난로",
+    "cuisine": "전통 조식 / 또우장",
+    "rating": 4.1,
+    "mention_count": 2,
+    "percentage": "1.0%",
+    "top_creators": [
+      "feed meimei",
+      "끼리 KKIRI"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 164,
+        "channel": "feed meimei",
+        "title": "What to Eat in TAIPEI! Taiwan Food Tour Part 1 2024",
+        "views": 717423,
+        "url": "https://www.youtube.com/watch?v=iCKUwBDRz5s"
+      },
+      {
+        "videoIndex": 184,
+        "channel": "끼리 KKIRI",
+        "title": "대만 타이베이 여행🇹🇼 엄마랑 먹방기행🍧구글평점 4.9맛집,탕위엔 빙수,야시장 철판구이,5성급 온천",
+        "views": 130537,
+        "url": "https://www.youtube.com/watch?v=LQdktravNzE"
+      }
+    ],
+    "rank": 33
+  },
+  {
+    "id": "항주소룡탕포",
+    "name_ko": "항주소룡탕포",
+    "name_zh": "杭州小籠湯包",
+    "district": "중정기념당 / 다안",
+    "cuisine": "만두 / 샤오롱바오",
+    "rating": 4.1,
+    "mention_count": 1,
+    "percentage": "0.5%",
+    "top_creators": [
+      "육식맨 YOOXICMAN"
+    ],
+    "mentioningVideos": [
+      {
+        "videoIndex": 28,
+        "channel": "육식맨 YOOXICMAN",
+        "title": "대만 육식 올스타전 : 젠슨황 단골집부터 반값 딘타이펑까지 월클로 가득 채운 육식 탐방기",
+        "views": 1982428,
+        "url": "https://www.youtube.com/watch?v=ZBfm-ReCLhw"
+      }
+    ],
+    "rank": 34
+  },
+  {
+    "id": "르팔레",
+    "name_ko": "르 팔레 (미슐랭 3스타)",
+    "name_zh": "頤宮中餐廳 Le Palais",
+    "district": "타이베이 메인역 / 팔레드쉰 호텔",
+    "cuisine": "미슐랭 3스타 파인다이닝",
+    "rating": 4.5,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 35
+  },
+  {
+    "id": "핀샨러차오",
+    "name_ko": "핀샨 생맹해선 러차오",
+    "name_zh": "品鱻生猛活海鮮",
+    "district": "다안 / 류장리",
+    "cuisine": "러차오 (대만식 선술집)",
+    "rating": 4.1,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 36
+  },
+  {
+    "id": "금춘발우육면",
+    "name_ko": "금춘발 우육면",
+    "name_zh": "金春發牛肉麵",
+    "district": "다퉁 / 위안산",
+    "cuisine": "우육면",
+    "rating": 4.1,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 37
+  },
+  {
+    "id": "임동방우육면",
+    "name_ko": "임동방 우육면",
+    "name_zh": "林東芳牛肉麵",
+    "district": "다안 / 중샤오푸싱",
+    "cuisine": "우육면",
+    "rating": 3.9,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 38
+  },
+  {
+    "id": "진펑루로우판",
+    "name_ko": "진펑 루로우판",
+    "name_zh": "金峰魯肉飯",
+    "district": "중정기념당 / 난먼시장",
+    "cuisine": "루로우판",
+    "rating": 3.8,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 39
+  },
+  {
+    "id": "중앙시장러차오",
+    "name_ko": "중앙시장 생맹해선 러차오",
+    "name_zh": "中央市場生猛海鮮 100",
+    "district": "중산 / 장안동로 러차오 거리",
+    "cuisine": "러차오 (대만식 선술집)",
+    "rating": 3.8,
+    "mention_count": 0,
+    "percentage": "0.0%",
+    "top_creators": [],
+    "mentioningVideos": [],
+    "rank": 40
+  }
+]

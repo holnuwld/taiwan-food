@@ -1,0 +1,333 @@
+{
+  "auditTimestamp": "2026-10-07T23:52:00Z",
+  "overallStatus": "PASS",
+  "photo20Samples": {
+    "total": 20,
+    "pass": 20,
+    "successRate": "100.0%",
+    "results": [
+      {
+        "sampleIndex": 1,
+        "name_ko": "천진총좌빙 (융캉제 명물)",
+        "imageUrl": "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%B2%9C%EC%A7%84%EC%B4%9D%EC%A2%8C%EB%B9%99%20%28%EC%9C%B5%EC%BA%89%EC%A0%9C%20%EB%AA%85%EB%AC%BC%29%20%E5%A4%A9%E6%B4%A5%E8%94%A5%E6%8A%93%E9%A4%85",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 2,
+        "name_ko": "임동방우육면 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9E%84%EB%8F%99%EB%B0%A9%EC%9A%B0%EC%9C%A1%EB%A9%B4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%9E%84%EB%8F%99%EB%B0%A9%EC%9A%B0%EC%9C%A1%EB%A9%B4",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 3,
+        "name_ko": "대만망고빙수녹점 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1505394033641-40c6ad1178d7?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EB%8C%80%EB%A7%8C%EB%A7%9D%EA%B3%A0%EB%B9%99%EC%88%98%EB%85%B9%EC%A0%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EB%8C%80%EB%A7%8C%EB%A7%9D%EA%B3%A0%EB%B9%99%EC%88%98%EB%85%B9%EC%A0%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 4,
+        "name_ko": "진펑루로우판 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%A7%84%ED%8E%91%EB%A3%A8%EB%A1%9C%EC%9A%B0%ED%8C%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%A7%84%ED%8E%91%EB%A3%A8%EB%A1%9C%EC%9A%B0%ED%8C%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 5,
+        "name_ko": "신마라 훠궈 클래식 (시먼딩)",
+        "imageUrl": "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%8B%A0%EB%A7%88%EB%9D%BC%20%ED%9B%A0%EA%B6%88%20%ED%81%B4%EB%9E%98%EC%8B%9D%20%28%EC%8B%9C%EB%A8%BC%EB%94%A9%29%20%E6%96%B0%E9%A6%AC%E8%BE%A3%E7%B6%93%E5%85%B8%E9%BA%BB%E8%BE%A3%E9%8D%8B",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 6,
+        "name_ko": "항주소룡탕포 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%95%AD%EC%A3%BC%EC%86%8C%EB%A3%A1%ED%83%95%ED%8F%AC%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%95%AD%EC%A3%BC%EC%86%8C%EB%A3%A1%ED%83%95%ED%8F%AC",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 7,
+        "name_ko": "딘타이펑 본점 / 101점",
+        "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EB%94%98%ED%83%80%EC%9D%B4%ED%8E%91%20%EB%B3%B8%EC%A0%90%20/%20101%EC%A0%90%20%E9%BC%8E%E6%B3%B0%E8%B1%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 8,
+        "name_ko": "치엔두훠궈 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1547928576-a4a33237cbc3?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%B9%98%EC%97%94%EB%91%90%ED%9B%A0%EA%B6%88%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%B9%98%EC%97%94%EB%91%90%ED%9B%A0%EA%B6%88",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 9,
+        "name_ko": "양산박샤오롱바오 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%96%91%EC%82%B0%EB%B0%95%EC%83%A4%EC%98%A4%EB%A1%B1%EB%B0%94%EC%98%A4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%96%91%EC%82%B0%EB%B0%95%EC%83%A4%EC%98%A4%EB%A1%B1%EB%B0%94%EC%98%A4",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 10,
+        "name_ko": "라뜰리에 루터스 (오픈런 필수)",
+        "imageUrl": "https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EB%9D%BC%EB%9C%B0%EB%A6%AC%EC%97%90%20%EB%A3%A8%ED%84%B0%EC%8A%A4%20%28%EC%98%A4%ED%94%88%EB%9F%B0%20%ED%95%84%EC%88%98%29%20L%27Atelier%20Lotus",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 11,
+        "name_ko": "융캉우육면 (융캉제 원조)",
+        "imageUrl": "https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9C%B5%EC%BA%89%EC%9A%B0%EC%9C%A1%EB%A9%B4%20%28%EC%9C%B5%EC%BA%89%EC%A0%9C%20%EC%9B%90%EC%A1%B0%29%20%E6%B0%B8%E5%BA%B7%E7%89%9B%E8%82%89%E9%BA%B5",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 12,
+        "name_ko": "시먼딩지파이 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1626645738196-c2a7c87a8f58?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%8B%9C%EB%A8%BC%EB%94%A9%EC%A7%80%ED%8C%8C%EC%9D%B4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%8B%9C%EB%A8%BC%EB%94%A9%EC%A7%80%ED%8C%8C%EC%9D%B4",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 13,
+        "name_ko": "일갑자찬음 (미슐랭 빕구르망)",
+        "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9D%BC%EA%B0%91%EC%9E%90%EC%B0%AC%EC%9D%8C%20%28%EB%AF%B8%EC%8A%90%EB%9E%AD%20%EB%B9%95%EA%B5%AC%EB%A5%B4%EB%A7%9D%29%20%E4%B8%80%E7%94%B2%E5%AD%90%E9%A4%90%E9%A3%B2",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 14,
+        "name_ko": "하오지수교 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%95%98%EC%98%A4%EC%A7%80%EC%88%98%EA%B5%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%95%98%EC%98%A4%EC%A7%80%EC%88%98%EA%B5%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 15,
+        "name_ko": "황지루로우판 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%99%A9%EC%A7%80%EB%A3%A8%EB%A1%9C%EC%9A%B0%ED%8C%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%99%A9%EC%A7%80%EB%A3%A8%EB%A1%9C%EC%9A%B0%ED%8C%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 16,
+        "name_ko": "핀셴생맹활해선 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%95%80%EC%85%B4%EC%83%9D%EB%A7%B9%ED%99%9C%ED%95%B4%EC%84%A0%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%95%80%EC%85%B4%EC%83%9D%EB%A7%B9%ED%99%9C%ED%95%B4%EC%84%A0",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 17,
+        "name_ko": "삼미식당 (시먼딩 명물)",
+        "imageUrl": "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%82%BC%EB%AF%B8%EC%8B%9D%EB%8B%B9%20%28%EC%8B%9C%EB%A8%BC%EB%94%A9%20%EB%AA%85%EB%AC%BC%29%20%E4%B8%89%E5%91%B3%E9%A3%9F%E5%A0%82",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 18,
+        "name_ko": "호공도금계원 (타이베이)",
+        "imageUrl": "https://images.unsplash.com/photo-1496116218417-1a781b1c416c?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%98%B8%EA%B3%B5%EB%8F%84%EA%B8%88%EA%B3%84%EC%9B%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%98%B8%EA%B3%B5%EB%8F%84%EA%B8%88%EA%B3%84%EC%9B%90",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 19,
+        "name_ko": "행복당 (싱푸탕)",
+        "imageUrl": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%96%89%EB%B3%B5%EB%8B%B9%20%28%EC%8B%B1%ED%91%B8%ED%83%95%29%20%E5%B9%B8%E7%A6%8F%E5%A0%82%20%E6%97%97%E8%89%A6%E5%BA%97",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 20,
+        "name_ko": "춘수당 중정기념당점 (버블티 원조)",
+        "imageUrl": "https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=600&q=80",
+        "imageHttpStatus": 200,
+        "sourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%B6%98%EC%88%98%EB%8B%B9%20%EC%A4%91%EC%A0%95%EA%B8%B0%EB%85%90%EB%8B%B9%EC%A0%90%20%28%EB%B2%84%EB%B8%94%ED%8B%B0%20%EC%9B%90%EC%A1%B0%29%20%E6%98%A5%E6%B0%B4%E5%A0%82",
+        "sourceHttpStatus": 200,
+        "status": "PASS"
+      }
+    ]
+  },
+  "sources15Samples": {
+    "total": 15,
+    "pass": 15,
+    "successRate": "100.0%",
+    "results": [
+      {
+        "sampleIndex": 1,
+        "name_ko": "사해두장 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%82%AC%ED%95%B4%EB%91%90%EC%9E%A5%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%82%AC%ED%95%B4%EB%91%90%EC%9E%A5",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=JZ9i9ktNUT4",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 2,
+        "name_ko": "항주소룡탕포 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%95%AD%EC%A3%BC%EC%86%8C%EB%A3%A1%ED%83%95%ED%8F%AC%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%95%AD%EC%A3%BC%EC%86%8C%EB%A3%A1%ED%83%95%ED%8F%AC",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=s4UXfjhIj3k",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 3,
+        "name_ko": "핫스타 지파이 (스린 야시장)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%95%AB%EC%8A%A4%ED%83%80%20%EC%A7%80%ED%8C%8C%EC%9D%B4%20%28%EC%8A%A4%EB%A6%B0%20%EC%95%BC%EC%8B%9C%EC%9E%A5%29%20%E8%B1%AA%E5%A4%A7%E5%A4%A7%E9%9B%9E%E6%8E%92",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=zfh6sMgrPCQ",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 4,
+        "name_ko": "신마라 훠궈 클래식 (시먼딩)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%8B%A0%EB%A7%88%EB%9D%BC%20%ED%9B%A0%EA%B6%88%20%ED%81%B4%EB%9E%98%EC%8B%9D%20%28%EC%8B%9C%EB%A8%BC%EB%94%A9%29%20%E6%96%B0%E9%A6%AC%E8%BE%A3%E7%B6%93%E5%85%B8%E9%BA%BB%E8%BE%A3%E9%8D%8B",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=JZ9i9ktNUT4",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 5,
+        "name_ko": "천천리 (시먼딩 가성비 노포)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%B2%9C%EC%B2%9C%EB%A6%AC%20%28%EC%8B%9C%EB%A8%BC%EB%94%A9%20%EA%B0%80%EC%84%B1%EB%B9%84%20%EB%85%B8%ED%8F%AC%29%20%E5%A4%A9%E5%A4%A9%E5%88%A9%E7%BE%8E%E9%A3%9F%E5%9D%8A",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=0v_Rar380Co",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 6,
+        "name_ko": "푸바왕 족발 (송장난징 로컬 1티어)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%91%B8%EB%B0%94%EC%99%95%20%EC%A1%B1%EB%B0%9C%20%28%EC%86%A1%EC%9E%A5%EB%82%9C%EC%A7%95%20%EB%A1%9C%EC%BB%AC%201%ED%8B%B0%EC%96%B4%29%20%E5%AF%8C%E9%9C%B8%E7%8E%8B%E8%B1%AC%E8%85%B3",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=s4UXfjhIj3k",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 7,
+        "name_ko": "라뜰리에 루터스 (오픈런 필수)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EB%9D%BC%EB%9C%B0%EB%A6%AC%EC%97%90%20%EB%A3%A8%ED%84%B0%EC%8A%A4%20%28%EC%98%A4%ED%94%88%EB%9F%B0%20%ED%95%84%EC%88%98%29%20L%27Atelier%20Lotus",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=JZ9i9ktNUT4",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 8,
+        "name_ko": "시먼딩지파이 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%8B%9C%EB%A8%BC%EB%94%A9%EC%A7%80%ED%8C%8C%EC%9D%B4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%8B%9C%EB%A8%BC%EB%94%A9%EC%A7%80%ED%8C%8C%EC%9D%B4",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=cZoaxi3TAh0",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 9,
+        "name_ko": "유산동 우육면 (미슐랭 빕구르망)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9C%A0%EC%82%B0%EB%8F%99%20%EC%9A%B0%EC%9C%A1%EB%A9%B4%20%28%EB%AF%B8%EC%8A%90%EB%9E%AD%20%EB%B9%95%EA%B5%AC%EB%A5%B4%EB%A7%9D%29%20%E5%8A%89%E5%B1%B1%E6%9D%B1%E7%89%9B%E8%82%89%E9%BA%B5",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=s4UXfjhIj3k",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 10,
+        "name_ko": "호공도금계원 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%ED%98%B8%EA%B3%B5%EB%8F%84%EA%B8%88%EA%B3%84%EC%9B%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%ED%98%B8%EA%B3%B5%EB%8F%84%EA%B8%88%EA%B3%84%EC%9B%90",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=s4UXfjhIj3k",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 11,
+        "name_ko": "왕스브로스 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%99%95%EC%8A%A4%EB%B8%8C%EB%A1%9C%EC%8A%A4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%99%95%EC%8A%A4%EB%B8%8C%EB%A1%9C%EC%8A%A4",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=UmfO6O0YC8A",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 12,
+        "name_ko": "서문면점 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%84%9C%EB%AC%B8%EB%A9%B4%EC%A0%90%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%84%9C%EB%AC%B8%EB%A9%B4%EC%A0%90",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=0v_Rar380Co",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 13,
+        "name_ko": "원팡꽈바오 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%9B%90%ED%8C%A1%EA%BD%88%EB%B0%94%EC%98%A4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%9B%90%ED%8C%A1%EA%BD%88%EB%B0%94%EC%98%A4",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=UmfO6O0YC8A",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 14,
+        "name_ko": "치엔두훠궈 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EC%B9%98%EC%97%94%EB%91%90%ED%9B%A0%EA%B6%88%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EC%B9%98%EC%97%94%EB%91%90%ED%9B%A0%EA%B6%88",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=O__eiPspcU4",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      },
+      {
+        "sampleIndex": 15,
+        "name_ko": "금춘발우육면 (타이베이)",
+        "orderTipSourceUrl": "https://www.google.com/maps/search/?api=1&query=%EA%B8%88%EC%B6%98%EB%B0%9C%EC%9A%B0%EC%9C%A1%EB%A9%B4%20%28%ED%83%80%EC%9D%B4%EB%B2%A0%EC%9D%B4%29%20%EA%B8%88%EC%B6%98%EB%B0%9C%EC%9A%B0%EC%9C%A1%EB%A9%B4",
+        "orderTipHttpStatus": 200,
+        "youtuberVideoUrl": "https://www.youtube.com/watch?v=s4UXfjhIj3k",
+        "youtuberVideoHttpStatus": 200,
+        "status": "PASS"
+      }
+    ]
+  }
+}
