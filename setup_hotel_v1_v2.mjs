@@ -1,0 +1,316 @@
+import fs from 'fs';
+
+console.log('=== Step 1: Processing hotel/v1.html ===');
+let v1Html = fs.readFileSync('c:/cowork/taiwan/hotel/index.html', 'utf8');
+
+const v1TopNav = `
+  <!-- 상단 네비게이션 헤더 -->
+  <nav class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur-md border-b border-slate-800 text-white px-4 py-2.5 shadow-lg mb-6">
+    <div class="max-w-[1520px] mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <a href="../index.html" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 text-xs font-bold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-house"></i> <span>메인 허브 (음식·일정·숙소)</span>
+        </a>
+        <div class="flex items-center gap-2">
+          <span class="px-2.5 py-1 rounded-md text-xs font-black bg-indigo-600 text-white flex items-center gap-1">
+            <i class="fa-solid fa-hotel"></i> v1 럭셔리 50선
+          </span>
+          <span class="text-xs text-slate-400 hidden md:inline">5성급·프리미엄 전체 추천순 상위 50개 호텔</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-2">
+        <a href="index.html" class="px-3.5 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black text-xs shadow-md shadow-amber-500/20 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-fire"></i> <span>v2 가성비(10k~15k 마일) 50선 보기 &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+`;
+
+// Insert nav in v1
+if (!v1Html.includes('v2 가성비(10k~15k 마일) 50선 보기')) {
+  v1Html = v1Html.replace(/<body([^>]*)>/i, '<body$1>\n' + v1TopNav);
+}
+fs.writeFileSync('c:/cowork/taiwan/hotel/v1.html', v1Html, 'utf8');
+console.log('Saved hotel/v1.html!');
+
+
+console.log('\n=== Step 2: Processing hotel/v2.html & hotel/index.html ===');
+let v2Html = fs.readFileSync('c:/cowork/taiwan/hotel/taiwan-hotel_v2.html', 'utf8');
+
+// Update header buttons in v2 to link to ../index.html and v1.html
+const v2NavReplacement = `
+      <div class="flex items-center gap-2 text-xs">
+        <a href="../index.html" class="px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white border border-slate-700 font-bold transition flex items-center gap-1.5">
+          <i class="fa-solid fa-house"></i> <span class="hidden sm:inline">메인 허브</span>
+        </a>
+        <a href="v1.html" class="px-3 py-1.5 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white border border-indigo-500 font-black transition flex items-center gap-1.5 shadow-sm">
+          <i class="fa-solid fa-gem"></i> <span>v1 럭셔리 50선 보기 &rarr;</span>
+        </a>
+      </div>
+`;
+
+v2Html = v2Html.replace(/<div class="flex items-center gap-2 text-xs">[\s\S]*?<\/div>\s*<\/div>\s*<\/header>/, v2NavReplacement + '    </div>\n  </header>');
+
+// Save as both v2.html and index.html so entering hotel/ directly opens v2!
+fs.writeFileSync('c:/cowork/taiwan/hotel/v2.html', v2Html, 'utf8');
+fs.writeFileSync('c:/cowork/taiwan/hotel/index.html', v2Html, 'utf8');
+console.log('Saved hotel/v2.html and hotel/index.html (default v2 view)!');
+
+
+console.log('\n=== Step 3: Updating root index.html to 3-card hub ===');
+const rootHtml = `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>대만 타이베이 여행 & 미식 & 숙소 종합 가이드 | Taiwan Travel Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card-bg: #1e293b;
+      --card-border: #334155;
+      --primary: #f59e0b;
+      --primary-hover: #d97706;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: radial-gradient(circle at 50% 15%, #1e293b 0%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .container {
+      max-width: 1140px;
+      width: 100%;
+      text-align: center;
+    }
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 158, 11, 0.15);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 6px 16px;
+      border-radius: 9999px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.6rem;
+      font-weight: 800;
+      margin-bottom: 14px;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff 40%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      font-size: 1.1rem;
+      margin-bottom: 44px;
+      line-height: 1.6;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      text-align: left;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 20px;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      color: inherit;
+      position: relative;
+      overflow: hidden;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: var(--primary);
+      box-shadow: 0 20px 35px -10px rgba(245, 158, 11, 0.25);
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+    .card-icon {
+      font-size: 2.4rem;
+    }
+    .card-version-badge {
+      font-size: 0.75rem;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      background: rgba(245, 158, 11, 0.2);
+      color: #fbbf24;
+      border: 1px solid rgba(245, 158, 11, 0.4);
+    }
+    .card h2 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: #fff;
+      line-height: 1.35;
+    }
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 22px;
+      flex-grow: 1;
+    }
+    .card-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 22px;
+    }
+    .card-tag {
+      background: #0f172a;
+      border: 1px solid #334155;
+      padding: 4px 10px;
+      border-radius: 6px;
+      font-size: 0.78rem;
+      color: #cbd5e1;
+      font-weight: 500;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 20px;
+      background: var(--primary);
+      color: #0f172a;
+      font-weight: 800;
+      font-size: 0.95rem;
+      border-radius: 12px;
+      text-align: center;
+      transition: background 0.2s ease, transform 0.15s ease;
+      text-decoration: none;
+    }
+    .card:hover .btn {
+      background: var(--primary-hover);
+      color: #ffffff;
+    }
+    .footer {
+      margin-top: 55px;
+      color: var(--text-muted);
+      font-size: 0.88rem;
+    }
+    .footer a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="badge">
+      <i class="fa-solid fa-compass"></i> Taiwan Travel & Gourmet & Stay Hub
+    </div>
+    <h1>대만 타이베이 여행 · 미식 · 숙소 종합 가이드</h1>
+    <p class="subtitle">
+      멀티 에이전트 교차 검증 시스템으로 완성된 3박 4일 일정표,<br>
+      구글 지도 실데이터 15대 미식 가이드, 그리고 에미레이트 리워드 50대 숙소 분석 대시보드입니다.
+    </p>
+    
+    <div class="grid">
+      <!-- Card 1: Food Guide -->
+      <a href="food/index.html" class="card">
+        <div>
+          <div class="card-top">
+            <div class="card-icon">🍽️</div>
+            <span class="card-version-badge">15대 맛집</span>
+          </div>
+          <h2>대만 15대 미식 & 레스토랑 지도 가이드</h2>
+          <p>시간대별 식문화(아침/점심/저녁/야식) 대표 맛집 12곳 + 미슐랭 3곳 완벽 분석. 실시간 인터랙티브 지도, 실제 구글 리뷰 5선(부정 2선 포함), 추천 메뉴 및 지하철 경로 안내.</p>
+          <div class="card-tags">
+            <span class="card-tag">인터랙티브 지도</span>
+            <span class="card-tag">구글 리뷰 실검증</span>
+            <span class="card-tag">My Maps CSV/KML</span>
+            <span class="card-tag">미슐랭 3스타</span>
+          </div>
+        </div>
+        <div class="btn">미식 가이드 열기 &rarr;</div>
+      </a>
+
+      <!-- Card 2: Travel Itinerary Dashboard -->
+      <a href="trip_plan/taipei_3n4d_dashboard_v3.html" class="card">
+        <div>
+          <div class="card-top">
+            <div class="card-icon">🗺️</div>
+            <span class="card-version-badge">3박 4일 동선</span>
+          </div>
+          <h2>타이베이 3박 4일 여행 일정 대시보드</h2>
+          <p>동선(Route), 영업시간/휴무일(Spot), 예산(Budget) 에이전트 간의 교차 검증 루프를 통해 완성된 최적의 3박 4일 여행 타임라인과 기념품 쇼핑 가이드.</p>
+          <div class="card-tags">
+            <span class="card-tag">3박 4일 일정표</span>
+            <span class="card-tag">MRT 동선 최적화</span>
+            <span class="card-tag">예산 감사 리포트</span>
+            <span class="card-tag">기념품 쇼핑</span>
+          </div>
+        </div>
+        <div class="btn">여행 일정표 열기 &rarr;</div>
+      </a>
+
+      <!-- Card 3: Hotel Dashboard (v2 Default with v1 Link) -->
+      <a href="hotel/index.html" class="card">
+        <div>
+          <div class="card-top">
+            <div class="card-icon">🏨</div>
+            <span class="card-version-badge" style="background: rgba(16, 185, 129, 0.2); color: #34d399; border-color: rgba(16, 185, 129, 0.4);">
+              v2 가성비 50선 (기본)
+            </span>
+          </div>
+          <h2>에미레이트 리워드 타이베이 숙소 가이드</h2>
+          <p>1박당 10,000~15,000 마일 가성비 구간 50선(v2 기본)과 5성급 럭셔리 50선(v1) 교차 분석. 실제 구글 지도 좌표 100% 매핑, 마일당 원화 가치 산출, AI 장단점 및 실리뷰 8선 완비.</p>
+          <div class="card-tags">
+            <span class="card-tag">10k~15k 마일 가성비(v2)</span>
+            <span class="card-tag">5성급 럭셔리(v1)</span>
+            <span class="card-tag">마일당 원화 가치</span>
+            <span class="card-tag">구글 지도 실좌표</span>
+          </div>
+        </div>
+        <div class="btn" style="background: linear-gradient(135deg, #10b981, #059669); color: white;">
+          숙소 가이드 열기 (v2) &rarr;
+        </div>
+      </a>
+    </div>
+
+    <div class="footer">
+      <p>Source Code & Datasets available on <a href="https://github.com/holnuwld/taiwan-food" target="_blank">GitHub Repository (taiwan-food)</a></p>
+    </div>
+  </div>
+</body>
+</html>
+`;
+
+fs.writeFileSync('c:/cowork/taiwan/index.html', rootHtml, 'utf8');
+console.log('Saved c:/cowork/taiwan/index.html with 3 cards (Food, Plan, Hotel)!');
