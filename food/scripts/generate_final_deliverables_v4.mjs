@@ -204,8 +204,11 @@ export function runDeliverablesGenerationV4() {
     .tip-box-yt b { color: #b45309; }
     .source-link { color: #2563eb; font-weight: 700; text-decoration: underline; margin-left: 4px; font-size: 0.7rem; }
 
-    .card-footer-link { margin-top: auto; padding-top: 6px; border-top: 1px solid #f1f5f9; text-align: center; }
+    .card-footer-link { margin-top: auto; padding-top: 6px; border-top: 1px solid #f1f5f9; text-align: center; display: flex; flex-direction: column; gap: 4px; }
     .card-footer-link a { color: #2563eb; font-weight: 700; font-size: 0.76rem; text-decoration: none; }
+    .btn-focus-map { padding: 5px 8px; background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; border-radius: 4px; font-weight: 700; font-size: 0.74rem; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .btn-focus-map:hover { background: #dbeafe; color: #1e40af; }
+    .custom-map-pin, .custom-m-pin { display: flex !important; align-items: center; justify-content: center; background: transparent !important; border: none !important; }
 
     /* Spreadsheet Viewer Section */
     .spreadsheet-section { background: white; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid var(--border); padding: 24px; margin-top: 30px; }
@@ -429,13 +432,14 @@ export function runDeliverablesGenerationV4() {
     const RAW_TIMELINES = ${JSON.stringify(rawTimelines)};
 
     // 1. Initialize Leaflet Map (Using Esri World Street Map - No API Key Needed)
-    const map = L.map('map').setView([25.042, 121.525], 13);
+    const map = L.map('map').setView([25.045, 121.525], 13);
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; High Precision Coordinates',
       maxZoom: 18
     }).addTo(map);
 
     const markers = [];
+    const markerGroup = L.featureGroup();
 
     // Populate Sidebar Ranking
     const rankingContainer = document.getElementById('rankingList');
@@ -456,27 +460,54 @@ export function runDeliverablesGenerationV4() {
         <div class="rank-count">\${r.mention_count || 10}회</div>
       \`;
       item.onclick = () => {
-        map.flyTo([r.lat, r.lng], 16, { animate: true });
-        markers[idx].openPopup();
+        focusOnMap(r.rank);
       };
       rankingContainer.appendChild(item);
     });
 
-    // Add Markers to Map
+    // Add Markers to Map with Number Badges
     RESTAURANTS.forEach((r, idx) => {
-      const marker = L.marker([r.lat, r.lng]).addTo(map);
+      const pinColor = idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
+      const customIcon = L.divIcon({
+        className: 'custom-map-pin',
+        html: \`<div style="background:\${pinColor}; color:#ffffff; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; border:2.5px solid #ffffff; box-shadow:0 3px 8px rgba(0,0,0,0.35); text-shadow:0 1px 2px rgba(0,0,0,0.4); cursor:pointer;">\${r.rank}</div>\`,
+        iconSize: [30, 30],
+        iconAnchor: [15, 15],
+        popupAnchor: [0, -15]
+      });
+
+      const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(map);
       marker.bindPopup(\`
-        <div style="font-family: Pretendard, sans-serif; font-size: 0.85rem; max-width: 250px;">
-          <img src="\${r.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 6px;" />
-          <h4 style="margin: 0 0 4px; color: #d90429;">#\${r.rank} \${r.name_ko}</h4>
-          <p style="margin: 0 0 4px; color: #64748b; font-size: 0.75rem;">\${r.name_zh}</p>
-          <p style="margin: 0 0 4px;">⭐️ 평점 \${r.rating} | \${r.cuisine}</p>
-          <p style="margin: 0 0 6px; font-size: 0.75rem; color: #334155;">\${r.one_line_desc}</p>
-          <a href="https://www.google.com/maps/search/?api=1&query=\${encodeURIComponent(r.name_ko + ' ' + r.address)}" target="_blank" style="color: #2563eb; font-weight: bold; text-decoration: none;">🗺️ Google 지도 공식 앱으로 열기 →</a>
+        <div style="font-family: Pretendard, -apple-system, sans-serif; font-size: 0.84rem; max-width: 270px; line-height: 1.45;">
+          <img src="\${r.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" />
+          <h4 style="margin: 0 0 2px; color: #d90429; font-size: 0.96rem;">#\${r.rank} \${r.name_ko}</h4>
+          <p style="margin: 0 0 4px; color: #64748b; font-size: 0.74rem;">\${r.name_zh}</p>
+          <p style="margin: 0 0 4px; font-size: 0.76rem;">⭐️ <b>평점:</b> \${r.rating} | <b>분류:</b> \${r.cuisine}</p>
+          <p style="margin: 0 0 4px; font-size: 0.76rem;">📍 <b>위치:</b> \${r.district}</p>
+          <p style="margin: 0 0 4px; font-size: 0.76rem;">🚇 <b>교통:</b> \${r.mrt}</p>
+          <p style="margin: 0 0 4px; font-size: 0.76rem;">🍲 <b>대표메뉴:</b> \${r.menu}</p>
+          <p style="margin: 0 0 6px; font-size: 0.74rem; color: #065f46; background: #ecfdf5; padding: 6px 8px; border-radius: 4px; border: 1px solid #a7f3d0;">👥 <b>2인 추천:</b> \${r.order_tip_2p}</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=\${encodeURIComponent(r.name_ko + ' ' + r.address)}" target="_blank" style="display: block; text-align: center; background: #2563eb; color: #ffffff; padding: 6px 10px; border-radius: 4px; font-weight: 700; text-decoration: none; font-size: 0.78rem;">🗺️ Google 지도 공식 앱으로 열기 →</a>
         </div>
       \`);
       markers.push(marker);
+      markerGroup.addLayer(marker);
     });
+
+    // Auto fit bounds to enclose all 40 spots comfortably
+    if (markers.length > 0) {
+      map.fitBounds(markerGroup.getBounds().pad(0.08));
+    }
+
+    function focusOnMap(rank) {
+      const idx = rank - 1;
+      const r = RESTAURANTS[idx];
+      if (r && markers[idx]) {
+        map.flyTo([r.lat, r.lng], 16, { animate: true });
+        markers[idx].openPopup();
+        document.getElementById('map').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }
 
     // Render Cards (4 Cards Per Row with Photos, 2P Tip, YouTuber Tip)
     const grid = document.getElementById('restaurantGrid');
@@ -521,6 +552,7 @@ export function runDeliverablesGenerationV4() {
               <a href="\${r.youtuber_tip_video_url}" target="_blank" class="source-link">[영상원문]</a>
             </div>
             <div class="card-footer-link">
+              <button onclick="focusOnMap(\${r.rank})" class="btn-focus-map">📍 지도에서 위치 확인</button>
               <a href="https://www.google.com/maps/search/?api=1&query=\${encodeURIComponent(r.name_ko + ' ' + r.address)}" target="_blank">🗺️ Google 지도 보기 →</a>
             </div>
           </div>
@@ -782,19 +814,50 @@ export function runDeliverablesGenerationV4() {
     });
 
     // Mobile Map
-    const mMap = L.map('mobileMap').setView([25.042, 121.525], 13);
+    const mMap = L.map('mobileMap').setView([25.045, 121.525], 13);
     L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
       attribution: 'Tiles &copy; Esri &mdash; High Precision Coordinates',
       maxZoom: 18
     }).addTo(mMap);
 
+    const mMarkerGroup = L.featureGroup();
     const mMapList = document.getElementById('mMapList');
-    RESTAURANTS.forEach(r => {
-      const marker = L.marker([r.lat, r.lng]).addTo(mMap);
-      marker.bindPopup(\`<b>#\${r.rank} \${r.name_ko}</b><br><span style="font-size:0.75rem;">\${r.menu}</span>\`);
+    const mMarkers = [];
+
+    RESTAURANTS.forEach((r, idx) => {
+      const pinColor = idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
+      const customIcon = L.divIcon({
+        className: 'custom-m-pin',
+        html: \`<div style="background:\${pinColor}; color:#ffffff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:11px; border:2px solid #ffffff; box-shadow:0 2px 6px rgba(0,0,0,0.35); text-shadow:0 1px 2px rgba(0,0,0,0.4); cursor:pointer;">\${r.rank}</div>\`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14],
+        popupAnchor: [0, -14]
+      });
+
+      const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(mMap);
+      marker.bindPopup(\`
+        <div style="font-family: Pretendard, sans-serif; font-size: 0.8rem; max-width: 230px; line-height: 1.4;">
+          <h4 style="margin: 0 0 2px; color: #d90429;">#\${r.rank} \${r.name_ko}</h4>
+          <p style="margin: 0 0 3px; color: #64748b; font-size: 0.7rem;">\${r.name_zh}</p>
+          <p style="margin: 0 0 3px; font-size: 0.74rem;">📍 \${r.district}</p>
+          <p style="margin: 0 0 3px; font-size: 0.74rem;">🚇 \${r.mrt}</p>
+          <p style="margin: 0 0 3px; font-size: 0.74rem;">🍲 \${r.menu}</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=\${encodeURIComponent(r.name_ko + ' ' + r.address)}" target="_blank" style="display:block; text-align:center; background:#2563eb; color:#fff; padding:5px; border-radius:4px; font-weight:bold; font-size:0.75rem; text-decoration:none; margin-top:5px;">🗺️ Google 지도 앱으로 열기</a>
+        </div>
+      \`);
+      mMarkers.push(marker);
+      mMarkerGroup.addLayer(marker);
+
       const row = document.createElement('div');
-      row.style.cssText = 'padding: 8px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; font-size: 0.82rem; cursor: pointer;';
-      row.innerHTML = \`<span><b>#\${r.rank}</b> \${r.name_ko}</span><span style="color:#ef233c; font-weight:bold;">\${r.mention_count || 10}회</span>\`;
+      row.style.cssText = 'padding: 8px 10px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; cursor: pointer;';
+      row.innerHTML = \`
+        <div>
+          <span style="font-weight: 800; color: \${pinColor}; margin-right: 6px;">#\${r.rank}</span>
+          <span style="font-weight: 700;">\${r.name_ko}</span>
+          <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">\${r.district} · \${r.cuisine}</div>
+        </div>
+        <span style="color:#ef233c; font-weight:bold; font-size:0.78rem;">\${r.mention_count || 10}회</span>
+      \`;
       row.onclick = () => {
         mMap.flyTo([r.lat, r.lng], 16);
         marker.openPopup();
@@ -802,6 +865,10 @@ export function runDeliverablesGenerationV4() {
       };
       mMapList.appendChild(row);
     });
+
+    if (mMarkers.length > 0) {
+      mMap.fitBounds(mMarkerGroup.getBounds().pad(0.08));
+    }
 
     // Timeline List
     const tlContainer = document.getElementById('mTimelineList');

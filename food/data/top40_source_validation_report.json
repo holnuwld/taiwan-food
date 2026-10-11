@@ -14,7 +14,7 @@
     {
       "rank": 1,
       "id": "행복당",
-      "name_ko": "행복당 (싱푸탕)",
+      "name_ko": "행복당 본점 (싱푸탕)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -44,7 +44,7 @@
     {
       "rank": 3,
       "id": "딘타이펑",
-      "name_ko": "딘타이펑 본점 / 101점",
+      "name_ko": "딘타이펑 신의본점",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -89,7 +89,7 @@
     {
       "rank": 6,
       "id": "용허또우장",
-      "name_ko": "용허또우장 (시먼딩 심야/조식)",
+      "name_ko": "용허또우장 다안점 (24시)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -164,7 +164,7 @@
     {
       "rank": 11,
       "id": "삼미식당",
-      "name_ko": "삼미식당 (시먼딩 명물)",
+      "name_ko": "삼미식당 (대왕연어초밥)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -239,7 +239,7 @@
     {
       "rank": 16,
       "id": "스무시하우스",
-      "name_ko": "스무시 하우스 (융캉제)",
+      "name_ko": "스무시 하우스 본관 (융캉제)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -269,7 +269,7 @@
     {
       "rank": 18,
       "id": "신마라훠궈",
-      "name_ko": "신마라 훠궈 클래식 (시먼딩)",
+      "name_ko": "신마라 훠궈 클래식 (시먼딩점)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -284,7 +284,7 @@
     {
       "rank": 19,
       "id": "핫스타지파이",
-      "name_ko": "핫스타 지파이 (스린 야시장)",
+      "name_ko": "핫스타 지파이 (스린 야시장 본점)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -299,7 +299,7 @@
     {
       "rank": 20,
       "id": "라뜰리에루터스",
-      "name_ko": "라뜰리에 루터스 (오픈런 필수)",
+      "name_ko": "라뜰리에 루터스 (누가크래커)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -314,7 +314,7 @@
     {
       "rank": 21,
       "id": "춘수당",
-      "name_ko": "춘수당 중정기념당점 (버블티 원조)",
+      "name_ko": "춘수당 (중정기념당점)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -329,7 +329,7 @@
     {
       "rank": 22,
       "id": "항주소룡탕포",
-      "name_ko": "항주소룡탕포",
+      "name_ko": "항주소룡탕포 본점 (미슐랭 빕구르망)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -344,7 +344,7 @@
     {
       "rank": 23,
       "id": "황지루로우판",
-      "name_ko": "황지 루로우판",
+      "name_ko": "황지 루로우판 (미슐랭 빕구르망)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -359,7 +359,7 @@
     {
       "rank": 24,
       "id": "진펑루로우판",
-      "name_ko": "진펑 루로우판",
+      "name_ko": "진펑 루로우판 (난먼시장 3대장)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -374,7 +374,7 @@
     {
       "rank": 25,
       "id": "양산박샤오롱바오",
-      "name_ko": "양산박 샤오롱바오",
+      "name_ko": "양산박 샤오롱바오 (시먼딩 가성비)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -389,7 +389,7 @@
     {
       "rank": 26,
       "id": "왕스브로스",
-      "name_ko": "왕스브로스 (소왕자과)",
+      "name_ko": "왕스브로스 소왕자과 (흑금 루로우판)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -404,7 +404,7 @@
     {
       "rank": 27,
       "id": "호공도금계원",
-      "name_ko": "호공도 금계원",
+      "name_ko": "호공도 금계원 (50년 전통 딤섬)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -419,7 +419,7 @@
     {
       "rank": 28,
       "id": "하오지수교",
-      "name_ko": "하오지 수교 전문점",
+      "name_ko": "하오지 수교 전문점 (타이베이역)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -434,7 +434,7 @@
     {
       "rank": 29,
       "id": "임동방우육면",
-      "name_ko": "린동팡 우육면",
+      "name_ko": "임동방 우육면 (린동팡 심야)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -449,7 +449,7 @@
     {
       "rank": 30,
       "id": "금춘발우육면",
-      "name_ko": "금춘발 우육면",
+      "name_ko": "금춘발 우육면 본점 (128년 전통)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -464,7 +464,7 @@
     {
       "rank": 31,
       "id": "서문면점",
-      "name_ko": "서문면점",
+      "name_ko": "서문면점 (시먼딩 60년 노포)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -479,7 +479,7 @@
     {
       "rank": 32,
       "id": "삼형매빙수",
-      "name_ko": "삼형매 빙수",
+      "name_ko": "삼형매 빙수 (시먼딩 망고눈꽃)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -494,7 +494,7 @@
     {
       "rank": 33,
       "id": "시먼딩지파이",
-      "name_ko": "180도 지파이 (시먼딩)",
+      "name_ko": "180도C 지파이 (시먼딩 꿀간장)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -509,7 +509,7 @@
     {
       "rank": 34,
       "id": "핀셴생맹활해선",
-      "name_ko": "핀셴 생맹활해선 (100원 러차오)",
+      "name_ko": "핀셴 생맹해선 (100NTD 러차오)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -524,7 +524,7 @@
     {
       "rank": 35,
       "id": "원팡꽈바오",
-      "name_ko": "원팡 꽈바오",
+      "name_ko": "원팡 꽈바오 (미슐랭 빕구르망)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -539,7 +539,7 @@
     {
       "rank": 36,
       "id": "원조호교병",
-      "name_ko": "원조 복주 후추빵 (후자오빙)",
+      "name_ko": "후쿠주 원조 후추빵 (라오허제 본점)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -554,7 +554,7 @@
     {
       "rank": 37,
       "id": "사해두장",
-      "name_ko": "사해또우장",
+      "name_ko": "사해두장 대왕 (중산 로컬 조식)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -569,7 +569,7 @@
     {
       "rank": 38,
       "id": "치엔두훠궈",
-      "name_ko": "치엔두 1인 훠궈",
+      "name_ko": "치엔두 훠궈 (지린점 1인 샤브)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -584,7 +584,7 @@
     {
       "rank": 39,
       "id": "대만망고빙수녹점",
-      "name_ko": "녹점 생망고빙수 (닝샤 야시장)",
+      "name_ko": "녹두산사미 (망고 녹두빙수)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,
@@ -599,7 +599,7 @@
     {
       "rank": 40,
       "id": "미미크래커",
-      "name_ko": "미미 누가크래커 (동먼)",
+      "name_ko": "미미 크래커 (누가크래커 원조)",
       "checks": {
         "imageUrl": true,
         "imageSourceUrl": true,

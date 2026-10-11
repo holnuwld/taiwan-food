@@ -1,8 +1,8 @@
 {
-  "totalVerifications": 3,
-  "passCount": 3,
+  "totalVerifications": 4,
+  "passCount": 4,
   "overallStatus": "PASS",
-  "verifiedAt": "2026-10-07T14:56:03.674Z",
+  "verifiedAt": "2026-10-11T12:56:54.154Z",
   "verifications": [
     {
       "verificationId": 1,
@@ -30,6 +30,17 @@
       "expected": "모바일 버전에서도 동일하게 Esri World Street Map 적용으로 모바일 구글맵 API 에러 원천 방지",
       "actual": {
         "esriMobilePresent": true
+      },
+      "status": "PASS"
+    },
+    {
+      "verificationId": 4,
+      "title": "40곳 맛집 실측 좌표 및 권역별 현실적 지리 분포 검증 (인위적 대각선 더미 0건)",
+      "expected": "40개 식당 전수 고유 좌표 보유, 타이베이 주요 8개 권역 정상 분산, 일직선 더미 배제",
+      "actual": {
+        "distinctCoordsCount": 40,
+        "inTaipeiBounds": true,
+        "noDiagonalDummy": true
       },
       "status": "PASS"
     }

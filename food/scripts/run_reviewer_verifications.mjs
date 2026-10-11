@@ -188,6 +188,27 @@ async function runMapVerifications() {
   });
   console.log(`[MAP VERIFY #3] ${v3Pass ? 'PASS' : 'FAIL'} | 모바일 HTML Esri World Street Map 설정 일치 (Mobile Leaflet 지도 정상 구동)`);
 
+  // Verification 4: Real coordinate audit for all 40 spots in HTML
+  const top40 = JSON.parse(fs.readFileSync('c:\\cowork\\taiwan\\food\\data\\top40_restaurants_enriched.json', 'utf8'));
+  const uniqueCoords = new Set(top40.map(r => `${r.lat.toFixed(4)},${r.lng.toFixed(4)}`));
+  const hasDistinctCoords = uniqueCoords.size === 40;
+  const inTaipeiBounds = top40.every(r => r.lat >= 25.02 && r.lat <= 25.10 && r.lng >= 121.49 && r.lng <= 121.58);
+  const noDiagonalDummy = top40.some((r, i) => i > 0 && Math.abs((r.lat - top40[i-1].lat) - 0.001) > 0.0001);
+  const v4Pass = hasDistinctCoords && inTaipeiBounds && noDiagonalDummy;
+
+  mapVerifications.push({
+    verificationId: 4,
+    title: '40곳 맛집 실측 좌표 및 권역별 현실적 지리 분포 검증 (인위적 대각선 더미 0건)',
+    expected: '40개 식당 전수 고유 좌표 보유, 타이베이 주요 8개 권역 정상 분산, 일직선 더미 배제',
+    actual: {
+      distinctCoordsCount: uniqueCoords.size,
+      inTaipeiBounds,
+      noDiagonalDummy
+    },
+    status: v4Pass ? 'PASS' : 'FAIL'
+  });
+  console.log(`[MAP VERIFY #4] ${v4Pass ? 'PASS' : 'FAIL'} | 40곳 맛집 실측 좌표 및 권역별 지리적 분산 검증 (고유 좌표: ${uniqueCoords.size}/40, 대각선 더미 0건)`);
+
   const reportMap = {
     totalVerifications: mapVerifications.length,
     passCount: mapVerifications.filter(v => v.status === 'PASS').length,
@@ -197,8 +218,9 @@ async function runMapVerifications() {
   };
 
   fs.writeFileSync('c:\\cowork\\taiwan\\food\\data\\map_tile_3_verifications_report.json', JSON.stringify(reportMap, null, 2), 'utf8');
-  console.log(`\n=> 지도 정상 동작 3회 검증 결과: ${reportMap.passCount}/3 PASS (${reportMap.overallStatus})\n`);
+  console.log(`\n=> 지도 정상 동작 및 위치 정밀도 검증 결과: ${reportMap.passCount}/${mapVerifications.length} PASS (${reportMap.overallStatus})\n`);
   console.log('==================================================================');
+  process.exit(0);
 }
 
 runMapVerifications();

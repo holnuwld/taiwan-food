@@ -238,15 +238,25 @@ RAW_SPECS = [
    "전자레인지에 딱 10초만 돌려먹으면 누가가 갓 만든 것처럼 부드럽게 치즈처럼 늘어나 3배로 맛있어진다.", "여행가 제이 [Traveler JAY]", "JZ9i9ktNUT4")
 ]
 
+META_FILE = os.path.join(BASE_DIR, "data", "top40_exact_metadata.json")
+with open(META_FILE, "r", encoding="utf-8") as f:
+    exact_metadata = json.load(f)
+
 final_enriched = []
 
 for idx, spec in enumerate(RAW_SPECS):
     r_id, cuisine_tag, photo_key, desc, tip2p, yt_tip, yt_creator, v_suffix = spec
     
-    # Match with known restaurant
+    meta = exact_metadata.get(r_id, {})
+    name_ko = meta.get("name_ko", f"{r_id} (타이베이)")
+    name_zh = meta.get("name_zh", r_id)
+    district = meta.get("district", "타이베이 핵심권역")
+    mrt = meta.get("mrt", "인근 MRT역 도보 5분")
+    address = meta.get("address", f"Taipei City, Taiwan ({name_zh})")
+    lat = meta.get("lat", 25.042)
+    lng = meta.get("lng", 121.515)
+    
     matched_r = next((r for r in KNOWN_RESTAURANTS if r["id"] == r_id), None)
-    name_ko = matched_r["name_ko"] if matched_r else f"{r_id} (타이베이)"
-    name_zh = matched_r["name_zh"] if matched_r else r_id
     menu = matched_r["menu"] if matched_r else "대표 시그니처 메뉴"
     
     # Safe query string for official Google Maps Place Search URL
@@ -264,13 +274,13 @@ for idx, spec in enumerate(RAW_SPECS):
         "rank": idx + 1,
         "name_ko": name_ko,
         "name_zh": name_zh,
-        "district": "타이베이 핵심권역",
-        "mrt": "인근 MRT역 도보 5분",
+        "district": district,
+        "mrt": mrt,
         "cuisine": cuisine_tag,
         "rating": 4.2,
-        "address": f"Taipei City, Taiwan ({name_zh})",
-        "lat": 25.042 + (idx * 0.001),
-        "lng": 121.515 + (idx * 0.001),
+        "address": address,
+        "lat": lat,
+        "lng": lng,
         "menu": menu,
         "one_line_desc": desc,
         "image_url": img_url,

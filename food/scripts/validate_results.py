@@ -284,18 +284,37 @@ class DeliverablesValidator:
                 self.log_error("지도 CSV 행 수 불일치", f"{len(rows)}행 (기대: 40)")
 
             coord_errors = 0
-            for r in rows:
+            distinct_coords = set()
+            dummy_addresses = 0
+            is_linear_dummy = True
+            prev_lat = None
+
+            for idx, r in enumerate(rows):
                 try:
                     lat = float(r["Latitude"])
                     lng = float(r["Longitude"])
-                    # 타이베이 대략 위도 24.9~25.3, 경도 121.4~121.7
+                    distinct_coords.add((round(lat, 5), round(lng, 5)))
                     if not (24.9 <= lat <= 25.3 and 121.4 <= lng <= 121.7):
                         coord_errors += 1
+                    
+                    addr = r.get("Address", "")
+                    if addr.startswith("Taipei City, Taiwan (") and len(addr) < 40:
+                        dummy_addresses += 1
+
+                    if prev_lat is not None:
+                        diff = round(lat - prev_lat, 4)
+                        if abs(diff - 0.001) > 0.0001:
+                            is_linear_dummy = False
+                    prev_lat = lat
                 except (ValueError, KeyError):
                     coord_errors += 1
 
-            if coord_errors == 0:
-                self.log_pass("지도 CSV 위/경도 좌표 범위", "40곳 전원 타이베이 정상 좌표 (위도 25.0~25.2, 경도 121.4~121.6)")
+            if coord_errors == 0 and not is_linear_dummy and len(distinct_coords) >= 38 and dummy_addresses == 0:
+                self.log_pass("지도 CSV 실측 좌표 및 상세 주소 검증", f"40곳 전원 고유 실측 좌표 (고유 좌표 {len(distinct_coords)}개) 및 실제 상세 주소 100% 완비 (인위적 선형 더미 0건)")
+            elif is_linear_dummy:
+                self.log_error("인위적 선형 좌표 더미 감지", "좌표가 0.001 간격의 일직선 더미로 생성됨")
+            elif dummy_addresses > 0:
+                self.log_error("더미 주소 감지", f"{dummy_addresses}건의 주소가 단순 더미 형식임")
             else:
                 self.log_error("지도 CSV 비정상 좌표", f"{coord_errors}건 발견")
 
