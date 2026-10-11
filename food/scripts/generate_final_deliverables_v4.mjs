@@ -431,12 +431,37 @@ export function runDeliverablesGenerationV4() {
     const RESTAURANTS = ${JSON.stringify(enrichedRestaurants)};
     const RAW_TIMELINES = ${JSON.stringify(rawTimelines)};
 
-    // 1. Initialize Leaflet Map (Using Esri World Street Map - No API Key Needed)
+    // 1. Initialize Leaflet Map with Google Maps Layers (API Key Not Required)
     const map = L.map('map').setView([25.045, 121.525], 13);
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-      attribution: 'Tiles &copy; Esri &mdash; High Precision Coordinates',
+
+    // Google Maps Standard (Korean typography)
+    const googleRoadLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=m&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Maps',
+      maxZoom: 20
+    });
+
+    // Google Maps Satellite / Hybrid
+    const googleHybridLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=y&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Maps Satellite',
+      maxZoom: 20
+    });
+
+    // Esri World Street Map (Alternative)
+    const esriLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+      attribution: 'Tiles &copy; Esri World Street Map',
       maxZoom: 18
-    }).addTo(map);
+    });
+
+    // Default to Google Maps Road Layer
+    googleRoadLayer.addTo(map);
+
+    // Layer Switcher Control (Top Right)
+    const baseMaps = {
+      "🗺️ Google 일반 지도": googleRoadLayer,
+      "🛰️ Google 위성 지도": googleHybridLayer,
+      "🌐 Esri 스트리트": esriLayer
+    };
+    L.control.layers(baseMaps, null, { position: 'topright' }).addTo(map);
 
     const markers = [];
     const markerGroup = L.featureGroup();
@@ -815,10 +840,24 @@ export function runDeliverablesGenerationV4() {
 
     // Mobile Map
     const mMap = L.map('mobileMap').setView([25.045, 121.525], 13);
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-      attribution: 'Tiles &copy; Esri &mdash; High Precision Coordinates',
+    const mGoogleRoad = L.tileLayer('https://mt1.google.com/vt/lyrs=m&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Maps',
+      maxZoom: 20
+    });
+    const mGoogleHybrid = L.tileLayer('https://mt1.google.com/vt/lyrs=y&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Satellite',
+      maxZoom: 20
+    });
+    const mEsri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+      attribution: '&copy; Esri',
       maxZoom: 18
-    }).addTo(mMap);
+    });
+    mGoogleRoad.addTo(mMap);
+    L.control.layers({
+      "🗺️ 구글 지도": mGoogleRoad,
+      "🛰️ 구글 위성": mGoogleHybrid,
+      "🌐 Esri": mEsri
+    }, null, { position: 'topright' }).addTo(mMap);
 
     const mMarkerGroup = L.featureGroup();
     const mMapList = document.getElementById('mMapList');

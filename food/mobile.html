@@ -128,10 +128,24 @@
 
     // Mobile Map
     const mMap = L.map('mobileMap').setView([25.045, 121.525], 13);
-    L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
-      attribution: 'Tiles &copy; Esri &mdash; High Precision Coordinates',
+    const mGoogleRoad = L.tileLayer('https://mt1.google.com/vt/lyrs=m&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Maps',
+      maxZoom: 20
+    });
+    const mGoogleHybrid = L.tileLayer('https://mt1.google.com/vt/lyrs=y&hl=ko&x={x}&y={y}&z={z}', {
+      attribution: '&copy; Google Satellite',
+      maxZoom: 20
+    });
+    const mEsri = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}', {
+      attribution: '&copy; Esri',
       maxZoom: 18
-    }).addTo(mMap);
+    });
+    mGoogleRoad.addTo(mMap);
+    L.control.layers({
+      "🗺️ 구글 지도": mGoogleRoad,
+      "🛰️ 구글 위성": mGoogleHybrid,
+      "🌐 Esri": mEsri
+    }, null, { position: 'topright' }).addTo(mMap);
 
     const mMarkerGroup = L.featureGroup();
     const mMapList = document.getElementById('mMapList');
