@@ -24,7 +24,7 @@ export function runDeliverablesGenerationV4() {
   // 1. Generate CSV for Google My Maps (UTF-8 with BOM)
   const csvHeaders = [
     'Rank', 'Name', 'Original_Name', 'District', 'MRT_Access', 'Cuisine_Category',
-    'Google_Rating', 'Address', 'Latitude', 'Longitude', 'Featured_Menus',
+    'Google_Rating', 'Address', 'Latitude', 'Longitude', 'Mention_Count', 'Percentage', 'Featured_Menus',
     'One_Line_Desc', 'Order_Tip_2P', 'Order_Tip_Source_URL', 'YouTuber_Tip',
     'YouTuber_Creator', 'YouTuber_Video_URL', 'Image_URL', 'Image_Source_URL', 'Google_Maps_URL'
   ];
@@ -49,6 +49,8 @@ export function runDeliverablesGenerationV4() {
       escapeCsv(r.address),
       escapeCsv(r.lat),
       escapeCsv(r.lng),
+      escapeCsv(r.mention_count),
+      escapeCsv(r.percentage),
       escapeCsv(r.menu),
       escapeCsv(r.one_line_desc),
       escapeCsv(r.order_tip_2p),
@@ -84,6 +86,7 @@ export function runDeliverablesGenerationV4() {
         <div style="font-family: Arial, sans-serif;">
           <img src="${r.image_url}" style="width: 100%; max-height: 180px; object-fit: cover; border-radius: 8px;" />
           <p><b>[한줄설명]</b> ${r.one_line_desc}</p>
+          <p><b>[유튜브 추천]</b> 🔥 <b>${r.mention_count}회 (${r.percentage})</b></p>
           <p><b>[평점/분류]</b> ⭐ ${r.rating} | ${r.cuisine} | ${r.district}</p>
           <p><b>[대표메뉴]</b> ${r.menu}</p>
           <p><b>[2인 주문추천]</b> ${r.order_tip_2p}</p>
@@ -482,7 +485,7 @@ export function runDeliverablesGenerationV4() {
           <div class="rank-name">\${r.name_ko}</div>
           <div class="rank-sub">\${r.district} · \${r.cuisine}</div>
         </div>
-        <div class="rank-count">\${r.mention_count || 10}회</div>
+        <div class="rank-count">\${r.mention_count}회 <span style="font-size:0.7rem; color:#64748b; font-weight:normal;">(\${r.percentage})</span></div>
       \`;
       item.onclick = () => {
         focusOnMap(r.rank);
@@ -507,6 +510,7 @@ export function runDeliverablesGenerationV4() {
           <img src="\${r.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" />
           <h4 style="margin: 0 0 2px; color: #d90429; font-size: 0.96rem;">#\${r.rank} \${r.name_ko}</h4>
           <p style="margin: 0 0 4px; color: #64748b; font-size: 0.74rem;">\${r.name_zh}</p>
+          <p style="margin: 0 0 4px; font-size: 0.76rem; color: #d90429; font-weight: 700;">🔥 <b>유튜브 추천:</b> \${r.mention_count}회 (\${r.percentage})</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">⭐️ <b>평점:</b> \${r.rating} | <b>분류:</b> \${r.cuisine}</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">📍 <b>위치:</b> \${r.district}</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">🚇 <b>교통:</b> \${r.mrt}</p>
@@ -551,7 +555,7 @@ export function runDeliverablesGenerationV4() {
               <h3>#\${r.rank} \${r.name_ko}</h3>
               <span>\${r.name_zh}</span>
             </div>
-            <div class="pill-mention">🔥 \${r.mention_count || 10}회</div>
+            <div class="pill-mention">🔥 \${r.mention_count}회 (\${r.percentage})</div>
           </div>
           <div class="card-body">
             <div class="desc-box">\${r.one_line_desc}</div>
@@ -816,7 +820,7 @@ export function runDeliverablesGenerationV4() {
               <h3>#\${r.rank} \${r.name_ko}</h3>
               <span style="font-size: 0.72rem; color: #64748b;">\${r.name_zh}</span>
             </div>
-            <span style="color: #ef233c; font-weight: 800; font-size: 0.78rem;">\${r.mention_count || 10}회</span>
+            <span style="color: #ef233c; font-weight: 800; font-size: 0.78rem;">🔥 \${r.mention_count}회 (\${r.percentage})</span>
           </div>
           <div class="m-card-body">
             <div class="m-desc">\${r.one_line_desc}</div>
@@ -878,6 +882,7 @@ export function runDeliverablesGenerationV4() {
         <div style="font-family: Pretendard, sans-serif; font-size: 0.8rem; max-width: 230px; line-height: 1.4;">
           <h4 style="margin: 0 0 2px; color: #d90429;">#\${r.rank} \${r.name_ko}</h4>
           <p style="margin: 0 0 3px; color: #64748b; font-size: 0.7rem;">\${r.name_zh}</p>
+          <p style="margin: 0 0 3px; font-size: 0.74rem; color: #ef233c; font-weight: 700;">🔥 <b>추천:</b> \${r.mention_count}회 (\${r.percentage})</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">📍 \${r.district}</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">🚇 \${r.mrt}</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">🍲 \${r.menu}</p>
@@ -895,7 +900,7 @@ export function runDeliverablesGenerationV4() {
           <span style="font-weight: 700;">\${r.name_ko}</span>
           <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">\${r.district} · \${r.cuisine}</div>
         </div>
-        <span style="color:#ef233c; font-weight:bold; font-size:0.78rem;">\${r.mention_count || 10}회</span>
+        <span style="color:#ef233c; font-weight:bold; font-size:0.78rem;">\${r.mention_count}회 <span style="font-size:0.68rem; font-weight:normal; color:#64748b;">(\${r.percentage})</span></span>
       \`;
       row.onclick = () => {
         mMap.flyTo([r.lat, r.lng], 16);
