@@ -14,7 +14,7 @@ export function runDeliverablesGenerationV4() {
 
   console.log(`Loaded ${masterVideos.length} master videos (Total Views: ${totalViews.toLocaleString()})`);
   console.log(`Loaded ${rawTimelines.length} raw timeline entries (V4 with transcript time mappings).`);
-  console.log(`Loaded ${enrichedRestaurants.length} enriched restaurants (with photos, 2P tips, one-line desc, creator sources).`);
+  console.log(`Loaded ${enrichedRestaurants.length} enriched restaurants (with closures, photos, 2P tips, one-line desc, creator sources).`);
 
   // Unique lists for Dropdowns
   const nationalities = [...new Set(rawTimelines.map(t => t.nationality).filter(Boolean))].sort();
@@ -23,7 +23,7 @@ export function runDeliverablesGenerationV4() {
 
   // 1. Generate CSV for Google My Maps (UTF-8 with BOM)
   const csvHeaders = [
-    'Rank', 'Name', 'Original_Name', 'District', 'MRT_Access', 'Cuisine_Category',
+    'Rank', 'Name', 'Original_Name', 'Status', 'District', 'MRT_Access', 'Cuisine_Category',
     'Google_Rating', 'Address', 'Latitude', 'Longitude', 'Mention_Count', 'Percentage', 'Featured_Menus',
     'One_Line_Desc', 'Order_Tip_2P', 'Order_Tip_Source_URL', 'YouTuber_Tip',
     'YouTuber_Creator', 'YouTuber_Video_URL', 'Image_URL', 'Image_Source_URL', 'Google_Maps_URL'
@@ -38,10 +38,13 @@ export function runDeliverablesGenerationV4() {
   const csvRows = [csvHeaders.join(',')];
   for (const r of enrichedRestaurants) {
     const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name_ko + ' ' + r.address)}`;
+    const displayName = r.is_closed ? `[폐업] ${r.name_ko}` : r.name_ko;
+    const statusText = r.is_closed ? '영구 폐업' : '정상 영업';
     const row = [
       escapeCsv(r.rank),
-      escapeCsv(r.name_ko),
+      escapeCsv(displayName),
       escapeCsv(r.name_zh),
+      escapeCsv(statusText),
       escapeCsv(r.district),
       escapeCsv(r.mrt),
       escapeCsv(r.cuisine),
@@ -74,17 +77,19 @@ export function runDeliverablesGenerationV4() {
   let kml = `<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Document>
-    <name>🇹🇼 타이베이 유튜브 검증 맛집 TOP 40 (사진·2인팁·원문출처 수록)</name>
-    <description>200개 유튜브 영상 전수 분석 및 자막 실측 검증 맛집 40선</description>
+    <name>🇹🇼 타이베이 유튜브 검증 맛집 TOP 40 (사진·2인팁·폐업표시 수록)</name>
+    <description>200개 유튜브 영상 전수 분석 및 자막 실측 검증 맛집 40선 (폐업 매장 표시 완료)</description>
 `;
 
   for (const r of enrichedRestaurants) {
     const gmapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(r.name_ko + ' ' + r.address)}`;
+    const placemarkName = r.is_closed ? `#${r.rank} [폐업] ${r.name_ko} (${r.name_zh})` : `#${r.rank} ${r.name_ko} (${r.name_zh})`;
     kml += `    <Placemark>
-      <name>#${r.rank} ${r.name_ko} (${r.name_zh})</name>
+      <name>${placemarkName}</name>
       <description><![CDATA[
         <div style="font-family: Arial, sans-serif;">
           <img src="${r.image_url}" style="width: 100%; max-height: 180px; object-fit: cover; border-radius: 8px;" />
+          ${r.is_closed ? '<p style="color:red; font-weight:bold;">⚠️ [영구 폐업 매장 - Google 지도 확인: 已歇業]</p>' : ''}
           <p><b>[한줄설명]</b> ${r.one_line_desc}</p>
           <p><b>[유튜브 추천]</b> 🔥 <b>${r.mention_count}회 (${r.percentage})</b></p>
           <p><b>[평점/분류]</b> ⭐ ${r.rating} | ${r.cuisine} | ${r.district}</p>
@@ -107,7 +112,7 @@ export function runDeliverablesGenerationV4() {
   fs.writeFileSync(kmlPath, kml, 'utf8');
   console.log(`Saved KML to ${kmlPath}`);
 
-  // 3. Generate Desktop HTML Dashboard (4 Cards Per Row + Photos + Dual Filters: Dropdown + Text)
+  // 3. Generate Desktop HTML Dashboard (4 Cards Per Row + Photos + Dual Filters: Dropdown + Text + Closed Badge + Reconciled Recommenders)
   const htmlPath = 'c:\\cowork\\taiwan\\food\\youtube_food_guide.html';
   const indexPath = 'c:\\cowork\\taiwan\\food\\index.html';
 
@@ -167,13 +172,36 @@ export function runDeliverablesGenerationV4() {
     .rank-top2 { background: #c0c0c0; color: #383d41; }
     .rank-top3 { background: #cd7f32; color: white; }
     .rank-info { flex: 1; min-width: 0; }
-    .rank-name { font-weight: 700; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .rank-name { font-weight: 700; font-size: 0.88rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; display: flex; align-items: center; }
     .rank-sub { font-size: 0.72rem; color: #64748b; }
     .rank-count { font-weight: 800; font-size: 0.85rem; color: var(--primary); margin-left: 6px; }
 
     .filters { background: white; padding: 14px 18px; border-radius: 10px; box-shadow: var(--shadow); margin-bottom: 22px; display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
     .filters select, .filters input { padding: 8px 12px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.85rem; font-family: inherit; outline: none; }
     .filters input { flex: 1; min-width: 200px; }
+
+    /* Closed Badges & Strikethrough */
+    .badge-closed {
+      background: #ef4444;
+      color: #ffffff;
+      font-size: 0.7rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 800;
+      margin-left: 6px;
+      display: inline-block;
+      vertical-align: middle;
+      letter-spacing: -0.3px;
+      box-shadow: 0 1px 3px rgba(239,68,68,0.4);
+    }
+    .text-closed {
+      text-decoration: line-through !important;
+      color: #94a3b8 !important;
+    }
+    .card.is-closed {
+      border: 1.5px solid #fca5a5;
+      background: #fffafa;
+    }
 
     /* Exactly 4 Cards Per Row on Desktop */
     .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 40px; }
@@ -200,20 +228,51 @@ export function runDeliverablesGenerationV4() {
     .modal-box { background: #ffffff; border-radius: 16px; width: 100%; max-width: 720px; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow: hidden; animation: slideUpModal 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
     @keyframes slideUpModal { from { transform: translateY(20px) scale(0.97); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
     .modal-header { padding: 16px 20px; background: linear-gradient(135deg, #d90429 0%, #ef233c 100%); color: white; display: flex; justify-content: space-between; align-items: center; }
-    .modal-header h3 { font-size: 1.15rem; font-weight: 800; margin: 0; }
-    .modal-header .modal-subtitle { font-size: 0.78rem; opacity: 0.92; font-weight: normal; margin-top: 3px; }
+    .modal-header h3 { font-size: 1.15rem; font-weight: 800; margin: 0; display: flex; align-items: center; }
+    .modal-header .modal-subtitle { font-size: 0.78rem; opacity: 0.95; font-weight: normal; margin-top: 3px; }
     .modal-close-btn { background: rgba(255, 255, 255, 0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
     .modal-close-btn:hover { background: rgba(255, 255, 255, 0.35); }
     .modal-body { padding: 16px 20px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; background: #f8fafc; }
+    
     .modal-video-card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); transition: transform 0.15s, border-color 0.15s; }
     .modal-video-card:hover { transform: translateY(-2px); border-color: #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    
+    /* Unconfirmed Videos Styling (Dimmed, blurred, at bottom) */
+    .modal-video-card.unconfirmed {
+      opacity: 0.52;
+      filter: grayscale(80%);
+      border: 1px dashed #94a3b8;
+      background: #f8fafc;
+      transition: all 0.2s ease;
+    }
+    .modal-video-card.unconfirmed:hover {
+      opacity: 0.95;
+      filter: grayscale(0%);
+    }
+    .badge-unconfirmed {
+      background: #64748b;
+      color: #ffffff;
+      font-size: 0.68rem;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-right: 6px;
+    }
+    .modal-unconfirmed-divider {
+      margin: 18px 0 10px;
+      border-top: 1.5px dashed #cbd5e1;
+      padding-top: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .modal-video-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
     .modal-creator-tag { font-weight: 800; font-size: 0.85rem; color: #1e293b; display: inline-flex; align-items: center; gap: 6px; }
     .modal-video-title { font-size: 0.83rem; font-weight: 600; color: #334155; line-height: 1.4; }
     .modal-video-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 4px; padding-top: 6px; border-top: 1px dashed #f1f5f9; }
     .modal-jump-btn { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; background: #e63946; color: white; font-size: 0.76rem; font-weight: 700; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
     .modal-jump-btn:hover { background: #d90429; }
-
     
     .card-body { padding: 10px 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; font-size: 0.8rem; }
     .desc-box { background: #f8fafc; border-left: 3px solid #3b82f6; padding: 6px 8px; font-size: 0.75rem; color: #334155; line-height: 1.4; border-radius: 0 4px 4px 0; }
@@ -309,9 +368,9 @@ export function runDeliverablesGenerationV4() {
 
     <div class="guide-banner">
       <b>🗺️ 구글 내 지도(Google My Maps) 1초 등록 안내:</b>
-      아래 버튼을 눌러 CSV 또는 KML 파일을 다운로드하신 후, <b>구글 내 지도(My Maps)</b>에 업로드하시면 스마트폰 구글맵 앱에서 바로 꺼내볼 수 있습니다.
+      아래 버튼을 눌러 CSV 또는 KML 파일을 다운로드하신 후, <b>구글 내 지도(My Maps)</b>에 업로드하시면 스마트폰 구글맵 앱에서 바로 꺼내볼 수 있습니다. (폐업 매장 취소선 및 [폐업] 뱃지 반영 완료)
       <div class="download-btns">
-        <a href="taipei_youtube_restaurants_for_google_maps.csv" download class="btn btn-csv">📥 구글지도용 CSV 다운로드 (사진·2인팁 포함)</a>
+        <a href="taipei_youtube_restaurants_for_google_maps.csv" download class="btn btn-csv">📥 구글지도용 CSV 다운로드 (사진·2인팁·폐업표시)</a>
         <a href="taipei_youtube_restaurants_for_google_maps.kml" download class="btn btn-kml">📥 KML 지도 파일 다운로드</a>
         <a href="taipei_youtube_food_timeline_raw.csv" download class="btn btn-csv" style="background: #3b82f6;">📊 8열 RAW 타임라인 CSV 다운로드</a>
       </div>
@@ -330,7 +389,7 @@ export function runDeliverablesGenerationV4() {
     <div style="margin: 25px 0 15px; display: flex; justify-content: space-between; align-items: flex-end;">
       <div>
         <h2 style="font-size: 1.4rem; font-weight: 800;">🍽️ 타이베이 추천 맛집 TOP 40 (카드 4열 뷰)</h2>
-        <p style="font-size: 0.85rem; color: #64748b;">메뉴 사진, 음식 한 줄 설명, 2인 주문 추천, 유튜버 실전 팁 및 원문 출처 하이퍼링크 완비</p>
+        <p style="font-size: 0.85rem; color: #64748b;">메뉴 사진, 음식 한 줄 설명, 2인 주문 추천, 유튜버 실전 팁 및 원문 출처 하이퍼링크 완비 (폐업 매장 취소선 및 [폐업] 뱃지 적용)</p>
       </div>
     </div>
 
@@ -518,10 +577,14 @@ export function runDeliverablesGenerationV4() {
       else if (idx === 1) badgeClass += ' rank-top2';
       else if (idx === 2) badgeClass += ' rank-top3';
 
+      const nameHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
       item.innerHTML = \`
         <div class="\${badgeClass}">\${r.rank}</div>
         <div class="rank-info">
-          <div class="rank-name">\${r.name_ko}</div>
+          <div class="rank-name">\${nameHtml}</div>
           <div class="rank-sub">\${r.district} · \${r.cuisine}</div>
         </div>
         <div class="rank-count clickable" onclick="event.stopPropagation(); openRecommendersModal('\${r.id}');" title="추천 유튜버 및 영상 목록 확인">🔥 \${r.mention_count}회 <span style="font-size:0.7rem; color:#64748b; font-weight:normal;">(\${r.percentage})</span></div>
@@ -534,7 +597,7 @@ export function runDeliverablesGenerationV4() {
 
     // Add Markers to Map with Number Badges
     RESTAURANTS.forEach((r, idx) => {
-      const pinColor = idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
+      const pinColor = r.is_closed ? '#64748b' : idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
       const customIcon = L.divIcon({
         className: 'custom-map-pin',
         html: \`<div style="background:\${pinColor}; color:#ffffff; width:30px; height:30px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:12px; border:2.5px solid #ffffff; box-shadow:0 3px 8px rgba(0,0,0,0.35); text-shadow:0 1px 2px rgba(0,0,0,0.4); cursor:pointer;">\${r.rank}</div>\`,
@@ -543,12 +606,17 @@ export function runDeliverablesGenerationV4() {
         popupAnchor: [0, -15]
       });
 
+      const popupNameHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
       const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(map);
       marker.bindPopup(\`
         <div style="font-family: Pretendard, -apple-system, sans-serif; font-size: 0.84rem; max-width: 270px; line-height: 1.45;">
           <img src="\${r.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" />
-          <h4 style="margin: 0 0 2px; color: #d90429; font-size: 0.96rem;">#\${r.rank} \${r.name_ko}</h4>
+          <h4 style="margin: 0 0 2px; color: #d90429; font-size: 0.96rem;">#\${r.rank} \${popupNameHtml}</h4>
           <p style="margin: 0 0 4px; color: #64748b; font-size: 0.74rem;">\${r.name_zh}</p>
+          \${r.is_closed ? '<div style="color:#ef4444; font-weight:800; font-size:0.75rem; margin-bottom:6px; background:#fee2e2; padding:4px 8px; border-radius:4px;">⚠️ 현재 영구 폐업된 상태입니다 (Google 지도 확인: 已歇業)</div>' : ''}
           <div onclick="openRecommendersModal('\${r.id}')" style="cursor:pointer; margin: 0 0 6px; font-size: 0.76rem; color: #d90429; font-weight: 700; background:#fee2e2; padding:4px 8px; border-radius:6px; display:inline-block;" title="클릭하여 추천 유튜버 및 영상 목록 확인">🔥 <b>유튜브 추천:</b> \${r.mention_count}회 (\${r.percentage}) <span style="text-decoration:underline; font-size:0.7rem;">[영상목록 ↗]</span></div>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">⭐️ <b>평점:</b> \${r.rating} | <b>분류:</b> \${r.cuisine}</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">📍 <b>위치:</b> \${r.district}</p>
@@ -577,13 +645,17 @@ export function runDeliverablesGenerationV4() {
       }
     }
 
-    // Render Cards (4 Cards Per Row with Photos, 2P Tip, YouTuber Tip)
+    // Render Cards (4 Cards Per Row with Photos, 2P Tip, YouTuber Tip, Closed Strikethrough)
     const grid = document.getElementById('restaurantGrid');
     function renderCards(list) {
       grid.innerHTML = '';
       list.forEach((r) => {
         const card = document.createElement('div');
-        card.className = 'card';
+        card.className = 'card' + (r.is_closed ? ' is-closed' : '');
+        const cardTitleHtml = r.is_closed 
+          ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+          : r.name_ko;
+
         card.innerHTML = \`
           <div class="card-img-wrap">
             <img src="\${r.image_url}" alt="\${r.name_ko}" class="card-img" loading="lazy" />
@@ -591,7 +663,7 @@ export function runDeliverablesGenerationV4() {
           </div>
           <div class="card-head">
             <div class="card-title">
-              <h3>#\${r.rank} \${r.name_ko}</h3>
+              <h3>#\${r.rank} \${cardTitleHtml}</h3>
               <span>\${r.name_zh}</span>
             </div>
             <div class="pill-mention" onclick="openRecommendersModal('\${r.id}')" title="클릭하여 추천 유튜버 \${r.mention_count}명 및 영상 확인">🔥 \${r.mention_count}회 (\${r.percentage}) 🔍</div>
@@ -602,6 +674,7 @@ export function runDeliverablesGenerationV4() {
               <span class="badge badge-gold">⭐️ \${r.rating}</span>
               <span class="badge">\${r.cuisine}</span>
               <span class="badge">\${r.district}</span>
+              \${r.is_closed ? '<span class="badge" style="background:#fee2e2; color:#ef4444; font-weight:800;">영구 폐업</span>' : ''}
             </div>
             <div class="card-row">
               <div class="card-label">교통편</div>
@@ -630,43 +703,96 @@ export function runDeliverablesGenerationV4() {
     }
     renderCards(RESTAURANTS);
 
-    // Modal Functions
+    // Modal Functions (Strict 1:1 match for confirmed videos + blurred unconfirmed section at bottom)
     function openRecommendersModal(restaurantId) {
       const r = RESTAURANTS.find(item => item.id === restaurantId || String(item.rank) === String(restaurantId));
       if (!r) return;
 
-      document.getElementById('modalRestaurantTitle').textContent = \`#\${r.rank} \${r.name_ko} (\${r.name_zh})\`;
-      document.getElementById('modalRestaurantSub').textContent = \`🔥 총 \${r.mention_count}회 추천 (\${r.percentage}) · 추천 유튜버 & 타임라인 영상 목록\`;
+      const modalTitleHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
+      document.getElementById('modalRestaurantTitle').innerHTML = \`#\${r.rank} \${modalTitleHtml} (\${r.name_zh})\`;
+
+      const vList = r.recommending_videos || [];
+      const confirmedList = vList.filter(v => !v.is_unconfirmed);
+      const unconfirmedList = vList.filter(v => v.is_unconfirmed);
+
+      document.getElementById('modalRestaurantSub').innerHTML = 
+        \`🔥 <b>공식 추천: \${r.mention_count}회 (\${r.percentage})</b> · 확인된 영상: <b>\${confirmedList.length}편 (1:1 일치)</b>\` +
+        (unconfirmedList.length > 0 ? \` · 미확인 추가 참고: \${unconfirmedList.length}건 (하단 배치)\` : '') +
+        (r.is_closed ? \` · <span style="background:#fee2e2; color:#ef4444; font-weight:800; padding:2px 6px; border-radius:4px;">[영구 폐업 매장]</span>\` : '');
 
       const body = document.getElementById('modalBody');
       body.innerHTML = '';
 
-      const vList = r.recommending_videos || [];
       if (vList.length === 0) {
         body.innerHTML = '<div style="text-align:center; padding:30px; color:#94a3b8;">추천 영상 데이터가 준비 중입니다.</div>';
       } else {
-        vList.forEach((v) => {
-          const card = document.createElement('div');
-          card.className = 'modal-video-card';
-          card.innerHTML = \`
-            <div class="modal-video-meta">
-              <span class="modal-creator-tag">
-                <span class="badge-nationality">\${v.nationality || '한국 🇰🇷'}</span>
-                <b>\${v.channel || '유튜버'}</b>
-              </span>
-              <span style="font-size:0.75rem; color:#64748b; font-weight:600;">조회수 \${v.views || '10만+'}</span>
-            </div>
-            <div class="modal-video-title">\${v.title}</div>
-            <div class="modal-video-footer">
-              <span class="tag-timeline-transcript" style="font-size:0.73rem;">\${v.timeline || '자막 실측'}</span>
-              <div style="display:flex; gap:6px;">
-                <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 해당 시점 바로보기 ↗</a>
-                \${v.raw_url ? \`<a href="\${v.raw_url}" target="_blank" style="font-size:0.73rem; color:#64748b; display:inline-flex; align-items:center; text-decoration:none;">🔗 영상처음</a>\` : ''}
+        // 1. Confirmed Videos Section (Exact 1:1 match with mention_count)
+        if (confirmedList.length > 0) {
+          const confHeader = document.createElement('div');
+          confHeader.style.cssText = 'font-size:0.82rem; font-weight:800; color:#0f172a; margin-bottom:4px; display:flex; align-items:center; gap:6px;';
+          confHeader.innerHTML = \`<span>🔥 공식 확인 추천 영상 (\${confirmedList.length}편 · 추천수 \${r.mention_count}회와 100% 일치)</span>\`;
+          body.appendChild(confHeader);
+
+          confirmedList.forEach((v) => {
+            const card = document.createElement('div');
+            card.className = 'modal-video-card';
+            card.innerHTML = \`
+              <div class="modal-video-meta">
+                <span class="modal-creator-tag">
+                  <span class="badge-nationality">\${v.nationality || '한국 🇰🇷'}</span>
+                  <b>\${v.channel || '유튜버'}</b>
+                </span>
+                <span style="font-size:0.75rem; color:#64748b; font-weight:600;">조회수 \${v.views || '10만+'}</span>
               </div>
-            </div>
+              <div class="modal-video-title">\${v.title}</div>
+              <div class="modal-video-footer">
+                <span class="tag-timeline-transcript" style="font-size:0.73rem;">\${v.timeline || '자막 실측'}</span>
+                <div style="display:flex; gap:6px;">
+                  <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 해당 시점 바로보기 ↗</a>
+                  \${v.raw_url ? \`<a href="\${v.raw_url}" target="_blank" style="font-size:0.73rem; color:#64748b; display:inline-flex; align-items:center; text-decoration:none;">🔗 영상처음</a>\` : ''}
+                </div>
+              </div>
+            \`;
+            body.appendChild(card);
+          });
+        }
+
+        // 2. Unconfirmed Videos Section (Placed at bottom, blurred/dimmed)
+        if (unconfirmedList.length > 0) {
+          const unconfDivider = document.createElement('div');
+          unconfDivider.className = 'modal-unconfirmed-divider';
+          unconfDivider.innerHTML = \`
+            <div style="font-size:0.8rem; font-weight:700; color:#64748b;">🔍 추가 참고 / 미확인 영상 (\${unconfirmedList.length}건)</div>
+            <div style="font-size:0.72rem; color:#94a3b8;">* 키워드 유사 매칭 또는 자막 미검증 항목 (하단 흐림 처리)</div>
           \`;
-          body.appendChild(card);
-        });
+          body.appendChild(unconfDivider);
+
+          unconfirmedList.forEach((v) => {
+            const card = document.createElement('div');
+            card.className = 'modal-video-card unconfirmed';
+            card.innerHTML = \`
+              <div class="modal-video-meta">
+                <span class="modal-creator-tag">
+                  <span class="badge-unconfirmed">[미확인 / 추가 참고]</span>
+                  <span class="badge-nationality">\${v.nationality || '한국 🇰🇷'}</span>
+                  <b>\${v.channel || '유튜버'}</b>
+                </span>
+                <span style="font-size:0.75rem; color:#94a3b8; font-weight:600;">조회수 \${v.views || '10만+'}</span>
+              </div>
+              <div class="modal-video-title" style="color:#64748b;">\${v.title}</div>
+              <div class="modal-video-footer">
+                <span style="font-size:0.72rem; color:#94a3b8; background:#e2e8f0; padding:2px 6px; border-radius:4px;">\${v.timeline || '영상 전체'}</span>
+                <div style="display:flex; gap:6px;">
+                  <a href="\${v.url}" target="_blank" class="modal-jump-btn" style="background:#64748b;">🎬 영상 확인 ↗</a>
+                </div>
+              </div>
+            \`;
+            body.appendChild(card);
+          });
+        }
       }
 
       const modal = document.getElementById('recommendersModal');
@@ -835,13 +961,32 @@ export function runDeliverablesGenerationV4() {
 
     .m-search { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 8px; font-size: 0.88rem; outline: none; margin-bottom: 10px; background: white; }
 
+    /* Closed Badges & Strikethrough */
+    .badge-closed {
+      background: #ef4444;
+      color: #ffffff;
+      font-size: 0.68rem;
+      padding: 2px 5px;
+      border-radius: 4px;
+      font-weight: 800;
+      margin-left: 5px;
+      display: inline-block;
+      vertical-align: middle;
+      letter-spacing: -0.3px;
+    }
+    .text-closed {
+      text-decoration: line-through !important;
+      color: #94a3b8 !important;
+    }
+
     /* Mobile Cards */
     .m-card { background: white; border-radius: 10px; border: 1px solid var(--border); margin-bottom: 12px; overflow: hidden; box-shadow: 0 2px 6px rgba(0,0,0,0.03); }
+    .m-card.is-closed { border: 1.5px solid #fca5a5; background: #fffdfd; }
     .m-card-img-wrap { position: relative; width: 100%; height: 130px; background: #e2e8f0; }
     .m-card-img { width: 100%; height: 100%; object-fit: cover; }
     .m-card-source { position: absolute; bottom: 6px; right: 6px; background: rgba(0,0,0,0.65); color: white; font-size: 0.65rem; padding: 2px 6px; border-radius: 4px; text-decoration: none; }
     .m-card-head { padding: 10px 12px 6px; display: flex; justify-content: space-between; align-items: flex-start; }
-    .m-card-title h3 { font-size: 0.95rem; font-weight: 700; }
+    .m-card-title h3 { font-size: 0.95rem; font-weight: 700; display: flex; align-items: center; }
     .m-card-body { padding: 6px 12px 10px; font-size: 0.8rem; display: flex; flex-direction: column; gap: 5px; }
     .m-desc { background: #f8fafc; border-left: 3px solid #3b82f6; padding: 5px 8px; font-size: 0.74rem; color: #334155; }
     .m-tip-2p { background: #ecfdf5; border: 1px solid #a7f3d0; border-radius: 6px; padding: 6px 8px; font-size: 0.74rem; color: #065f46; }
@@ -861,11 +1006,37 @@ export function runDeliverablesGenerationV4() {
     .modal-box { background: #ffffff; border-radius: 16px 16px 0 0; width: 100%; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); overflow: hidden; animation: slideUpMobile 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
     @keyframes slideUpMobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
     .modal-header { padding: 14px 16px; background: linear-gradient(135deg, #d90429, #ef233c); color: white; display: flex; justify-content: space-between; align-items: center; }
-    .modal-header h3 { font-size: 1rem; font-weight: 800; margin: 0; }
-    .modal-header .modal-subtitle { font-size: 0.73rem; opacity: 0.92; margin-top: 2px; }
+    .modal-header h3 { font-size: 1rem; font-weight: 800; margin: 0; display: flex; align-items: center; }
+    .modal-header .modal-subtitle { font-size: 0.73rem; opacity: 0.95; margin-top: 2px; }
     .modal-close-btn { background: rgba(255, 255, 255, 0.2); border: none; color: white; width: 28px; height: 28px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
     .modal-body { padding: 12px 14px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; background: #f8fafc; }
     .modal-video-card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    
+    /* Unconfirmed styling */
+    .modal-video-card.unconfirmed {
+      opacity: 0.52;
+      filter: grayscale(80%);
+      border: 1px dashed #94a3b8;
+      background: #f8fafc;
+    }
+    .badge-unconfirmed {
+      background: #64748b;
+      color: #ffffff;
+      font-size: 0.65rem;
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-weight: 700;
+      margin-right: 4px;
+    }
+    .modal-unconfirmed-divider {
+      margin: 14px 0 8px;
+      border-top: 1.5px dashed #cbd5e1;
+      padding-top: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
     .modal-video-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; }
     .modal-creator-tag { font-weight: 800; color: #1e293b; display: inline-flex; align-items: center; gap: 5px; }
     .modal-video-title { font-size: 0.78rem; font-weight: 600; color: #334155; line-height: 1.35; }
@@ -929,13 +1100,17 @@ export function runDeliverablesGenerationV4() {
       }
     }
 
-    // Render Cards
+    // Render Cards (Mobile with Closed Strikethrough & [폐업] Badge)
     const mCardList = document.getElementById('mCardList');
     function renderMCards(list) {
       mCardList.innerHTML = '';
       list.forEach(r => {
         const d = document.createElement('div');
-        d.className = 'm-card';
+        d.className = 'm-card' + (r.is_closed ? ' is-closed' : '');
+        const cardTitleHtml = r.is_closed 
+          ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+          : r.name_ko;
+
         d.innerHTML = \`
           <div class="m-card-img-wrap">
             <img src="\${r.image_url}" alt="\${r.name_ko}" class="m-card-img" loading="lazy" />
@@ -943,14 +1118,14 @@ export function runDeliverablesGenerationV4() {
           </div>
           <div class="m-card-head">
             <div class="m-card-title">
-              <h3>#\${r.rank} \${r.name_ko}</h3>
+              <h3>#\${r.rank} \${cardTitleHtml}</h3>
               <span style="font-size: 0.72rem; color: #64748b;">\${r.name_zh}</span>
             </div>
             <span onclick="openRecommendersModal('\${r.id}')" style="color: #ef233c; font-weight: 800; font-size: 0.78rem; cursor: pointer; background: #fee2e2; padding: 2px 7px; border-radius: 8px;">🔥 \${r.mention_count}회 (\${r.percentage}) 🔍</span>
           </div>
           <div class="m-card-body">
             <div class="m-desc">\${r.one_line_desc}</div>
-            <div style="font-size: 0.76rem; color: #64748b;">⭐️ \${r.rating} | \${r.cuisine} | \${r.district}</div>
+            <div style="font-size: 0.76rem; color: #64748b;">⭐️ \${r.rating} | \${r.cuisine} | \${r.district} \${r.is_closed ? ' | <b style=\"color:#ef4444;\">영구 폐업</b>' : ''}</div>
             <div style="font-size: 0.76rem;"><b>대표:</b> \${r.menu}</div>
             <div class="m-tip-2p"><b>👥 2인 팁:</b> \${r.order_tip_2p} <a href="\${r.order_tip_source_url}" target="_blank" style="color:#2563eb;">[원문]</a></div>
             <div class="m-tip-yt"><b>🎬 \${r.youtuber_tip_creator}:</b> \${r.youtuber_tip} <a href="\${r.youtuber_tip_video_url}" target="_blank" style="color:#2563eb;">[영상]</a></div>
@@ -962,40 +1137,91 @@ export function runDeliverablesGenerationV4() {
     }
     renderMCards(RESTAURANTS);
 
-    // Mobile Modal Functions
+    // Mobile Modal Functions (Strict 1:1 match for confirmed videos + blurred unconfirmed section at bottom)
     function openRecommendersModal(restaurantId) {
       const r = RESTAURANTS.find(item => item.id === restaurantId || String(item.rank) === String(restaurantId));
       if (!r) return;
 
-      document.getElementById('modalRestaurantTitle').textContent = \`#\${r.rank} \${r.name_ko} (\${r.name_zh})\`;
-      document.getElementById('modalRestaurantSub').textContent = \`🔥 총 \${r.mention_count}회 추천 (\${r.percentage}) · 추천 유튜버 & 영상\`;
+      const modalTitleHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
+      document.getElementById('modalRestaurantTitle').innerHTML = \`#\${r.rank} \${modalTitleHtml} (\${r.name_zh})\`;
+
+      const vList = r.recommending_videos || [];
+      const confirmedList = vList.filter(v => !v.is_unconfirmed);
+      const unconfirmedList = vList.filter(v => v.is_unconfirmed);
+
+      document.getElementById('modalRestaurantSub').innerHTML = 
+        \`🔥 <b>공식 추천: \${r.mention_count}회</b> · 확인된 영상: <b>\${confirmedList.length}편 (1:1 일치)</b>\` +
+        (unconfirmedList.length > 0 ? \` · 미확인 참고: \${unconfirmedList.length}건\` : '') +
+        (r.is_closed ? \` · <span style="color:#fee2e2; font-weight:bold;">[영구 폐업 매장]</span>\` : '');
 
       const body = document.getElementById('modalBody');
       body.innerHTML = '';
 
-      const vList = r.recommending_videos || [];
       if (vList.length === 0) {
         body.innerHTML = '<div style="text-align:center; padding:25px; color:#94a3b8; font-size:0.8rem;">추천 영상 데이터가 준비 중입니다.</div>';
       } else {
-        vList.forEach((v) => {
-          const card = document.createElement('div');
-          card.className = 'modal-video-card';
-          card.innerHTML = \`
-            <div class="modal-video-meta">
-              <span class="modal-creator-tag">
-                <span style="background:#f1f5f9; padding:1px 5px; border-radius:4px; font-size:0.7rem;">\${v.nationality || '한국 🇰🇷'}</span>
-                <b>\${v.channel || '유튜버'}</b>
-              </span>
-              <span style="font-size:0.72rem; color:#64748b;">\${v.views || '10만+'}</span>
-            </div>
-            <div class="modal-video-title">\${v.title}</div>
-            <div class="modal-video-footer">
-              <span style="background:#dcfce7; color:#166534; font-size:0.7rem; font-weight:700; padding:2px 5px; border-radius:4px;">\${v.timeline || '자막 실측'}</span>
-              <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 영상 바로보기 ↗</a>
-            </div>
+        // 1. Confirmed Videos Section
+        if (confirmedList.length > 0) {
+          const confHeader = document.createElement('div');
+          confHeader.style.cssText = 'font-size:0.78rem; font-weight:800; color:#0f172a; margin-bottom:2px;';
+          confHeader.innerHTML = \`🔥 공식 확인 추천 영상 (\${confirmedList.length}편 · 추천수와 100% 일치)\`;
+          body.appendChild(confHeader);
+
+          confirmedList.forEach((v) => {
+            const card = document.createElement('div');
+            card.className = 'modal-video-card';
+            card.innerHTML = \`
+              <div class="modal-video-meta">
+                <span class="modal-creator-tag">
+                  <span style="background:#f1f5f9; padding:1px 5px; border-radius:4px; font-size:0.7rem;">\${v.nationality || '한국 🇰🇷'}</span>
+                  <b>\${v.channel || '유튜버'}</b>
+                </span>
+                <span style="font-size:0.72rem; color:#64748b;">\${v.views || '10만+'}</span>
+              </div>
+              <div class="modal-video-title">\${v.title}</div>
+              <div class="modal-video-footer">
+                <span style="background:#dcfce7; color:#166534; font-size:0.7rem; font-weight:700; padding:2px 5px; border-radius:4px;">\${v.timeline || '자막 실측'}</span>
+                <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 영상 바로보기 ↗</a>
+              </div>
+            \`;
+            body.appendChild(card);
+          });
+        }
+
+        // 2. Unconfirmed Videos Section (at bottom, blurred/dimmed)
+        if (unconfirmedList.length > 0) {
+          const unconfDivider = document.createElement('div');
+          unconfDivider.className = 'modal-unconfirmed-divider';
+          unconfDivider.innerHTML = \`
+            <div style="font-size:0.76rem; font-weight:700; color:#64748b;">🔍 추가 참고 / 미확인 영상 (\${unconfirmedList.length}건)</div>
+            <div style="font-size:0.68rem; color:#94a3b8;">* 키워드 유사 매칭 (하단 흐림 처리)</div>
           \`;
-          body.appendChild(card);
-        });
+          body.appendChild(unconfDivider);
+
+          unconfirmedList.forEach((v) => {
+            const card = document.createElement('div');
+            card.className = 'modal-video-card unconfirmed';
+            card.innerHTML = \`
+              <div class="modal-video-meta">
+                <span class="modal-creator-tag">
+                  <span class="badge-unconfirmed">[미확인]</span>
+                  <span style="background:#f1f5f9; padding:1px 5px; border-radius:4px; font-size:0.68rem;">\${v.nationality || '한국 🇰🇷'}</span>
+                  <b>\${v.channel || '유튜버'}</b>
+                </span>
+                <span style="font-size:0.7rem; color:#94a3b8;">\${v.views || '10만+'}</span>
+              </div>
+              <div class="modal-video-title" style="color:#64748b;">\${v.title}</div>
+              <div class="modal-video-footer">
+                <span style="background:#e2e8f0; color:#94a3b8; font-size:0.68rem; padding:2px 5px; border-radius:4px;">\${v.timeline || '영상 전체'}</span>
+                <a href="\${v.url}" target="_blank" class="modal-jump-btn" style="background:#64748b;">🎬 영상 확인 ↗</a>
+              </div>
+            \`;
+            body.appendChild(card);
+          });
+        }
       }
 
       const modal = document.getElementById('recommendersModal');
@@ -1046,7 +1272,7 @@ export function runDeliverablesGenerationV4() {
     const mMarkers = [];
 
     RESTAURANTS.forEach((r, idx) => {
-      const pinColor = idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
+      const pinColor = r.is_closed ? '#64748b' : idx < 3 ? '#d90429' : idx < 10 ? '#ea580c' : '#2563eb';
       const customIcon = L.divIcon({
         className: 'custom-m-pin',
         html: \`<div style="background:\${pinColor}; color:#ffffff; width:28px; height:28px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; font-size:11px; border:2px solid #ffffff; box-shadow:0 2px 6px rgba(0,0,0,0.35); text-shadow:0 1px 2px rgba(0,0,0,0.4); cursor:pointer;">\${r.rank}</div>\`,
@@ -1055,11 +1281,16 @@ export function runDeliverablesGenerationV4() {
         popupAnchor: [0, -14]
       });
 
+      const popupNameHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
       const marker = L.marker([r.lat, r.lng], { icon: customIcon }).addTo(mMap);
       marker.bindPopup(\`
         <div style="font-family: Pretendard, sans-serif; font-size: 0.8rem; max-width: 230px; line-height: 1.4;">
-          <h4 style="margin: 0 0 2px; color: #d90429;">#\${r.rank} \${r.name_ko}</h4>
+          <h4 style="margin: 0 0 2px; color: #d90429;">#\${r.rank} \${popupNameHtml}</h4>
           <p style="margin: 0 0 3px; color: #64748b; font-size: 0.7rem;">\${r.name_zh}</p>
+          \${r.is_closed ? '<div style="color:#ef4444; font-weight:800; font-size:0.72rem; margin-bottom:4px; background:#fee2e2; padding:3px 6px; border-radius:4px;">⚠️ 영구 폐업 매장 (Google Maps 已歇業)</div>' : ''}
           <div onclick="openRecommendersModal('\${r.id}')" style="cursor:pointer; margin: 0 0 4px; font-size: 0.74rem; color: #ef233c; font-weight: 700; background:#fee2e2; padding:3px 6px; border-radius:4px;">🔥 <b>추천:</b> \${r.mention_count}회 (\${r.percentage}) [영상보기 ↗]</div>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">📍 \${r.district}</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">🚇 \${r.mrt}</p>
@@ -1072,10 +1303,14 @@ export function runDeliverablesGenerationV4() {
 
       const row = document.createElement('div');
       row.style.cssText = 'padding: 8px 10px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: center; font-size: 0.82rem; cursor: pointer;';
+      const rowNameHtml = r.is_closed 
+        ? \`<span class="text-closed">\${r.name_ko}</span> <span class="badge-closed">[폐업]</span>\` 
+        : r.name_ko;
+
       row.innerHTML = \`
         <div>
           <span style="font-weight: 800; color: \${pinColor}; margin-right: 6px;">#\${r.rank}</span>
-          <span style="font-weight: 700;">\${r.name_ko}</span>
+          <span style="font-weight: 700;">\${rowNameHtml}</span>
           <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">\${r.district} · \${r.cuisine}</div>
         </div>
         <span onclick="event.stopPropagation(); openRecommendersModal('\${r.id}');" style="color:#ef233c; font-weight:bold; font-size:0.78rem; cursor:pointer; background:#fee2e2; padding:2px 7px; border-radius:6px;" title="추천 영상 목록 확인">🔥 \${r.mention_count}회 <span style="font-size:0.68rem; font-weight:normal; color:#64748b;">(\${r.percentage})</span></span>
