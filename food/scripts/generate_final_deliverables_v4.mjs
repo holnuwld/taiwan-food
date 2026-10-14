@@ -188,7 +188,32 @@ export function runDeliverablesGenerationV4() {
     .card-head { padding: 10px 14px 6px; border-bottom: 1px solid #f1f5f9; display: flex; justify-content: space-between; align-items: flex-start; }
     .card-title h3 { font-size: 0.98rem; font-weight: 700; margin-bottom: 2px; line-height: 1.3; }
     .card-title span { font-size: 0.72rem; color: #64748b; }
-    .pill-mention { background: #fee2e2; color: var(--primary); font-size: 0.72rem; font-weight: 800; padding: 2px 7px; border-radius: 10px; white-space: nowrap; margin-left: 4px; }
+    .pill-mention { background: #fee2e2; color: var(--primary); font-size: 0.72rem; font-weight: 800; padding: 2px 7px; border-radius: 10px; white-space: nowrap; margin-left: 4px; cursor: pointer; transition: all 0.15s; }
+    .pill-mention:hover { transform: scale(1.06); box-shadow: 0 2px 6px rgba(230, 57, 70, 0.25); background: #fecaca; }
+    .rank-count.clickable { cursor: pointer; border-radius: 4px; padding: 2px 4px; transition: background 0.15s; }
+    .rank-count.clickable:hover { background: #fee2e2; }
+
+    /* Modal Popup for Recommender Videos */
+    .modal-backdrop { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 23, 42, 0.65); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 10000; align-items: center; justify-content: center; padding: 16px; animation: fadeInModal 0.2s ease-out; }
+    .modal-backdrop.active { display: flex; }
+    @keyframes fadeInModal { from { opacity: 0; } to { opacity: 1; } }
+    .modal-box { background: #ffffff; border-radius: 16px; width: 100%; max-width: 720px; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); overflow: hidden; animation: slideUpModal 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+    @keyframes slideUpModal { from { transform: translateY(20px) scale(0.97); opacity: 0; } to { transform: translateY(0) scale(1); opacity: 1; } }
+    .modal-header { padding: 16px 20px; background: linear-gradient(135deg, #d90429 0%, #ef233c 100%); color: white; display: flex; justify-content: space-between; align-items: center; }
+    .modal-header h3 { font-size: 1.15rem; font-weight: 800; margin: 0; }
+    .modal-header .modal-subtitle { font-size: 0.78rem; opacity: 0.92; font-weight: normal; margin-top: 3px; }
+    .modal-close-btn { background: rgba(255, 255, 255, 0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; font-size: 1.3rem; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: background 0.15s; }
+    .modal-close-btn:hover { background: rgba(255, 255, 255, 0.35); }
+    .modal-body { padding: 16px 20px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; background: #f8fafc; }
+    .modal-video-card { background: white; border: 1px solid #e2e8f0; border-radius: 10px; padding: 12px 14px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); transition: transform 0.15s, border-color 0.15s; }
+    .modal-video-card:hover { transform: translateY(-2px); border-color: #cbd5e1; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .modal-video-meta { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 6px; }
+    .modal-creator-tag { font-weight: 800; font-size: 0.85rem; color: #1e293b; display: inline-flex; align-items: center; gap: 6px; }
+    .modal-video-title { font-size: 0.83rem; font-weight: 600; color: #334155; line-height: 1.4; }
+    .modal-video-footer { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 4px; padding-top: 6px; border-top: 1px dashed #f1f5f9; }
+    .modal-jump-btn { display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; background: #e63946; color: white; font-size: 0.76rem; font-weight: 700; border-radius: 6px; text-decoration: none; transition: background 0.15s; }
+    .modal-jump-btn:hover { background: #d90429; }
+
     
     .card-body { padding: 10px 14px; flex: 1; display: flex; flex-direction: column; gap: 6px; font-size: 0.8rem; }
     .desc-box { background: #f8fafc; border-left: 3px solid #3b82f6; padding: 6px 8px; font-size: 0.75rem; color: #334155; line-height: 1.4; border-radius: 0 4px 4px 0; }
@@ -430,6 +455,20 @@ export function runDeliverablesGenerationV4() {
 
   </div>
 
+  <!-- Modal Popup for Recommender Videos -->
+  <div id="recommendersModal" class="modal-backdrop" onclick="closeRecommendersModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalRestaurantTitle">#1 맛집명</h3>
+          <div id="modalRestaurantSub" class="modal-subtitle">추천 유튜버 및 영상 목록</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeRecommendersModal()" title="닫기">&times;</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
   <script>
     const RESTAURANTS = ${JSON.stringify(enrichedRestaurants)};
     const RAW_TIMELINES = ${JSON.stringify(rawTimelines)};
@@ -485,7 +524,7 @@ export function runDeliverablesGenerationV4() {
           <div class="rank-name">\${r.name_ko}</div>
           <div class="rank-sub">\${r.district} · \${r.cuisine}</div>
         </div>
-        <div class="rank-count">\${r.mention_count}회 <span style="font-size:0.7rem; color:#64748b; font-weight:normal;">(\${r.percentage})</span></div>
+        <div class="rank-count clickable" onclick="event.stopPropagation(); openRecommendersModal('\${r.id}');" title="추천 유튜버 및 영상 목록 확인">🔥 \${r.mention_count}회 <span style="font-size:0.7rem; color:#64748b; font-weight:normal;">(\${r.percentage})</span></div>
       \`;
       item.onclick = () => {
         focusOnMap(r.rank);
@@ -510,7 +549,7 @@ export function runDeliverablesGenerationV4() {
           <img src="\${r.image_url}" style="width: 100%; height: 110px; object-fit: cover; border-radius: 6px; margin-bottom: 8px;" />
           <h4 style="margin: 0 0 2px; color: #d90429; font-size: 0.96rem;">#\${r.rank} \${r.name_ko}</h4>
           <p style="margin: 0 0 4px; color: #64748b; font-size: 0.74rem;">\${r.name_zh}</p>
-          <p style="margin: 0 0 4px; font-size: 0.76rem; color: #d90429; font-weight: 700;">🔥 <b>유튜브 추천:</b> \${r.mention_count}회 (\${r.percentage})</p>
+          <div onclick="openRecommendersModal('\${r.id}')" style="cursor:pointer; margin: 0 0 6px; font-size: 0.76rem; color: #d90429; font-weight: 700; background:#fee2e2; padding:4px 8px; border-radius:6px; display:inline-block;" title="클릭하여 추천 유튜버 및 영상 목록 확인">🔥 <b>유튜브 추천:</b> \${r.mention_count}회 (\${r.percentage}) <span style="text-decoration:underline; font-size:0.7rem;">[영상목록 ↗]</span></div>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">⭐️ <b>평점:</b> \${r.rating} | <b>분류:</b> \${r.cuisine}</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">📍 <b>위치:</b> \${r.district}</p>
           <p style="margin: 0 0 4px; font-size: 0.76rem;">🚇 <b>교통:</b> \${r.mrt}</p>
@@ -555,7 +594,7 @@ export function runDeliverablesGenerationV4() {
               <h3>#\${r.rank} \${r.name_ko}</h3>
               <span>\${r.name_zh}</span>
             </div>
-            <div class="pill-mention">🔥 \${r.mention_count}회 (\${r.percentage})</div>
+            <div class="pill-mention" onclick="openRecommendersModal('\${r.id}')" title="클릭하여 추천 유튜버 \${r.mention_count}명 및 영상 확인">🔥 \${r.mention_count}회 (\${r.percentage}) 🔍</div>
           </div>
           <div class="card-body">
             <div class="desc-box">\${r.one_line_desc}</div>
@@ -590,6 +629,61 @@ export function runDeliverablesGenerationV4() {
       });
     }
     renderCards(RESTAURANTS);
+
+    // Modal Functions
+    function openRecommendersModal(restaurantId) {
+      const r = RESTAURANTS.find(item => item.id === restaurantId || String(item.rank) === String(restaurantId));
+      if (!r) return;
+
+      document.getElementById('modalRestaurantTitle').textContent = \`#\${r.rank} \${r.name_ko} (\${r.name_zh})\`;
+      document.getElementById('modalRestaurantSub').textContent = \`🔥 총 \${r.mention_count}회 추천 (\${r.percentage}) · 추천 유튜버 & 타임라인 영상 목록\`;
+
+      const body = document.getElementById('modalBody');
+      body.innerHTML = '';
+
+      const vList = r.recommending_videos || [];
+      if (vList.length === 0) {
+        body.innerHTML = '<div style="text-align:center; padding:30px; color:#94a3b8;">추천 영상 데이터가 준비 중입니다.</div>';
+      } else {
+        vList.forEach((v) => {
+          const card = document.createElement('div');
+          card.className = 'modal-video-card';
+          card.innerHTML = \`
+            <div class="modal-video-meta">
+              <span class="modal-creator-tag">
+                <span class="badge-nationality">\${v.nationality || '한국 🇰🇷'}</span>
+                <b>\${v.channel || '유튜버'}</b>
+              </span>
+              <span style="font-size:0.75rem; color:#64748b; font-weight:600;">조회수 \${v.views || '10만+'}</span>
+            </div>
+            <div class="modal-video-title">\${v.title}</div>
+            <div class="modal-video-footer">
+              <span class="tag-timeline-transcript" style="font-size:0.73rem;">\${v.timeline || '자막 실측'}</span>
+              <div style="display:flex; gap:6px;">
+                <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 해당 시점 바로보기 ↗</a>
+                \${v.raw_url ? \`<a href="\${v.raw_url}" target="_blank" style="font-size:0.73rem; color:#64748b; display:inline-flex; align-items:center; text-decoration:none;">🔗 영상처음</a>\` : ''}
+              </div>
+            </div>
+          \`;
+          body.appendChild(card);
+        });
+      }
+
+      const modal = document.getElementById('recommendersModal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeRecommendersModal(e) {
+      if (e && e.target !== e.currentTarget && !e.target.classList.contains('modal-close-btn')) return;
+      const modal = document.getElementById('recommendersModal');
+      if (modal) modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeRecommendersModal();
+    });
 
     function filterRestaurants() {
       const q = document.getElementById('searchInput').value.toLowerCase();
@@ -759,6 +853,24 @@ export function runDeliverablesGenerationV4() {
     .timeline-item { background: white; border-radius: 8px; border: 1px solid var(--border); padding: 10px 12px; margin-bottom: 8px; }
     .tl-tag { font-size: 0.7rem; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: #f1f5f9; }
     .tl-btn-jump { display: inline-block; background: #e63946; color: white; font-size: 0.74rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; text-decoration: none; margin-top: 6px; }
+
+    /* Modal Popup for Mobile */
+    .modal-backdrop { display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); z-index: 10000; align-items: flex-end; justify-content: center; animation: fadeInModal 0.2s ease-out; }
+    .modal-backdrop.active { display: flex; }
+    @keyframes fadeInModal { from { opacity: 0; } to { opacity: 1; } }
+    .modal-box { background: #ffffff; border-radius: 16px 16px 0 0; width: 100%; max-height: 85vh; display: flex; flex-direction: column; box-shadow: 0 -4px 20px rgba(0,0,0,0.2); overflow: hidden; animation: slideUpMobile 0.25s cubic-bezier(0.16, 1, 0.3, 1); }
+    @keyframes slideUpMobile { from { transform: translateY(100%); } to { transform: translateY(0); } }
+    .modal-header { padding: 14px 16px; background: linear-gradient(135deg, #d90429, #ef233c); color: white; display: flex; justify-content: space-between; align-items: center; }
+    .modal-header h3 { font-size: 1rem; font-weight: 800; margin: 0; }
+    .modal-header .modal-subtitle { font-size: 0.73rem; opacity: 0.92; margin-top: 2px; }
+    .modal-close-btn { background: rgba(255, 255, 255, 0.2); border: none; color: white; width: 28px; height: 28px; border-radius: 50%; font-size: 1.2rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .modal-body { padding: 12px 14px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 10px; background: #f8fafc; }
+    .modal-video-card { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 10px 12px; display: flex; flex-direction: column; gap: 5px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+    .modal-video-meta { display: flex; justify-content: space-between; align-items: center; font-size: 0.78rem; }
+    .modal-creator-tag { font-weight: 800; color: #1e293b; display: inline-flex; align-items: center; gap: 5px; }
+    .modal-video-title { font-size: 0.78rem; font-weight: 600; color: #334155; line-height: 1.35; }
+    .modal-video-footer { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; padding-top: 5px; border-top: 1px dashed #f1f5f9; }
+    .modal-jump-btn { display: inline-flex; align-items: center; gap: 4px; padding: 4px 10px; background: #e63946; color: white; font-size: 0.73rem; font-weight: 700; border-radius: 4px; text-decoration: none; }
   </style>
 </head>
 <body>
@@ -791,6 +903,20 @@ export function runDeliverablesGenerationV4() {
     <div id="mTimelineList"></div>
   </div>
 
+  <!-- Modal Popup for Recommender Videos (Mobile) -->
+  <div id="recommendersModal" class="modal-backdrop" onclick="closeRecommendersModal(event)">
+    <div class="modal-box" onclick="event.stopPropagation()">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalRestaurantTitle">#1 맛집명</h3>
+          <div id="modalRestaurantSub" class="modal-subtitle">추천 유튜버 및 영상 목록</div>
+        </div>
+        <button class="modal-close-btn" onclick="closeRecommendersModal()" title="닫기">&times;</button>
+      </div>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
   <script>
     const RESTAURANTS = ${JSON.stringify(enrichedRestaurants)};
     const RAW_TIMELINES = ${JSON.stringify(rawTimelines)};
@@ -820,7 +946,7 @@ export function runDeliverablesGenerationV4() {
               <h3>#\${r.rank} \${r.name_ko}</h3>
               <span style="font-size: 0.72rem; color: #64748b;">\${r.name_zh}</span>
             </div>
-            <span style="color: #ef233c; font-weight: 800; font-size: 0.78rem;">🔥 \${r.mention_count}회 (\${r.percentage})</span>
+            <span onclick="openRecommendersModal('\${r.id}')" style="color: #ef233c; font-weight: 800; font-size: 0.78rem; cursor: pointer; background: #fee2e2; padding: 2px 7px; border-radius: 8px;">🔥 \${r.mention_count}회 (\${r.percentage}) 🔍</span>
           </div>
           <div class="m-card-body">
             <div class="m-desc">\${r.one_line_desc}</div>
@@ -835,6 +961,58 @@ export function runDeliverablesGenerationV4() {
       });
     }
     renderMCards(RESTAURANTS);
+
+    // Mobile Modal Functions
+    function openRecommendersModal(restaurantId) {
+      const r = RESTAURANTS.find(item => item.id === restaurantId || String(item.rank) === String(restaurantId));
+      if (!r) return;
+
+      document.getElementById('modalRestaurantTitle').textContent = \`#\${r.rank} \${r.name_ko} (\${r.name_zh})\`;
+      document.getElementById('modalRestaurantSub').textContent = \`🔥 총 \${r.mention_count}회 추천 (\${r.percentage}) · 추천 유튜버 & 영상\`;
+
+      const body = document.getElementById('modalBody');
+      body.innerHTML = '';
+
+      const vList = r.recommending_videos || [];
+      if (vList.length === 0) {
+        body.innerHTML = '<div style="text-align:center; padding:25px; color:#94a3b8; font-size:0.8rem;">추천 영상 데이터가 준비 중입니다.</div>';
+      } else {
+        vList.forEach((v) => {
+          const card = document.createElement('div');
+          card.className = 'modal-video-card';
+          card.innerHTML = \`
+            <div class="modal-video-meta">
+              <span class="modal-creator-tag">
+                <span style="background:#f1f5f9; padding:1px 5px; border-radius:4px; font-size:0.7rem;">\${v.nationality || '한국 🇰🇷'}</span>
+                <b>\${v.channel || '유튜버'}</b>
+              </span>
+              <span style="font-size:0.72rem; color:#64748b;">\${v.views || '10만+'}</span>
+            </div>
+            <div class="modal-video-title">\${v.title}</div>
+            <div class="modal-video-footer">
+              <span style="background:#dcfce7; color:#166534; font-size:0.7rem; font-weight:700; padding:2px 5px; border-radius:4px;">\${v.timeline || '자막 실측'}</span>
+              <a href="\${v.url}" target="_blank" class="modal-jump-btn">🎬 영상 바로보기 ↗</a>
+            </div>
+          \`;
+          body.appendChild(card);
+        });
+      }
+
+      const modal = document.getElementById('recommendersModal');
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeRecommendersModal(e) {
+      if (e && e.target !== e.currentTarget && !e.target.classList.contains('modal-close-btn')) return;
+      const modal = document.getElementById('recommendersModal');
+      if (modal) modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeRecommendersModal();
+    });
 
     document.getElementById('mCardSearch').addEventListener('input', (e) => {
       const q = e.target.value.toLowerCase();
@@ -882,7 +1060,7 @@ export function runDeliverablesGenerationV4() {
         <div style="font-family: Pretendard, sans-serif; font-size: 0.8rem; max-width: 230px; line-height: 1.4;">
           <h4 style="margin: 0 0 2px; color: #d90429;">#\${r.rank} \${r.name_ko}</h4>
           <p style="margin: 0 0 3px; color: #64748b; font-size: 0.7rem;">\${r.name_zh}</p>
-          <p style="margin: 0 0 3px; font-size: 0.74rem; color: #ef233c; font-weight: 700;">🔥 <b>추천:</b> \${r.mention_count}회 (\${r.percentage})</p>
+          <div onclick="openRecommendersModal('\${r.id}')" style="cursor:pointer; margin: 0 0 4px; font-size: 0.74rem; color: #ef233c; font-weight: 700; background:#fee2e2; padding:3px 6px; border-radius:4px;">🔥 <b>추천:</b> \${r.mention_count}회 (\${r.percentage}) [영상보기 ↗]</div>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">📍 \${r.district}</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">🚇 \${r.mrt}</p>
           <p style="margin: 0 0 3px; font-size: 0.74rem;">🍲 \${r.menu}</p>
@@ -900,7 +1078,7 @@ export function runDeliverablesGenerationV4() {
           <span style="font-weight: 700;">\${r.name_ko}</span>
           <div style="font-size: 0.72rem; color: #64748b; margin-top: 2px;">\${r.district} · \${r.cuisine}</div>
         </div>
-        <span style="color:#ef233c; font-weight:bold; font-size:0.78rem;">\${r.mention_count}회 <span style="font-size:0.68rem; font-weight:normal; color:#64748b;">(\${r.percentage})</span></span>
+        <span onclick="event.stopPropagation(); openRecommendersModal('\${r.id}');" style="color:#ef233c; font-weight:bold; font-size:0.78rem; cursor:pointer; background:#fee2e2; padding:2px 7px; border-radius:6px;" title="추천 영상 목록 확인">🔥 \${r.mention_count}회 <span style="font-size:0.68rem; font-weight:normal; color:#64748b;">(\${r.percentage})</span></span>
       \`;
       row.onclick = () => {
         mMap.flyTo([r.lat, r.lng], 16);

@@ -1,7 +1,7 @@
 # 🇹🇼 타이베이 유튜브 200개 영상 맛집 프로젝트 - AI 인수인계 가이드 (Handover Guide)
 
 > **문서 목적**: 다음 AI 모델이나 다른 개발자가 이 프로젝트를 이어서 작업할 때, 전체 시스템 구조, 데이터 파이프라인, 엄격한 비즈니스 규칙 및 검증 체계를 한눈에 파악하고 즉시 연속성 있게 작업을 수행할 수 있도록 작성된 종합 인수인계 문서입니다.
-> **최종 갱신 일시**: 2026-10-13
+> **최종 갱신 일시**: 2026-10-14
 > **작업 디렉토리**: `c:\cowork\taiwan\food`
 > **연동 GitHub 리포지토리**: [https://github.com/holnuwld/taiwan-food-yt](https://github.com/holnuwld/taiwan-food-yt) (Branch: `main`)
 
@@ -14,6 +14,8 @@
 3. **핵심 가치**:
    * **광고성 블로그 배제**: 최근 2년(2024~2026) 이내, 조회수 10만 회 이상의 실제 검증된 유튜브 영상 200개 마스터 데이터셋 구축.
    * **실제 유튜브 추천 횟수 집계**: 200개 마스터 영상 내 실제 언급 빈도(1위 행복당 26회 ~ 40위 1회) 및 백분율(%)을 전수 집계하여 랭킹 순위 및 카드/지도 뱃지에 실측치 반영.
+   * **추천 횟수 클릭 시 팝업 모달**: 식당 카드, 좌측 랭킹 사이드바, 구글 지도 마커 팝업의 추천 횟수 뱃지(`🔥 N회 (P%)`) 클릭 시, 해당 식당을 추천한 유튜버 목록, 국적, 영상 제목, 누적 조회수, 타임라인 및 해당 시점 바로보기 링크를 보여주는 인터랙티브 모달(`recommendersModal`) 탑재.
+   * **음식 사진 중복 0건 (100% Unique & Authentic)**: 과거 11개 제너릭 사진 중복을 전면 해소하고, 40곳 식당의 실제 대표 메뉴(아종면선 곱창국수, 딘타이펑 샤오롱바오, 라오허제 후추빵, 유산동 우육면 등)와 1:1 일치하는 40개 고유 사진 수록 및 `food/images/` 내 오프라인 백업 완료.
    * **투명한 타임라인**: 영상 설명란의 공식 챕터뿐만 아니라 영상 음성/자막을 직접 실측 매핑하여 정확한 재생 위치(`&t=초`) 제공.
    * **TOP 40 맛집 고도화**: 영상 언급 빈도 순으로 추출된 40곳 맛집의 실측 메뉴 사진, 2인 주문 추천 꿀팁, 블로그/커뮤니티 후기 원문 링크, 유튜버 실전 팁 및 영상 원문 링크 전수 완비.
    * **반응형 대시보드 & 지도**: 
@@ -38,26 +40,29 @@ c:\cowork\taiwan\food\
 ├── README.md                                # 깃허브 메인 표출용 리드미 (위 가이드와 동일)
 ├── AI_HANDOVER_GUIDE.md                     # [본 문서] AI 간 인수인계 가이드
 │
+├── images/                                  # 40곳 맛집 100% 고유 실측 음식 사진 오프라인 백업 (01~40)
+│   ├── 01_행복당.jpg ~ 40_금춘발우육면.jpg    # 40개 JPG 파일 (각 22KB~295KB)
+│
 ├── data/                                    # 데이터셋 및 감사 리포트
 │   ├── taipei_200_videos_master.json        # 200개 유튜브 영상 마스터 메타데이터
 │   ├── taipei_youtube_food_timeline_raw.json# 312건 타임라인 RAW JSON
-│   ├── top40_restaurants_enriched.json     # 사진, 2인팁, 설명, 유튜버팁 완비된 TOP 40 메인 데이터
+│   ├── top40_restaurants_enriched.json     # 사진, 추천영상 목록, 2인팁, 설명, 유튜버팁 완비된 TOP 40 메인 데이터
 │   ├── top40_exact_metadata.json            # 40곳 맛집의 100% 실측 좌표, 상세 지번 주소, MRT 메타
 │   ├── restaurant_mention_counts.json       # 40곳 식당별 언급 횟수 및 영상 참조 목록
 │   ├── mechanical_validation_report.json    # 오케스트레이터 기계 검증기 결과 보고서 (27개 PASS)
-│   ├── top40_source_validation_report.json  # 사진/후기 출처 URL 유효성 검증 보고서
-│   ├── spreadsheet_search_30_tests_report.json # 스프레드시트 조건검색 30회 샘플 테스트 보고서
-│   ├── map_tile_3_verifications_report.json # 지도 타일 및 좌표 정밀도 검증 보고서
+│   ├── top40_source_validation_report.json  # 40곳 고유 사진/로컬이미지/모달팝업 검증 보고서 (11개 항목 PASS)
+│   ├── reviewer_sample_20_report.json       # 리뷰어 20개 무작위 샘플링(50% 비율) 전수 감사 보고서 (20/20 PASS)
+│   ├── spreadsheet_search_30_tests_report.json # 스프레드시트 조건검색 30회 샘플 테스트 보고서 (30/30 PASS)
+│   ├── map_tile_3_verifications_report.json # 지도 타일 및 좌표 정밀도 검증 보고서 (4/4 PASS)
 │   └── transcripts/                         # 유튜브 자막(Transcript) JSON 캐시 (40여 개 영상)
 │
 └── scripts/                                 # 빌드 및 검증 자동화 스크립트
     ├── generate_final_deliverables_v4.mjs   # [핵심] 모든 산출물(HTML 4종, CSV, KML) 일괄 생성기
     ├── build_top40_enriched_dataset.py      # TOP 40 메타데이터 빌더 (Python)
-    ├── apply_real_coordinates.mjs           # 40곳 실측 좌표 일괄 주입기
     ├── validate_results.py                  # [검증기 1] 기계적 무결성 전수 검증기 (Python)
-    ├── validate_top40_sources_and_urls.py   # [검증기 2] 사진 및 후기 출처 전수 유효성 검증기 (Python)
-    ├── run_reviewer_verifications.mjs       # [검증기 3] 스프레드시트 30회 & 지도 4회 감사 스크립트 (Node)
-    └── rebuild_honest_timelines_v3.py       # 자막 실측 타임라인 빌더
+    ├── validate_top40_sources_and_urls.py   # [검증기 2] 사진 고유성·모달·출처 URL 전수 검증기 (Python)
+    ├── verify_reviewer_sample_20.py         # [검증기 3] 리뷰어 20개 식당 샘플링 감사 스크립트 (Python)
+    └── run_reviewer_verifications.mjs       # [검증기 4] 스프레드시트 30회 & 지도 4회 감사 스크립트 (Node)
 ```
 
 ---
@@ -79,7 +84,18 @@ c:\cowork\taiwan\food\
   - 우측 상단 `L.control.layers`를 통해 `Google 일반 지도`, `Google 위성 지도`, `Esri 스트리트` 3대 레이어 전환기를 항상 유지해야 합니다.
   - 핀은 단순 마커가 아닌 순위 번호(`#1`~`#40`)가 각인된 커스텀 번호 뱃지 핀(`.custom-map-pin`)을 유지합니다.
 
-### ③ 타임라인 데이터 포맷 및 8열 표준 규격 엄수
+### ③ 40곳 음식 사진 100% 고유성 유지 (No Duplicate Photos)
+* **과거 발생했던 오류**: 카테고리별(우육면 7곳, 루로우판 5곳 등)로 동일한 Unsplash 라멘/덮밥 사진 11장을 중복 재사용하여 식당별 고유성이 훼손되었음.
+* **준수 사항**:
+  - 40개 식당은 반드시 **40개의 100% 서로 다른 고유 사진 URL**을 유지해야 합니다 (`len(set(urls)) == 40`).
+  - 위키미디어 공용(Wikimedia Commons)의 실제 매장/음식 사진(아종면선 곱창국수, 딘타이펑, 후추빵, 유산동 등)과 고유 Unsplash 사진을 결합하여 매칭.
+  - `food/images/` 디렉토리에 40개 이미지 오프라인 백업 파일을 항시 보관합니다.
+
+### ④ 추천 횟수 뱃지 클릭 시 추천 영상 모달 팝업 연동
+* 식당 카드(`.pill-mention`), 사이드바 순위(`.rank-count`), 지도 마커 팝업의 추천 횟수를 누르면 `openRecommendersModal(id)`가 실행되어 해당 식당의 추천 유튜버와 영상 목록(`recommending_videos`) 팝업이 노출되어야 합니다.
+* 사이드바 클릭 시 지도 이동(`focusOnMap`)과 이벤트 간섭이 없도록 `event.stopPropagation()` 처리를 유지합니다.
+
+### ⑤ 타임라인 데이터 포맷 및 8열 표준 규격 엄수
 * **RAW 데이터 헤더 (8열)**:
   `['유튜버 국적', '유튜버명', '영상제목', '영상링크', '맛집이름', '메뉴', '영상중 타임라인', '해당타임라인 지정된링크']`
 * **타임라인 표기 규칙**:
@@ -87,47 +103,25 @@ c:\cowork\taiwan\food\
   - 타임라인 미제공: `🎥 전체 시청 (자막 미지원)` ➔ 링크는 원본 영상 URL 유지.
   - **절대 타임라인 시간을 임의로 날조하여 찍지 말 것!** (정직한 표기 원칙)
 
-### ④ TOP 40 항목 필수 충족 요건
-* 40개 식당 전원에 대해 아래 5개 항목이 누락 없이 100% 채워져 있어야 합니다:
-  1. 메뉴 사진 URL (Unsplash 등 검증된 고화질 CDN)
-  2. 사진 원본 출처 하이퍼링크 (Google Maps Place 공식 검색 URL)
-  3. 2인 주문 추천 꿀팁 (메뉴 종류, 개수 추천 포함)
-  4. 후기 원문 출처 하이퍼링크
-  5. 음식 한 줄 차별점 설명 (20자 이상)
-  6. 유튜버 실전 팁 및 유튜버 크리에이터명 & 영상 원문 링크
-
-### ⑤ 유튜브 추천 횟수 및 추천율 일괄 더미값 금지 (Real Counts Only)
-* **과거 발생했던 오류**: 클라이언트 렌더링 시 `${r.mention_count || 10}회` 폴백 처리가 남아있어 40개 모든 식당이 10회로 일괄 표기되는 결함이 있었음.
-* **준수 사항**:
-  - `top40_restaurants_enriched.json`에 `mention_count`와 `percentage`를 반드시 정수/문자열로 명시해야 합니다.
-  - PC/모바일 카드, 좌측 랭킹 사이드바, 구글 지도 핀 팝업, 구글 내 지도 CSV/KML 설명란에 실제 횟수(`${r.mention_count}회 (${r.percentage})`)를 일관되게 렌더링해야 합니다.
-
 ---
 
 ## 🤖 4. 멀티에이전트 검증 체계 (Dual-Validation Pipeline)
 
-프로젝트에는 두 단계의 검증 장치가 구현되어 있으며, 코드를 수정할 때마다 반드시 실행하여 통과 여부를 확인해야 합니다.
+프로젝트에는 4단계의 검증 장치가 구현되어 있으며, 코드를 수정할 때마다 반드시 실행하여 통과 여부를 확인해야 합니다.
 
-### 1단계: 오케스트레이터 기계 검증기 (`validate_results.py`)
 ```bash
-python food/scripts/validate_results.py
-# (Windows 환경에서 python3.12 권장: & "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/validate_results.py)
-```
-* **검증 내용 (27개 항목 전수 검사)**:
-  - 200개 마스터 영상 수량, 중복 0건, 조회수 10만+, 최근 2년 발행일 충족 여부.
-  - 40곳 맛집 275건 언급 집계와 마스터 영상 간 참조 무결성 100%.
-  - RAW CSV 312행 필수값 빈칸(Null) 0건, 더미 텍스트 0건, 8개 열 헤더 일치.
-  - **지도 CSV/KML 40곳 고유 실측 좌표 유효성 및 인위적 선형 더미 감지 차단**.
-  - TOP 40 사진 CDN, 2인팁, 음식 설명, 유튜버 출처 100% 충족.
+# 1. 기계적 정합성 전수 검증 (27개 항목 PASS 확인)
+& "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/validate_results.py
 
-### 2단계: 독립 감사 리뷰어 에이전트 (`run_reviewer_verifications.mjs`)
-```bash
+# 2. 40곳 고유 사진(중복 0건) 및 추천 영상 모달 전수 검증 (11개 항목 PASS 확인)
+& "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/validate_top40_sources_and_urls.py
+
+# 3. 리뷰어 20개 식당 무작위 샘플링(50% 비율) 정밀 감사 (20/20 PASS 확인)
+& "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/verify_reviewer_sample_20.py
+
+# 4. 스프레드시트 조건검색 30회 & 지도 4회 리뷰어 감사 (30/30, 4/4 PASS 확인)
 node food/scripts/run_reviewer_verifications.mjs
 ```
-* **검증 내용**:
-  - 스프레드시트 뷰어 다중 AND 조건검색 샘플 테스트 **30회 전수 통과 (30/30 PASS)**.
-  - 지도 타일 HTTP 통신 검증 (Google Maps 및 Esri 타일 Status 200 확인).
-  - 40곳 맛집 좌표의 고유성(40/40) 및 타이베이 권역 분산 정밀도 검증 (4/4 PASS).
 
 ---
 
@@ -146,31 +140,19 @@ node food/scripts/generate_final_deliverables_v4.mjs
   - `food/taipei_youtube_restaurants_for_google_maps.csv`
   - `food/taipei_youtube_restaurants_for_google_maps.kml`
 
-### 전체 검증 실행
-```bash
-# 1. 기계적 정합성 검증 (27개 PASS 확인)
-& "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/validate_results.py
-
-# 2. 사진/후기 출처 URL 유효성 검증 (40개 PASS 확인)
-& "C:\Users\pobco\.local\bin\python3.12.exe" food/scripts/validate_top40_sources_and_urls.py
-
-# 3. 스프레드시트 조건검색 30회 & 지도 4회 리뷰어 감사 (30/30, 4/4 PASS 확인)
-node food/scripts/run_reviewer_verifications.mjs
-```
-
 ### Git 반영 및 푸시 (GitHub Pages 서빙 구조)
 상위 디렉토리 `c:\cowork\taiwan`에서 서브트리 방식으로 `food` 폴더 내용만 독립 리포지토리의 루트(Root)로 푸시합니다.
 ```powershell
 # 1. food 변경사항 스테이징 및 커밋
 git add food/
-git commit -m "feat/fix: 작업 내용 설명"
+git commit -m "feat: Add recommending videos popup modal and 40 unique authentic dish photos"
 
-# 2. subtree 브랜치 재생성 및 배포 푸시
+# 2. subtree 브랜치 재생성 및 배포 푸시 (taiwan-food-yt)
 git branch -D food-release
 git subtree split --prefix food -b food-release
-git push yt food-release:main
+git push yt food-release:main --force
 
-# 3. 상위 리포지토리 푸시 (동기화)
+# 3. 상위 리포지토리 푸시 (taiwan-food)
 git push origin main
 ```
 
